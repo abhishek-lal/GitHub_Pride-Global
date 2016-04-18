@@ -31,7 +31,7 @@
     		  }
        select{max-width:100px !important; min-width:30px !important;
     			   }
-        
+       .split-width-select{margin-right:10px;}
     }
     .text-links li{border-right:solid 1px $primary-button-bg; padding:0 7px 0 4px;}
     .text-links li:last-child{border-right:0;}
@@ -491,7 +491,9 @@
     	.split-width{
     	input{width:100%; min-width:50px !important; max-width:700px !important;}
     	select{ width:150px !important; min-width:50px !important;}
-    	}
+    	.split-width-select{margin-right:10px;}
+		.split-width-input{ width:auto;}
+		}
     }
     @media (max-width: 480px) {
     	.form-group-lg{

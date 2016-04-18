@@ -32,6 +32,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .split-width select {
   max-width: 100px !important;
   min-width: 30px !important; }
+.split-width .split-width-select {
+  margin-right: 10px; }
 
 .text-links li {
   border-right: solid 1px #9b9b9b;
@@ -437,7 +439,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     max-width: 700px !important; }
   .split-width select {
     width: 150px !important;
-    min-width: 50px !important; } }
+    min-width: 50px !important; }
+  .split-width .split-width-select {
+    margin-right: 10px; }
+  .split-width .split-width-input {
+    width: auto; } }
 
 @media (max-width: 480px) {
   .form-group-lg label {
