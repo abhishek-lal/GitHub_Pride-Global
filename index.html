@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>Launch</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+    <!-- Custom styles -->
+    <link href="sass/site.css" rel="stylesheet">
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Global Header -->
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">LAUNCH</a>
+                    <!--<a href="#" class="pull-right hidden-lg hidden-md hidden-sm"><span class="badge-mobile">10</span></a>-->
+                    <div class="input-group pull-right hidden-lg hidden-md hidden-sm">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="badge-mobile">10</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Users</a></li>
+                            <li><a href="#">Clients</a></li>
+                            <li><a href="#">Sppliers</a></li>
+                            <li><a href="#">Audit Log</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown visible-lg visible-md visible-sm">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="badge">10</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Users</a></li>
+                                <li><a href="#">Clients</a></li>
+                                <li><a href="#">Sppliers</a></li>
+                                <li><a href="#">Audit Log</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="#">Run a Report</a></li>
+                        <li><a href="#about">Create a Requisition</a></li>
+                        <li><a href="#contact">View Requisitions</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">System</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Users</a></li>
+                                <li><a href="#">Clients</a></li>
+                                <li><a href="#">Sppliers</a></li>
+                                <li><a href="#">Audit Log</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img id="profile" src="img/profile.png" class="profile" /></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">My Profile</a></li>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">unsubscribe</a></li>
+                                <li><a href="#">Update Password</a></li>
+                                <li><a href="#">Sign Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+    </header>
+    <!-- container start -->
+    <div class="container">
+        <h1>Add a New User</h1>
+        <div class="form-container">
+            <form class="form-inline">
+                <div class="form-group">
+                    <label for="userType">User Type*</label>
+                    <select id="userType" class="form-control">
+                        <option>Abc</option>
+                        <option>Xyz</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="client">Client*</label>
+                    <select id="client" class="form-control">
+                        <option>Abc</option>
+                        <option>Xyz</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="firstName">First Name*</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name*</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                </div>
+                <div class="form-group">
+                    <label for="PreferredName">Preferred Name</label>
+                    <input type="text" class="form-control" id="PreferredName" placeholder="Preferred Name">
+                </div>
+                <div class="form-group">
+                    <label for="activeStatus">Active Status*</label>
+                    <select id="activeStatus" class="form-control">
+                        <option>Abc</option>
+                        <option>Xyz</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" class="form-control" id="email" placeholder="abc@xyz.com">
+                </div>
+                <div class="form-group">
+                    <label for="phoneNone">Phone No*</label>
+                    <input type="text" class="form-control" id="phoneNone" placeholder="Phone No">
+                </div>
+                <div class="form-group">
+                    <label for="heirarchyLevel">Heirarchy Level*</label>
+                    <input type="text" class="form-control" id="heirarchyLevel" placeholder="Heirarchy Level">
+                </div>
+                <div class="form-group">
+                    <label for="heirarchyUnit">Heirarchy Unit*</label>
+                    <select id="heirarchyUnit" class="form-control">
+                        <option>Abc</option>
+                        <option>Xyz</option>
+                    </select>
+                </div>
+                <div class="clear"></div>
+                <div class="block-horizontal">
+                    <h4>Abilities*</h4>
+                    <div class="checkbox checkbox-primary">
+                        <input type="checkbox" id="checkBox1"><label for="checkBox1">Create Requisitions</label>
+                    </div>
+                    <div class="checkbox checkbox-primary">
+                        <input type="checkbox" id="checkBox2"><label for="checkBox2">Approve Requisitions</label>
+                    </div>
+                    <div class="checkbox checkbox-primary">
+                        <input type="checkbox" id="checkBox3"><label for="checkBox3">Manage Requisitions</label>
+                    </div>
+                    <div class="checkbox checkbox-primary">
+                        <input type="checkbox" id="checkBox4" disabled><label for="checkBox4">View All Requisitions</label>
+                    </div>
+                    <div class="radio radio-primary">
+                        <input type="radio" id="radio1" name="optradio"><label for="radio1">View All Requisitions</label>
+                    </div>
+                    <div class="radio radio-primary">
+                        <input type="radio" id="radio2" name="optradio"><label for="radio2">View All Requisitions</label>
+                    </div>
+                    <div class="radio radio-primary">
+                        <input type="radio" id="radio3" name="optradio" disabled><label for="radio3">View All Requisitions</label>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="button-container"><button type="submit" class="btn btn-default block-btn">Add a User</button></div>
+            </form>
+        </div>
+    </div>
+    <!-- /.container -->
+    <footer><div class="container"><span>&copy; Copyright PrideOne 2016 All Rights Reserved</span><a href="#" class="pull-right">Help</a></div></footer>
+    <script src="js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

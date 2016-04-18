@@ -1,0 +1,53 @@
+@import "../setup/library";
+html {
+  position: relative;
+  min-height: 100%;
+  //height:100%;
+}
+body {
+		@include font-face-default();
+    font-size: $default-font-size;
+    color: $default-font-color;
+    background-color: transparent;
+    background: $body-bg;
+    height: 100%;
+    margin-bottom: 66px;
+    margin-top: 90px;
+}
+
+h1, h2, h3, h4, h5 {
+		@include font-face-heading();
+    margin: 10px 0 10px;
+}
+
+h1 {margin: 10px 0 20px; font-size:$heading-font-size; font-weight:500;}
+h4{		@include font-face-default();
+	font-size:$sub-heading-font-size;}
+
+.clear {
+    clear: both;
+}
+
+a {
+    color:$default-anchor-color;
+    font-size:$default-font-size;
+    &:active, &:focus, &:hover {
+        outline: none;
+        outline: 0;
+        color:$default-anchor-hover-color;
+    }
+}
+input:-webkit-autofill{
+        -webkit-box-shadow: 0 0 0px 1000px $form-elements-bg inset !important;
+        -webkit-text-fill-color: $default-font-color !important;
+}
+input:focus::-webkit-input-placeholder{
+    color: transparent!important;
+}
+input:focus::-moz-placeholder{
+    color: transparent!important;
+}
+input:focus:-moz-placeholder{
+    color: transparent!important;
+}
+

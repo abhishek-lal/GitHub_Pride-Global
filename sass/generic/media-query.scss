@@ -1,0 +1,110 @@
+@import "../setup/library";
+
+//media query for resolution upto @768
+
+@media (max-width:767px) {
+  
+    // For controlling dynamic margin
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    //      margin-left: 0 !important;
+    //    margin-right:0 !important;
+    } 
+      .responsive-img {
+      //margin-right:0 !important;
+      //margin-left:0 !important;
+    }
+  
+    // For global header
+    a.navbar-brand {
+        background: url(../../img/launch_logo2.jpg) no-repeat !important;
+        //margin:3px 0 4px 8px !important;
+        width: 153px !important;
+        //display:block;
+        height: 47px !important;
+    }
+    .navbar-nav > li > a {
+        line-height:normal !important;
+        padding:10px 15px !important;
+    }
+    
+ }
+@media (max-width:320px){
+    
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+// Mobile
+@media only screen and (min-width : 0) and (max-width : 194px) and (orientation : portrait) { 
+    //.text-component h3 {color: #ff6a00 !important;}
+    
+}
+@media only screen and (min-width : 195px) and (max-width : 386px) and (orientation : landscape) {
+    // .text-component h3 {color: #c00 !important;}
+}
+
+// Tablet
+@media only screen and (min-width : 387px) and (max-width : 578px) and (orientation : portrait) { }
+@media only screen and (min-width : 579px) and (max-width : 770px) and (orientation : landscape) { }
+
+// Desktop
+@media only screen and (min-width : 771px) and (max-width : 962px) and (orientation : portrait) { }
+@media only screen and (min-width : 963px) and (max-width : 1152px) and (orientation : landscape) { }
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (max-width:320px){
+
+// Download Comp desc. width    
+ //   .dwn-details {
+   //     width: 280px !important;
+   // }
+}
+
+@media (min-width: 321px) and (max-width: 360px) {
+// Download Comp desc. width
+    .dwn-details {
+      //  width: 320px !important;
+    }
+}
+@media (min-width: 361px) and (max-width: 640px) {
+// Download Comp desc. width
+    .dwn-details {
+     //   width: 360px !important;
+
+        h4 {
+            //padding-right: 40px !important;
+        }
+    }
+}
+@media (min-width: 768px) {
+    
+// Download Comp desc. width
+   // .dwn-details {
+     //   width: 480px !important;
+   // }
+}
+@media (min-width: 1024px) {
+// Download Comp desc. width
+   // .dwn-details {
+       // width: 700px !important;
+   // }
+}
+
+
+@media (min-width: 992px) {
+    }
+// Scale up controls for tablets and up
+@media screen and (min-width: 288px) {
+
+  
+}
+
+
+
+// Container Heading specific for 480 resolution
+@media (min-width: 480px) and (max-width : 490px) {
+    
+}
+
+

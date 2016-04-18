@@ -1,0 +1,73 @@
+@import "../setup/library";
+
+#resend-registration {
+    .modal-footer {
+        margin-top: 50px;
+    }
+}
+
+.modal-dialog {
+    .modal-content {
+        border-radius: 0;
+
+        .modal-header {
+            padding: 8px;
+            background-color: $heading-color;
+            color: $white-font;
+            text-align: center;
+            border-bottom: none;
+
+            .modal-title {
+                font-size: 1.6em;
+                font-weight: bold;
+            }
+
+            .close {
+                margin-top: 0;
+                background-color: $white;
+                border-radius: 20px;
+                float: right;
+                font-size: 30px;
+                font-weight: 700;
+                line-height: 1;
+                color: $orange;
+                text-shadow: none;
+                opacity: 1;
+                padding: 0 6px;
+                outline: none;
+
+                &:hover, &:focus {
+                    color: $primary-button-hover-bg;
+                }
+            }
+        }
+
+        .modal-body {
+            .diff-email {
+                #diff-email {
+                    display: none;
+                }
+
+                label {
+                    font-size: $default-font-size !important;
+                    margin-bottom: 6px;
+                    color:$orange;
+
+                    &:hover {
+                        //color: $orange;
+                        text-decoration: underline;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .modal-footer {
+            padding: 0 15px 15px;
+            border-top: none;
+			.btn+.btn {
+					margin:0;
+					  }
+        }
+    }
+}

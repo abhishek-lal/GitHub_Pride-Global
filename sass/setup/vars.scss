@@ -1,0 +1,95 @@
+
+// Gradient for body bg
+$body-bg:                               #fff;
+
+//font style normal
+$default-font-size:                     1.2em;
+$footer-font-size:                      1em;
+$heading-font-size:                     2.6em;
+$heading-lg-size:                       4em;
+$heading-sm-size:                       2.8em;
+$sub-heading-font-size:                 1.4em;
+$login-subheading-font-size:            0.55em;
+$form-heading-label:                    1.4em;
+$button-font-size:                      1.3em;
+$badge-view-font-size:				    2.4em;
+$normal-font:                           normal;
+$italic-font:                           italic;
+$bold-font:                             bold;
+$uppercase-font:                        uppercase;
+$default-font-family:                   Arial, sans-serif;
+$nav-font-family:                       Arial, sans-serif;
+
+//common colors
+$default-font-color:                    #5f5f5f;
+$black:                                 #000;
+$white:                                 #fff;
+$orange:                                #ef5f47;
+$heading-color:                         #ef5f47;
+$default-button-bg:                     #ef5f47;
+$default-button-hover-bg:               #c03e29;
+$primary-button-bg:                     #9b9b9b;
+$primary-button-hover-bg:               #707070;
+$form-elements-bg:                      #f2f2f2;
+$badge-bg:								#fae6d6;	
+$grey-color:                            #5f5f5f;
+$error-color:                           #ff2a00;
+$error-bg-color:                        #f7f7f7;
+$gradient-white:                        rgba(255,255,255,0.7);
+$gradient-white-center:                 rgba(255,255,255,0.95);
+$stage-background-ie:                   #e5f1d7;
+$status-green:							#35b15a;
+$status-yellow:							#ffae00;
+$status-red:							#b13535;
+
+// Nav Vars
+$nav-border-bottom:                     #d5d5d5;
+$nav-shadow:                            rgba(0,0,0,0.175);
+$nav-font-size:                         1.2em;
+$nav-color:                             #ef5f47;
+$badge-font-size:                       12px;
+
+// Dynamic Base Vars
+$default-anchor-color:                  #ef5f47;
+$default-anchor-hover-color:            #ef5f47;
+$default-table-anchor-color:            #5f5f5f;
+
+// Common Margin Classes
+$margin-all:                            10px;
+$margin-top:                            10px;
+$margin-right:                          10px;
+$margin-bottom:                         10px;
+$margin-left:                           10px;
+
+
+///////////////////////////////////////////////////////////////////////////////////
+
+//common styles for all pages
+$float-right:                           right;
+$dis-inline:                            inline;
+$gray-dark:                             lighten(#000, 20%);   // #333
+$gray-light:                            lighten(#000, 60%);   // #999
+$white-font:                            #fff;
+$gray-font-footer:                      #afafaf;
+$yellow-color:                          #FDE409;
+
+
+//common margin for all pages
+$no-margin:                             0;
+
+//common margin for all pages
+$no-padding:                            0;
+
+// Gradient Mixins
+$start-color:                           #6a6a6a;
+$end-color:                             #aa9701;
+$start-percent:                         0; 
+$end-percent:                           100%;
+
+//////////////////////////////
+$dropdown-link-active-color: #c00;
+$dropdown-link-active-bg:    #c00;
+//$grid-float-breakpoint:     992px;
+//$icon-font-path:          "../fonts/";
+//$icon-font-name:          "glyphicons-halflings-regular";
+$global-font-path:			"../fonts/";	

@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>Launch</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!--<link href="css/bootstrap-theme.min.css" rel="stylesheet" />-->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+    <!-- Custom styles -->
+    <link href="sass/site.css" rel="stylesheet">
+
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Global Header -->
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">LAUNCH</a>
+                    <!--<a href="#" class="pull-right hidden-lg hidden-md hidden-sm"><span class="badge-mobile">10</span></a>-->
+                    <div class="input-group pull-right hidden-lg hidden-md hidden-sm">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="badge-mobile">10</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Users</a></li>
+                            <li><a href="#">Clients</a></li>
+                            <li><a href="#">Sppliers</a></li>
+                            <li><a href="#">Audit Log</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown visible-lg visible-md visible-sm">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="badge">10</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Users</a></li>
+                                <li><a href="#">Clients</a></li>
+                                <li><a href="#">Sppliers</a></li>
+                                <li><a href="#">Audit Log</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in">Run a Report</a></li>
+                        <li><a href="http://www.google.com" data-toggle="collapse" data-target=".navbar-collapse.in">Create a Requisition</a></li>
+                        <li><a href="#contact" data-toggle="collapse" data-target=".navbar-collapse.in">View Requisitions</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">System</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in">Users</a></li>
+                                <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in">Clients</a></li>
+                                <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in">Sppliers</a></li>
+                                <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in">Audit Log</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img id="profile" src="img/profile.png" class="profile" /></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in">My Profile</a></li>
+                                <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in">Help</a></li>
+                                <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in">unsubscribe</a></li>
+                                <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in">Update Password</a></li>
+                                <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in">Sign Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+    </header>
+    <!-- container start -->
+    <div class="container">
+        <h1>James Polk</h1>
+        <div class="form-container">
+            <div class="global-msg">Error message will be displayed here</div>
+            <div class="button-container"><div class="text-right"><button type="submit" class="btn btn-default block-btn">Update Password</button></div></div>
+            <div class="clear"></div>
+            <form class="form-inline">
+                <div class="form-group col-sm-3">
+                    <label for="userType" class="control-label">User Type</label>
+                    <div>
+                        <p class="form-control-static">Client</p>
+                    </div>
+                </div>
+                <div class="form-group col-sm-3">
+                    <label for="client" class="control-label">Client</label>
+                    <div>
+                        <p class="form-control-static">Chase Bank</p>
+                    </div>
+                </div>
+                <div class="form-group col-sm-3">
+                    <label for="userName" class="control-label">User Name</label>
+                    <div>
+                        <p class="form-control-static">Jpolk</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <div class="form-group col-sm-3">
+                    <label for="firstName" class="control-label">First Name</label>
+                    <div>
+                        <p class="form-control-static">James</p>
+                    </div>
+                </div>
+                <div class="form-group col-sm-3">
+                    <label for="lastName" class="control-label">Last Name</label>
+                    <div>
+                        <p class="form-control-static">Polk</p>
+                    </div>
+                </div>
+                <div class="form-group col-sm-3">
+                    <label for="PreferredName" class="control-label">Preferred Name</label>
+                    <div>
+                        <p class="form-control-static">Jamie</p>
+                    </div>
+                </div>
+                <div class="form-group col-sm-3">
+                    <label for="email" class="control-label">Email</label>
+                    <div>
+                        <p class="form-control-static">jpolk@chase.com</p>
+                    </div>
+                </div>
+                <div class="form-group col-sm-3">
+                    <label for="phoneNone" class="control-label">Phone No</label>
+                    <div>
+                        <p class="form-control-static">123-456-789</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <!--<div class="button-container"><div class="text-right"><button type="submit" class="btn btn-default">Edit User</button></div></div>-->
+            </form>
+        </div>
+    </div>
+    <!-- /.container -->
+    <footer><div class="container"><span>&copy; Copyright PrideOne 2016 All Rights Reserved</span><a href="#" class="pull-right">Help</a></div></footer>
+    <script src="js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
