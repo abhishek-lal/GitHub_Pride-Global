@@ -550,6 +550,8 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
       outline: none; }
       .modal-dialog .modal-content .modal-header .close:hover, .modal-dialog .modal-content .modal-header .close:focus {
         color: #707070; }
+  .modal-dialog .modal-content .modal-body a {
+    font-size: 1em; }
   .modal-dialog .modal-content .modal-body .diff-email #diff-email {
     display: none; }
   .modal-dialog .modal-content .modal-body .diff-email label {
@@ -653,7 +655,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .form-inline .horizontal-form .form-group-lg {
   display: block; }
   .form-inline .horizontal-form .form-group-lg label {
-    width: 200px; }
+    width: 230px; }
 .form-inline .horizontal-form .margin-b6 {
   margin-bottom: 6px;
   display: inline-block; }

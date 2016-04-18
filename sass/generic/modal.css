@@ -1,0 +1,47 @@
+﻿#resend-registration .modal-footer {
+  margin-top: 50px; }
+
+.modal-dialog .modal-content {
+  border-radius: 0; }
+  .modal-dialog .modal-content .modal-header {
+    padding: 8px;
+    background-color: #ef5f47;
+    color: #fff;
+    text-align: center;
+    border-bottom: none; }
+    .modal-dialog .modal-content .modal-header .modal-title {
+      font-size: 1.6em;
+      font-weight: bold; }
+    .modal-dialog .modal-content .modal-header .close {
+      margin-top: 0;
+      background-color: #fff;
+      border-radius: 20px;
+      float: right;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1;
+      color: #ef5f47;
+      text-shadow: none;
+      opacity: 1;
+      padding: 0 6px;
+      outline: none; }
+      .modal-dialog .modal-content .modal-header .close:hover, .modal-dialog .modal-content .modal-header .close:focus {
+        color: #707070; }
+  .modal-dialog .modal-content .modal-body a {
+    font-size: 1em; }
+  .modal-dialog .modal-content .modal-body .diff-email #diff-email {
+    display: none; }
+  .modal-dialog .modal-content .modal-body .diff-email label {
+    font-size: 1.2em !important;
+    margin-bottom: 6px;
+    color: #ef5f47; }
+    .modal-dialog .modal-content .modal-body .diff-email label:hover {
+      text-decoration: underline;
+      cursor: pointer; }
+  .modal-dialog .modal-content .modal-footer {
+    padding: 0 15px 15px;
+    border-top: none; }
+    .modal-dialog .modal-content .modal-footer .btn + .btn {
+      margin: 0; }
+
+/*# sourceMappingURL=modal.css.map */

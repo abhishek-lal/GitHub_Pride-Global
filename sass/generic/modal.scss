@@ -43,6 +43,7 @@
         }
 
         .modal-body {
+			a{font-size:$footer-font-size;}
             .diff-email {
                 #diff-email {
                     display: none;
