@@ -5,7 +5,7 @@ html {
   //height:100%;
 }
 body {
-		@include font-face-default();
+	@include font-face-default();
     font-size: $default-font-size;
     color: $default-font-color;
     background-color: transparent;
@@ -16,11 +16,11 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-		@include font-face-heading();
+	@include font-face-heading();
     margin: 10px 0 10px;
 }
 
-h1 {margin: 10px 0 20px; font-size:$heading-font-size; font-weight:500;}
+h1 {margin: 0 0 20px; font-size:$heading-font-size; font-weight:500;}
 .margint20 {margin-top: 20px;}
 h4{		@include font-face-default();
 	font-size:$sub-heading-font-size;}
@@ -28,7 +28,7 @@ h4{		@include font-face-default();
 .clear {
     clear: both;
 }
-
+.disp-inblk{display:$dis-inline-block;}
 a {
     color:$default-anchor-color;
     font-size:$default-font-size;
@@ -37,6 +37,25 @@ a {
         outline: 0;
         color:$default-anchor-hover-color;
     }
+}
+.breadcrumb {
+    padding: 0;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: transparent;
+    border-radius: 0;
+	.active{
+			   color:$grey-color;
+			   font-size:$default-font-size;
+		   }
+	li+li:before {
+    padding: 0 5px;
+    color: $orange;
+    content: "\003e";
+	font-size: $default-font-size;
+    position: relative;
+    top: 2px;
+	}
 }
 input:-webkit-autofill{
         -webkit-box-shadow: 0 0 0px 1000px $form-elements-bg inset !important;

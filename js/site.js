@@ -8,4 +8,9 @@
         $('#diff-email').hide();
         $('.diff-email label').show();
     });
+    $('.button-indicator .btn-default').click(function () {
+        $(this).toggleClass('btn-clearbg');
+    });
+    
+
 });

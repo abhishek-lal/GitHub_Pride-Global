@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+
+    <title>Launch</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!--<link href="css/bootstrap-theme.min.css" rel="stylesheet" />-->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+    <!-- Custom styles -->
+    <link href="sass/site.css" rel="stylesheet">
+
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Global Header -->
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">LAUNCH</a>
+                    <!--<a href="#" class="pull-right hidden-lg hidden-md hidden-sm"><span class="badge-mobile">10</span></a>-->
+                    <div class="input-group pull-right hidden-lg hidden-md hidden-sm">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="badge-mobile">10</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Users</a></li>
+                            <li><a href="#">Clients</a></li>
+                            <li><a href="#">Sppliers</a></li>
+                            <li><a href="#">Audit Log</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown visible-lg visible-md visible-sm">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="badge">10</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Users</a></li>
+                                <li><a href="#">Clients</a></li>
+                                <li><a href="#">Sppliers</a></li>
+                                <li><a href="#">Audit Log</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="#">Run a Report</a></li>
+                        <li><a href="#about">Create a Requisition</a></li>
+                        <li><a href="#contact">View Requisitions</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">System</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Users</a></li>
+                                <li><a href="#">Clients</a></li>
+                                <li><a href="#">Sppliers</a></li>
+                                <li><a href="#">Audit Log</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img id="profile" src="img/profile.png" class="profile" /></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">My Profile</a></li>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">unsubscribe</a></li>
+                                <li><a href="#">Update Password</a></li>
+                                <li><a href="#">Sign Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+    </header>
+    <!-- container start -->
+    <div class="container">
+        <div class="text-left"><ol class="breadcrumb"><li><a href="#">All Requisitions</a></li><li class="active">Requisition Details</li></ol></div>
+        <h1>Send to Suppliers</h1>
+        <h4 class="disp-inblk">Please select which suppliers to send this requisition to.</h4>
+        <div class="button-container">
+            <a href="javascript:void(0)" data-toggle="modal" class="pull-right block-btn btn-mbl" data-target="#filter-users">Filter<span class="caret"></span></a>
+        </div>
+        <div class="form-container">
+            <form class="form-inline">
+                <div class="horizontal-form">
+                    <div class="button-indicator">
+                        <button type="button" class="btn btn-default block-btn"><strong>Banu sobu Company Inc.</strong><span>10000009234 234 234 234 234 234</span></button>
+                    </div>
+                    <div class="button-indicator">
+                        <button type="button" class="btn btn-default btn-clearbg block-btn"><strong>ABC asd sad sad sad asd asd asd asd asdCompany Inc.</strong><span>10000009</span></button>
+                    </div>
+                    <div class="button-indicator">
+                        <button type="button" class="btn btn-default block-btn"><strong>ABC Company Inc.</strong><span>10000009</span></button>
+                    </div>
+                    <div class="button-indicator">
+                        <button type="button" class="btn btn-default block-btn"><strong>Banu sobu Company Inc.</strong><span>10000009234 234 234 234 234 234</span></button>
+                    </div>
+                    <div class="button-indicator">
+                        <button type="button" class="btn btn-default btn-clearbg block-btn"><strong>ABC asd sad sad sad asd asd asd asd asdCompany Inc.</strong><span>10000009</span></button>
+                    </div>
+                    <div class="button-indicator">
+                        <button type="button" class="btn btn-default block-btn"><strong>ABC Company Inc.</strong><span>10000009</span></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="form-container">
+            <form class="form-inline">
+                <div class="horizontal-form">
+                    <div class="button-container"><div class="text-right split-btn"><a href="#" class="btn btn-link btn-mbl">Clear All</a><a href="#" class="btn btn-link btn-mbl">Select All</a><button type="submit" class="btn btn-default block-btn">Send Requisition</button></div></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /.container -->
+    <footer><div class="container"><span>&copy; Copyright PrideOne 2016 All Rights Reserved</span><a href="#" class="pull-right">Help</a></div></footer>
+    <script src="js/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/site.js"></script>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
