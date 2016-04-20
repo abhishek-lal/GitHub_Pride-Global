@@ -44,6 +44,11 @@
 
         .modal-body {
 			a{font-size:$footer-font-size;}
+			 .modal-radio{
+				.button-container{
+								  margin:3px 0;
+							}
+			 }
             .diff-email {
                 #diff-email {
                     display: none;
@@ -71,4 +76,14 @@
 					  }
         }
     }
+}
+
+@media (max-width: 767px){
+.modal-radio{
+	.button-container{ 
+		.radio{
+				  margin-top:0;
+			  }
+		}
+	}
 }

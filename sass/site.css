@@ -283,7 +283,7 @@ footer {
   padding-left: 20px; }
 
 .checkbox label {
-  display: inline-block;
+  display: inline-block !important;
   vertical-align: middle;
   position: relative;
   padding-left: 5px !important; }
@@ -582,6 +582,8 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
         color: #707070; }
   .modal-dialog .modal-content .modal-body a {
     font-size: 1em; }
+  .modal-dialog .modal-content .modal-body .modal-radio .button-container {
+    margin: 3px 0; }
   .modal-dialog .modal-content .modal-body .diff-email #diff-email {
     display: none; }
   .modal-dialog .modal-content .modal-body .diff-email label {
@@ -596,6 +598,10 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
     border-top: none; }
     .modal-dialog .modal-content .modal-footer .btn + .btn {
       margin: 0; }
+
+@media (max-width: 767px) {
+  .modal-radio .button-container .radio {
+    margin-top: 0; } }
 
 /* PAGE ITEMS
 ------------------------------------------- */
