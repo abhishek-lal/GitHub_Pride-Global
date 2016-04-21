@@ -275,9 +275,11 @@
 	}
 
     // table css
+	.table-responsive{margin-bottom:20px;}
     .table {
         font-size: $default-font-size;
         font-weight: normal;
+		margin-bottom:0;
 
         a {
             font-size: 1.0em;
@@ -308,6 +310,7 @@
             }
         }
         tbody{
+			border-bottom:3px solid $grey-color;
             tr{
                 td{
 					  /*div{
@@ -323,6 +326,7 @@
 						  }
 				   	   }*/
 						vertical-align:middle;
+						.form-control{ min-width:100px;}
                     a{
                         color:$grey-color;
                     }
@@ -348,7 +352,19 @@
         }
     }
 
-  
+    .long-subHeading{
+				margin-top:15px;
+				
+		span{
+			 display:inline-block;
+			 font-family: 'Open Sans';
+			 font-size: 0.5em;
+			 text-transform: uppercase;
+			 position: relative;
+			 top: -2px;
+			 padding-left:8px;
+			 }
+		}
     .status-round-green {
         @include status-now($status-green);
     }
@@ -499,6 +515,18 @@
 								}
 	   .requisition-mbl-container{display:block;}
        .mbl-block+.block-btn{margin:-1px 0 0 0;}
+	   .mbl-block+.btn-group{
+						margin-top: -6px;
+						position: relative;
+						display: inline-block;
+						vertical-align: middle;
+						width: 100%;
+						.dropdown-menu{
+							margin-top:-5px;
+							min-width: 100%;
+							text-align: center;
+						}
+			}
        .btn-mbl{
               border:1px solid $orange;
               text-align:center;
