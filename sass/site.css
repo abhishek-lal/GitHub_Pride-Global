@@ -832,9 +832,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding: 4px 8px !important;
     text-align: left !important; }
 
+.table-responsive {
+  margin-bottom: 20px; }
+
 .table {
   font-size: 1.2em;
-  font-weight: normal; }
+  font-weight: normal;
+  margin-bottom: 0; }
   .table a {
     font-size: 1em; }
   .table thead {
@@ -849,8 +853,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .table thead tr th, .table thead tr td, .table tbody tr th, .table tbody tr td {
     border: none;
     text-align: center; }
-  .table tbody tr td {
-    /*div{
+  .table tbody {
+    border-bottom: 3px solid #5f5f5f; }
+    .table tbody tr td {
+      /*div{
 						  line-height: 3;
 						  border-left: 3px solid #35b15a;
 					  span{
@@ -862,31 +868,44 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 								white-space: normal;
 						  }
 				   	   }*/
-    vertical-align: middle; }
-    .table tbody tr td a {
-      color: #5f5f5f; }
-    .table tbody tr td a.orange {
-      color: #ef5f47; }
-      .table tbody tr td a.orange:hover {
-        color: #fff; }
-  .table tbody tr .status-bar-green {
+      vertical-align: middle; }
+      .table tbody tr td .form-control {
+        min-width: 100px; }
+      .table tbody tr td a {
+        color: #5f5f5f; }
+      .table tbody tr td a.orange {
+        color: #ef5f47; }
+        .table tbody tr td a.orange:hover {
+          color: #fff; }
+    .table tbody tr .status-bar-green {
+      display: inline-block;
+      border-left: solid 4px #35b15a;
+      margin: 5px 0;
+      height: 108%;
+      width: 100%; }
+    .table tbody tr .status-bar-yellow {
+      display: inline-block;
+      border-left: solid 4px #ffae00;
+      margin: 5px 0;
+      height: 108%;
+      width: 100%; }
+    .table tbody tr .status-bar-red {
+      display: inline-block;
+      border-left: solid 4px #b13535;
+      margin: 5px 0;
+      height: 108%;
+      width: 100%; }
+
+.long-subHeading {
+  margin-top: 15px; }
+  .long-subHeading span {
     display: inline-block;
-    border-left: solid 4px #35b15a;
-    margin: 5px 0;
-    height: 108%;
-    width: 100%; }
-  .table tbody tr .status-bar-yellow {
-    display: inline-block;
-    border-left: solid 4px #ffae00;
-    margin: 5px 0;
-    height: 108%;
-    width: 100%; }
-  .table tbody tr .status-bar-red {
-    display: inline-block;
-    border-left: solid 4px #b13535;
-    margin: 5px 0;
-    height: 108%;
-    width: 100%; }
+    font-family: 'Open Sans';
+    font-size: 0.5em;
+    text-transform: uppercase;
+    position: relative;
+    top: -2px;
+    padding-left: 8px; }
 
 .status-round-green {
   background-color: #35b15a;
@@ -1058,6 +1077,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: block; }
   .mbl-block + .block-btn {
     margin: -1px 0 0 0; }
+  .mbl-block + .btn-group {
+    margin-top: -6px;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%; }
+    .mbl-block + .btn-group .dropdown-menu {
+      margin-top: -5px;
+      min-width: 100%;
+      text-align: center; }
   .btn-mbl {
     border: 1px solid #ef5f47;
     text-align: center;
