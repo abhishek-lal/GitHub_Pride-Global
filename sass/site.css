@@ -871,6 +871,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       vertical-align: middle; }
       .table tbody tr td .form-control {
         min-width: 100px; }
+      .table tbody tr td .btn {
+        padding: 3px 6px;
+        font-size: 1em; }
+      .table tbody tr td .resume {
+        display: inline-block;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        background: url(/img/resume-icon.png) no-repeat;
+        width: 34px;
+        height: 34px;
+        padding-left: 34px; }
+        .table tbody tr td .resume:hover, .table tbody tr td .resume:focus, .table tbody tr td .resume:active {
+          background: url(/img/resume-icon-hover.png) no-repeat; }
       .table tbody tr td a {
         color: #5f5f5f; }
       .table tbody tr td a.orange {
@@ -1075,6 +1088,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: none; }
   .requisition-mbl-container {
     display: block; }
+  .mbl-resume {
+    position: relative; }
+    .mbl-resume a {
+      position: absolute;
+      right: 0;
+      background: #9b9b9b;
+      padding: 5px 7px;
+      margin: -10px -10px 0 0;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold; }
+      .mbl-resume a:hover, .mbl-resume a:focus {
+        text-decoration: none; }
   .mbl-block + .block-btn {
     margin: -1px 0 0 0; }
   .mbl-block + .btn-group {
@@ -1127,6 +1153,13 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-bottom: 5px; }
   .split-btn .btn-mbl + .btn-mbl {
     margin-right: 0 !important; }
+  .combined-btn .btn-mbl {
+    width: 50%;
+    margin: -1px 0 5px 0;
+    padding: 7px 0 !important;
+    border: 0; }
+  .combined-btn .btn-mbl + .btn-mbl {
+    margin-right: 0 !important; }
   .button-indicator {
     display: block; }
     .button-indicator .block-btn {
@@ -1140,8 +1173,30 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .form-group-lg label {
     width: 140px !important; }
   .form-group-lg .form-control-static {
-    vertical-align: top; } }
+    vertical-align: top; }
+  .mbl-resume {
+    float: right;
+    display: flex;
+    margin-bottom: 10px; }
+    .mbl-resume a {
+      position: inherit;
+      text-decoration: none; } }
 
+@media (min-width: 767px) and (max-width: 1199px) {
+  .table tbody td .btn + .btn-default {
+    padding: 3px 9px;
+    margin-top: 3px; } }
+
+/*@media (max-width: 480px) and (min-width:0\0) { 
+		//IE 9 and 10 Specific css
+			.mbl-resume{
+				a{
+					//right: -3px;
+					//top: -7px;
+					text-decoration:none;
+				}
+			 }
+	}*/
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 html.login {
   height: 100%; }
