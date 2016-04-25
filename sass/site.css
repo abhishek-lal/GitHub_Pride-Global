@@ -908,6 +908,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       margin: 5px 0;
       height: 108%;
       width: 100%; }
+    .table tbody tr .status-bar-purple {
+      display: inline-block;
+      border-left: solid 4px #af82cc;
+      margin: 5px 0;
+      height: 108%;
+      width: 100%; }
+    .table tbody tr .status-bar-blue {
+      display: inline-block;
+      border-left: solid 4px #2ca7e0;
+      margin: 5px 0;
+      height: 108%;
+      width: 100%; }
 
 .long-subHeading {
   margin-top: 15px; }
@@ -1382,5 +1394,49 @@ html.login {
 */
   .site-wrapper-inner {
     vertical-align: top; } }
+
+.dashboard {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 20px; }
+  .dashboard .table {
+    margin-bottom: 15px; }
+  .dashboard .left-container {
+    overflow: auto; }
+    .dashboard .left-container .table tr td {
+      margin-left: 10px;
+      width: 98%;
+      text-align: left; }
+  .dashboard .right-container {
+    padding-left: 0; }
+    .dashboard .right-container table thead th a {
+      text-decoration: underline; }
+      .dashboard .right-container table thead th a:hover {
+        text-decoration: none; }
+    .dashboard .right-container .statisics label span {
+      padding-left: 8px;
+      font-weight: normal; }
+    .dashboard .right-container .statisics table tr td {
+      text-align: left; }
+    @media (max-width: 768px) {
+      .dashboard .right-container {
+        padding-left: 15px; } }
+
+.progress {
+  margin-bottom: 0;
+  height: 30px;
+  border-radius: 0; }
+  .progress .progress-bar {
+    line-height: 30px; }
+  .progress .progress-bar-blue {
+    background-color: #2ca7e0; }
+  .progress .progress-bar-green {
+    background-color: #35b15a; }
+  .progress .progress-bar-purple {
+    background-color: #af82cc; }
+  .progress .progress-bar-red {
+    background-color: #b13535; }
+  .progress .progress-bar-yellow {
+    background-color: #ffae00; }
 
 /*# sourceMappingURL=site.css.map */

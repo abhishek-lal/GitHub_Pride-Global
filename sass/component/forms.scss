@@ -356,15 +356,19 @@
                     }
                 }
 				.status-bar-green {
-					@include status-bar(#35b15a);
+					@include status-bar($status-green);
 				}
-
 				.status-bar-yellow {
-					@include status-bar(#ffae00);
+					@include status-bar($status-yellow);
 				}
-
 				.status-bar-red {
-					@include status-bar(#b13535);
+					@include status-bar($status-red);
+				}
+				.status-bar-purple {
+					@include status-bar($status-purple);
+				}
+				.status-bar-blue {
+					@include status-bar($status-blue);
 				}
             }
         }

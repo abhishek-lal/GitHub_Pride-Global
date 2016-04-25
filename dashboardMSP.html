@@ -87,8 +87,8 @@
     </header>
     <!-- container start -->
     <div class="container">
-        <div class="dashboard" style="margin-bottom:20px;">
-            <div class="col-md-7 left-container" style="border:1px solid #c00;">
+        <div class="dashboard">
+            <div class="col-md-7 left-container">
                 
                     <table class="table table-striped">
                         <thead>
@@ -98,58 +98,49 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="status-bar-green"><strong>Requisitions</strong>10 New Requisitions were submitted to the MSP Program</td>
+                                <td class="status-bar-yellow"><a href="#"><strong>Requisitions </strong>10 New Requisitions were submitted to the MSP Program</a></td>
                             </tr>
                             <tr>
-                                <td class="status-bar-green"><strong>Requisitions</strong>10 New Requisitions were submitted to the MSP Program</td>
+                                <td class="status-bar-yellow"><a href="#"><strong>Requisitions </strong>10 New Requisitions were submitted to the MSP Program</a></td>
                             </tr>
                             <tr>
-                                <td class="status-bar-green"><strong>Requisitions</strong>10 New Requisitions were submitted to the MSP Program</td>
+                                <td class="status-bar-yellow"><a href="#"><strong>Requisitions </strong>10 New Requisitions were submitted to the MSP Program</a></td>
                             </tr>
                             <tr>
-                                <td class="status-bar-green"><strong>Requisitions</strong>10 New Requisitions were submitted to the MSP Program</td>
+                                <td class="status-bar-yellow"><a href="#"><strong>Requisitions </strong>10 New Requisitions were submitted to the MSP Program</a></td>
                             </tr>
                             <tr>
-                                <td class="status-bar-green"><strong>Requisitions</strong>10 New Requisitions were submitted to the MSP Program</td>
+                                <td class="status-bar-blue"><a href="#"><strong>Candidate Submission </strong>2 new candidates have been submitted for Requistion 10009</a></td>
                             </tr>
                             <tr>
-                                <td class="status-bar-green"><strong>Requisitions</strong>10 New Requisitions were submitted to the MSP Program</td>
+                                <td class="status-bar-blue"><a href="#"><strong>Candidate Submission </strong>2 new candidates have been submitted for Requistion 10009</a></td>
                             </tr>
                             <tr>
-                                <td class="status-bar-green"><strong>Requisitions</strong>10 New Requisitions were submitted to the MSP Program</td>
+                                <td class="status-bar-green"><a href="#"><strong>Offer </strong>1 offer request for Requistion 10007</a></td>
                             </tr>
                             <tr>
-                                <td class="status-bar-green"><strong>Requisitions</strong>10 New Requisitions were submitted to the MSP Program</td>
+                                <td class="status-bar-green"><a href="#"><strong>Offer </strong>1 offer request for Requistion 10007</a></td>
                             </tr>
                             <tr>
-                                <td class="status-bar-green"><strong>Requisitions</strong>10 New Requisitions were submitted to the MSP Program</td>
+                                <td class="status-bar-purple"><a href="#"><strong>Interview </strong>1 phone interview request is for Requistion 10008</a></td>
                             </tr>
                             <tr>
-                                <td class="status-bar-green"><strong>Requisitions</strong>10 New Requisitions were submitted to the MSP Program</td>
+                                <td class="status-bar-purple"><a href="#"><strong>Interview </strong>1 phone interview request is for Requistion 10008</a></td>
                             </tr>
                             <tr>
-                                <td class="status-bar-green"><strong>Requisitions</strong>10 New Requisitions were submitted to the MSP Program</td>
+                                <td class="status-bar-purple"><a href="#"><strong>Interview </strong>1 phone interview request is for Requistion 10008</a></td>
                             </tr>
                             <tr>
-                                <td class="status-bar-green"><strong>Requisitions</strong>10 New Requisitions were submitted to the MSP Program</td>
+                                <td class="status-bar-red"><a href="#"><strong>Rejection </strong>2 Candidates you submitted to Requisition 10007 have been rejected</a></td>
                             </tr>
                             <tr>
-                                <td class="status-bar-green"><strong>Requisitions</strong>10 New Requisitions were submitted to the MSP Program</td>
-                            </tr>
-                            <tr>
-                                <td class="status-bar-green"><strong>Requisitions</strong>10 New Requisitions were submitted to the MSP Program</td>
-                            </tr>
-                            <tr>
-                                <td class="status-bar-green"><strong>Requisitions</strong>10 New Requisitions were submitted to the MSP Program</td>
-                            </tr>
-                            <tr>
-                                <td class="status-bar-green"><strong>Requisitions</strong>10 New Requisitions were submitted to the MSP Program</td>
+                                <td class="status-bar-red"><a href="#"><strong>Rejection </strong>2 Candidates you submitted to Requisition 10007 have been rejected</a></td>
                             </tr>
                         </tbody>
                     </table>
               
             </div>
-            <div class="col-md-5 right-container" style="border:1px solid #000;">
+            <div class="col-md-5 right-container">
                 <div class="requisitions">
                     
                         <table class="table table-striped">
@@ -208,8 +199,31 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="statisics">
+                <div class="candidate" style="display:none;">
                     <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Candidates <a href="#">See All</a></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Kristina Jenkins</td>
+                            </tr>
+                            <tr>
+                                <td>Jonathan Venkatesh</td>
+                            </tr>
+                            <tr>
+                                <td>Kristina Jenkins</td>
+                            </tr>
+                            <tr>
+                                <td>Jonathan Venkatesh</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="statisics">
+                    <table class="table">
                         <thead>
                             <tr>
                                 <th>Quick Statistics</th>
@@ -219,19 +233,31 @@
                             <tr>
                                 <td>
                                     <label>New Requisitions<span>8</span></label>
-                                    <div>Bootstrap Progress bar</div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-blue" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                                            <span class="sr-only">50% Complete</span>
+                                        </div>
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <label>New Requisitions<span>8</span></label>
-                                    <div>Bootstrap Progress bar</div>
+                                    <label>Your Open Requisitions<span>16</span></label>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-green" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+                                            <span class="sr-only">70% Complete (success)</span>
+                                        </div>
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <label>New Requisitions<span>8</span></label>
-                                    <div>Bootstrap Progress bar</div>
+                                    <label>Your Pending Offers<span>4</span></label>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-purple" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                            <span class="sr-only">40% Complete (warning)</span>
+                                        </div>
+                                    </div>
                                 </td>
                             </tr>
                         </tbody>
