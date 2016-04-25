@@ -1113,6 +1113,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       font-weight: bold; }
       .mbl-resume a:hover, .mbl-resume a:focus {
         text-decoration: none; }
+    .mbl-resume img {
+      position: relative;
+      top: -1px; }
   .mbl-block + .block-btn {
     margin: -1px 0 0 0; }
   .mbl-block + .btn-group {
@@ -1179,7 +1182,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     .button-indicator .btn-default, .button-indicator .btn-clearbg {
       width: 100%; }
     .button-indicator strong, .button-indicator span {
-      width: 85%; } }
+      width: 85%; }
+  .mbl-container button img {
+    position: relative;
+    top: -1px; } }
 
 @media (max-width: 480px) {
   .form-group-lg label {
