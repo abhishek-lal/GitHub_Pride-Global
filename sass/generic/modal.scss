@@ -18,8 +18,10 @@
             border-bottom: none;
 
             .modal-title {
-                font-size: 1.6em;
+                font-size: 1.3em;
                 font-weight: bold;
+				text-transform:uppercase;
+				line-height:2;
             }
 
             .close {
@@ -66,6 +68,9 @@
                     }
                 }
             }
+		.split-width{
+			input[type='date']{max-width:150px !important;}
+			}
         }
 
         .modal-footer {
@@ -79,6 +84,18 @@
 }
 
 @media (max-width: 767px){
+.modal-dialog{ 
+	.modal-content{
+		.modal-body {
+			.split-width{
+			input[type='date']{ width:100%; max-width:700px !important;}
+			@media (max-width: 340px){
+				input[type='date']{max-width:140px !important;}
+			}
+			}
+		}
+	}
+}
 .modal-radio{
 	.button-container{ 
 		.radio{

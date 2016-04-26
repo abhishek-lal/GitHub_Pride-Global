@@ -563,8 +563,10 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
     text-align: center;
     border-bottom: none; }
     .modal-dialog .modal-content .modal-header .modal-title {
-      font-size: 1.6em;
-      font-weight: bold; }
+      font-size: 1.3em;
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 2; }
     .modal-dialog .modal-content .modal-header .close {
       margin-top: 0;
       background-color: #fff;
@@ -593,6 +595,8 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
     .modal-dialog .modal-content .modal-body .diff-email label:hover {
       text-decoration: underline;
       cursor: pointer; }
+  .modal-dialog .modal-content .modal-body .split-width input[type='date'] {
+    max-width: 150px !important; }
   .modal-dialog .modal-content .modal-footer {
     padding: 0 15px 15px;
     border-top: none; }
@@ -600,6 +604,12 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
       margin: 0; }
 
 @media (max-width: 767px) {
+  .modal-dialog .modal-content .modal-body .split-width input[type='date'] {
+    width: 100%;
+    max-width: 700px !important; }
+  @media (max-width: 340px) {
+    .modal-dialog .modal-content .modal-body .split-width input[type='date'] {
+      max-width: 140px !important; } }
   .modal-radio .button-container .radio {
     margin-top: 0; } }
 
