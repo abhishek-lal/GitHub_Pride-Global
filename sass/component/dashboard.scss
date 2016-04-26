@@ -1,0 +1,56 @@
+@import "../setup/library";
+.dashboard{
+	margin-left: -15px;
+    margin-right: -15px;
+	margin-bottom:20px;
+	.table{margin-bottom:15px;}
+	.left-container{
+		overflow:auto;
+		.table tr td{margin-left:10px;
+					 width:98%;
+					 text-align:left;
+					 strong{
+							  // padding-right:5px;
+						   }
+					 }
+	}
+	.right-container{
+		padding-left:0;
+		table thead th a{
+						text-decoration:underline;
+						&:hover{text-decoration:none;}
+					  }
+		.statisics{
+					  label span{padding-left:8px; font-weight:normal;}
+					  
+					  table tr td{text-align:left}
+		  }
+	
+		@media (max-width : 768px) {
+			padding-left:15px;
+		}
+	}			   		
+}
+.progress{
+	margin-bottom:0;
+	height: 30px;
+	border-radius:0;
+	.progress-bar{
+		line-height:30px;
+		}
+	.progress-bar-blue{
+		 background-color: $status-blue;
+	}
+	.progress-bar-green{
+		 background-color: $status-green;
+	}
+	.progress-bar-purple{
+		 background-color: $status-purple;
+	}
+	.progress-bar-red{
+		 background-color: $status-red;
+	}
+	.progress-bar-yellow{
+		 background-color: $status-yellow;
+	}
+}

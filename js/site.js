@@ -12,7 +12,14 @@
     //$('.button-indicator .btn').click(function () {
     //    $(this).toggleClass('btn-default btn-clearbg');
     //});
-    
+
+    // Dashboard left-right cols equal height//    
+    //var rightContHeight = $(".right-container").outerHeight() + 40 + 'px';
+    //var leftContHeight = $(".left-container").outerHeight() + 'px';
+
+    //alert(rightContHeight);
+    //$('.left-container').css({ "height": rightContHeight });
+
     
 
 });

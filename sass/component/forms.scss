@@ -356,15 +356,19 @@
                     }
                 }
 				.status-bar-green {
-					@include status-bar(#35b15a);
+					@include status-bar($status-green);
 				}
-
 				.status-bar-yellow {
-					@include status-bar(#ffae00);
+					@include status-bar($status-yellow);
 				}
-
 				.status-bar-red {
-					@include status-bar(#b13535);
+					@include status-bar($status-red);
+				}
+				.status-bar-purple {
+					@include status-bar($status-purple);
+				}
+				.status-bar-blue {
+					@include status-bar($status-blue);
 				}
             }
         }
@@ -547,6 +551,10 @@
 						text-decoration:none;
 						}
 			}
+			img{
+				position: relative;
+				top: -1px;
+			}
 		 }
        .mbl-block+.block-btn{margin:-1px 0 0 0;}
 	   .mbl-block+.btn-group{
@@ -615,6 +623,10 @@
 			.btn-default,.btn-clearbg{width:100%;}
 			strong,span{width:85%;}
 		}
+		.mbl-container button img{
+			    position: relative;
+				top: -1px;
+		}
     }
     @media (max-width: 480px) {
     	.form-group-lg{
@@ -641,7 +653,6 @@
 			 text-decoration:none;
 			}
 		 }
-		
     }
 		@media (min-width: 767px) and (max-width:1199px) { 
 			.table{

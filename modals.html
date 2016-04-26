@@ -93,6 +93,7 @@
             <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#reason-closing">2) #202 - Reason for Closing</a></div>
             <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#user-info">3) #1709 - View user info modal</a></div>
             <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#areyousure">4) #1355 - Are you sure modal</a></div>
+            <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#submitCand-billRate">5) #1357 - Submit candidate bill rate modal</a></div>
 
             <br /><br />
             <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#filter-users">Example 1 for reuse</a></div>
@@ -250,6 +251,51 @@
             </div>
         </div>
     </div>
+    <!-- Submit Candidate Bill Rate Modal -->
+    <div class="modal fade" id="submitCand-billRate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title" id="myModalLabel">Candidate Submission</h3>
+                </div>
+                <div class="modal-body">
+                    <form class="form-inline">
+                        <div class="form-group split-width">
+                            <label for="billRate">Candidates Bill Rate*</label>
+                            <div class="input-group">
+                                <span class="input-group-addon">$</span>
+                                <input type="text" class="form-control" id="billRate" placeholder="Rate">
+                                <div class="input-group-btn">
+                                    <select id="location" class="form-control">
+                                        <option>Per Hour</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label>Has this candidate ever worked for this client before?*</label>
+                            <div class="radio radio-primary">
+                                <input type="radio" id="radio1" name="optradio"><label for="radio1">Yes</label>
+                            </div>
+                            <div class="radio radio-primary">
+                                <input type="radio" id="radio2" name="optradio" checked><label for="radio2">No</label>
+                            </div>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="additionalComments">Additional Comments</label>
+                            <input type="text" class="form-control full-width" id="additionalComments" placeholder="Additional Comments">
+                        </div>
+                        <div class="clear"></div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary block-btn" data-dismiss="modal">Cancel</button>
+                    <button type="submit" class="btn btn-default block-btn" data-dismiss="modal">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Modal Example code -->
     <div class="modal fade" id="filter-users" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -263,7 +309,7 @@
                     <form class="form-inline">
                         <div class="form-group">
                             <label for="company">Company</label>
-                            <input type="text" class="form-control" id="copany" placeholder="Company">
+                            <input type="text" class="form-control" id="company" placeholder="Company">
                         </div>
                         <div class="form-group">
                             <label for="userType">User Type</label>
