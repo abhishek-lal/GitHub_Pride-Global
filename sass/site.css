@@ -597,6 +597,9 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
       cursor: pointer; }
   .modal-dialog .modal-content .modal-body .split-width input[type='date'] {
     max-width: 150px !important; }
+  .modal-dialog .modal-content .modal-body label span {
+    padding-left: 8px;
+    font-weight: normal; }
   .modal-dialog .modal-content .modal-footer {
     padding: 0 15px 15px;
     border-top: none; }
