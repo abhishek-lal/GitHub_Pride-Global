@@ -8,6 +8,16 @@
         $('#diff-email').hide();
         $('.diff-email label').show();
     });
+    // for Audit Logs 
+    $(".audit-filter").hide();
+    var auditVal = ($('#auditType option:selected').val());
+    $("#" + auditVal).toggle();
+
+    $('#auditType').change(function (event) {
+        $(".audit-filter").hide();
+        var auditVal = ($('#auditType option:selected').val());
+        $("#" + auditVal).toggle();
+    });
 
     //$('.button-indicator .btn').click(function () {
     //    $(this).toggleClass('btn-default btn-clearbg');

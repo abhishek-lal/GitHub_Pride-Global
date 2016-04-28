@@ -1,0 +1,339 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.ico">
+    <title>Launch - Pride Global</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!--<link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">-->
+    <!-- Custom styles -->
+    <link href="sass/site.css" rel="stylesheet">
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Global Header -->
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">LAUNCH</a>
+                    <!--<a href="#" class="pull-right hidden-lg hidden-md hidden-sm"><span class="badge-mobile">10</span></a>-->
+                    <div class="input-group pull-right hidden-lg hidden-md hidden-sm">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="badge-mobile">10</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Users</a></li>
+                            <li><a href="#">Clients</a></li>
+                            <li><a href="#">Sppliers</a></li>
+                            <li><a href="#">Audit Log</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown visible-lg visible-md visible-sm">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="badge">10</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Users</a></li>
+                                <li><a href="#">Clients</a></li>
+                                <li><a href="#">Sppliers</a></li>
+                                <li><a href="#">Audit Log</a></li>
+                            </ul>
+                        </li>
+                        <li class="active"><a href="#">Run a Report</a></li>
+                        <li><a href="#about">Create a Requisition</a></li>
+                        <li><a href="#contact">View Requisitions</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">System</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Users</a></li>
+                                <li><a href="#">Clients</a></li>
+                                <li><a href="#">Sppliers</a></li>
+                                <li><a href="#">Audit Log</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img id="profile" src="img/profile.png" class="profile" /></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">My Profile</a></li>
+                                <li><a href="#">Help</a></li>
+                                <li><a href="#">unsubscribe</a></li>
+                                <li><a href="#">Update Password</a></li>
+                                <li><a href="#">Sign Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+    </header>
+    <!-- container start -->
+    <div class="container">
+        <h1>Client Information</h1>
+        <div class="form-container">
+            <form class="form-inline">
+                <div class="requisition-dtop-container">
+                    <ul class="nav nav-pills nav-justified">
+                        <li role="presentation" class="active"><a data-toggle="tab" href="#clientInfo">Client Info</a></li>
+                        <li role="presentation"><a data-toggle="tab" href="#billRate">Bill Rate</a></li>
+                        <li role="presentation"><a data-toggle="tab" href="#suppliers">Suppliers</a></li>
+                        <li role="presentation"><a data-toggle="tab" href="#clientHeirarchy">Client Heirarchy</a></li>
+                    </ul>
+                    <div class="tab-content margint20">
+                        <div id="clientInfo" class="tab-pane fade in active">
+                            <div class="horizontal-form">
+                                <div class="form-group-lg">
+                                    <label class="col-lg-10">First Name</label><p class="form-control-static">John</p>
+                                </div>
+                                <div class="form-group-lg">
+                                    <label class="col-lg-10">Last Name</label><p class="form-control-static">Smith</p>
+                                </div>
+                                <div class="form-group-lg">
+                                    <label class="col-lg-10">Preferred Name</label><p class="form-control-static">Johnny</p>
+                                </div>
+                                <div class="form-group-lg">
+                                    <label class="col-lg-10">Date of Birth</label><p class="form-control-static">September 19th</p>
+                                </div>
+                                <div class="form-group-lg">
+                                    <label class="col-lg-10">Last 4 Digits of SSN</label><p class="form-control-static">1212</p>
+                                </div>
+                                <div class="form-group-lg">
+                                    <label class="col-lg-10">Phone Number</label><p class="form-control-static">125-452-4587</p>
+                                </div>
+                                <div class="form-group-lg">
+                                    <label class="col-lg-10">Address</label><p class="form-control-static">123 Fake St.</p>
+                                </div>
+                                <div class="form-group-lg">
+                                    <label class="col-lg-10">City</label><p class="form-control-static">Kalamazoo</p>
+                                </div>
+                                <div class="form-group-lg">
+                                    <label class="col-lg-10">State</label><p class="form-control-static">MI</p>
+                                </div>
+                                <div class="form-group-lg">
+                                    <label class="col-lg-10">Zip Code</label><p class="form-control-static">10009</p>
+                                </div>
+                                <div class="form-group-lg">
+                                    <label class="col-lg-10">Emergency Contact</label><p class="form-control-static">Jenny Smith</p>
+                                </div>
+                                <div class="form-group-lg">
+                                    <label class="col-lg-10">Emergency Phone No</label><p class="form-control-static">123-567-0091</p>
+                                </div>
+                                <div class="form-group-lg">
+                                    <label class="col-lg-10">Supplier</label><p class="form-control-static">ABC Company Inc.</p>
+                                </div>
+                                <div class="form-group-lg">
+                                    <label class="col-lg-10">Resume Attachment (PDF)</label><p class="form-control-static"><a href="#">johnnysmithresume2015.pdf</a></p>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                            <h3 class="margint20">Locations</h3>
+                            <div class="clear"></div>
+                            <div class="horizontal-form">
+                                <div class="form-group-lg">
+                                    <label class="col-lg-10">Location Name</label><p class="form-control-static">HQ</p>
+                                </div>
+                                <div class="form-group-lg">
+                                    <label class="col-lg-10">Address</label><p class="form-control-static">123 Fake St.</p>
+                                </div>
+                                <div class="form-group-lg">
+                                    <label class="col-lg-10">Address 2</label><p class="form-control-static"></p>
+                                </div>
+                                <div class="form-group-lg">
+                                    <label class="col-lg-10">City</label><p class="form-control-static">Kalamazoo</p>
+                                </div>
+                                <div class="form-group-lg">
+                                    <label class="col-lg-10">State</label><p class="form-control-static">MI</p>
+                                </div>
+                                <div class="form-group-lg">
+                                    <label class="col-lg-10">Region</label><p class="form-control-static">Main Building</p>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div id="billRate" class="tab-pane fade">
+                            <div class="horizontal-form">
+                                <div class="form-group-lg">
+                                    <label class="col-lg-10">Bill Rate</label><p class="form-control-static">Content</p>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div id="suppliers" class="tab-pane fade">
+                            <div class="col-md-3">
+                                <h3>Search Suppliers</h3>
+                                <div class="form-group">
+                                    <label for="supplierName">Supplier Name</label>
+                                    <input type="text" class="form-control" id="supplierName" placeholder="Supplier Name">
+                                </div>
+                            </div><div class="col-md-9">
+                                <h3>Selected Suppliers</h3>
+                                <div><a href="javascript:void(0)" class="block-btn btn-mbl" data-toggle="modal" data-target="#tag-suppliers">Tag Suppliers</a></div>
+                                <div class="clear"></div>
+                                <div class="horizontal-form">
+                                    <div class="button-indicator">
+                                        <button type="button" class="btn btn-default block-btn"><strong>ABC Company Inc.</strong><span>10000009</span></button>
+                                    </div>
+                                    <div class="button-indicator">
+                                        <button type="button" class="btn btn-default block-btn"><strong>ABC Company Inc.</strong><span>10000009</span></button>
+                                    </div>
+                                    <div class="button-indicator">
+                                        <button type="button" class="btn btn-default block-btn"><strong>ABC Company Inc.</strong><span>10000009</span></button>
+                                    </div>
+                                    <div class="button-indicator">
+                                        <button type="button" class="btn btn-default block-btn"><strong>ABC Company Inc.</strong><span>10000009</span></button>
+                                    </div>
+                                    <div class="button-indicator">
+                                        <button type="button" class="btn btn-clearbg block-btn"><strong>ABC Company Inc.</strong><span>10000009</span></button>
+                                    </div>
+                                    <div class="button-indicator">
+                                        <button type="button" class="btn btn-clearbg block-btn"><strong>ABC Company Inc.</strong><span>10000009</span></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="clientHeirarchy" class="tab-pane fade">
+                            <div class="horizontal-form">
+                                <div class="form-group-lg">
+                                    <label class="col-lg-10">Client Heirarchy</label><p class="form-control-static">Content</p>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="requisition-mbl-container">
+
+                    <div id="carousel-example-generic" class="carousel" data-ride="carousel" data-interval="false">
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <h2>Client Info</h2>
+                                <h3 class="margint20">Client Info</h3>
+
+                            </div>
+                            <div class="item">
+                                <h2>Bill Rate</h2>
+                                <h3 class="margint20">Bill Rate</h3>
+
+                            </div>
+                            <div class="item ">
+                                <h2>Suppliers</h2>
+                                <h3 class="margint20">Search Suppliers</h3>
+                                <div class="form-group">
+                                    <label for="supplier">Supplier Name</label>
+                                    <input type="text" class="form-control" id="supplier" placeholder="Supplier Name">
+                                </div>
+                                <h3 class="margint20">Selected Suppliers</h3>
+                                <div><a href="javascript:void(0)" class="block-btn btn-mbl" data-toggle="modal" data-target="#tag-suppliers">Tag Suppliers</a></div>
+                                <div class="button-indicator">
+                                    <button type="button" class="btn btn-default block-btn"><strong>ABC Company Inc.</strong></button>
+                                </div>
+                                <div class="button-indicator">
+                                    <button type="button" class="btn btn-default block-btn"><strong>ABC Company Inc.</strong></button>
+                                </div>
+                                <div class="button-indicator">
+                                    <button type="button" class="btn btn-default block-btn"><strong>ABC Company Inc.</strong></button>
+                                </div>
+                                <div class="button-indicator">
+                                    <button type="button" class="btn btn-default block-btn"><strong>ABC Company Inc.</strong></button>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h2>Client Heirarchy</h2>
+                                <h3 class="margint20">Client Heirarchy</h3>
+                            </div>
+                        </div>
+                        <!-- Controls -->
+                    </div>
+                </div>
+            </form>
+        </div>
+     
+                    
+                    
+        </div>
+        <!-- /.container -->
+        <!-- Global Footer -->
+        <footer><div class="container"><span>&copy; Copyright PrideOne 2016 All Rights Reserved</span><a href="#" class="pull-right">Help</a></div></footer>
+        <!--<link rel="import" href="all-modals.html">-->
+        <!-- Modal code -->
+        <div class="modal fade" id="tag-suppliers" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-title" id="myModalLabel">Filter</h3>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input type="text" class="form-control" id="company" placeholder="Company">
+                            </div>
+                            <div class="form-group">
+                                <label for="userType">User Type</label>
+                                <select id="userType" class="form-control">
+                                    <option>MSP</option>
+                                    <option>Client</option>
+                                    <option>Supplier</option>
+                                </select>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="PreferredName">User Id</label>
+                                <input type="text" class="form-control" id="userId" placeholder="User ID">
+                            </div>
+                            <div class="clear"></div>
+                            <!--<a href="#">Clear All</a>-->
+                            <button type="reset" class="btn btn-link">Clear All</button>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary block-btn" data-dismiss="modal">Cancel</button><button type="submit" class="btn btn-default block-btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal code end -->
+        <script src="js/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/site.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

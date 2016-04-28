@@ -72,6 +72,38 @@
 			input[type='date']{max-width:150px !important;}
 			}
 		 label span{padding-left:8px; font-weight:normal;}
+		 .timeline{ 
+			 list-style:none;
+			 margin-bottom:0;
+			 li{
+					border-left:5px solid $status-blue;
+					position:relative;
+					padding:0 13px 25px;
+					font-size: $button-font-size;
+					.oval {
+						width: 18px;
+						height: 18px;
+						position: absolute;
+						top: -1px;
+						left: -12px;
+						border: 1px solid $status-blue;
+						border-radius: 50%;
+						display: inline-block;
+						background-color: $white;
+					}
+						  strong, span{
+							  position:relative;
+							  top:-4px;
+						  }
+						  strong{ margin-right:5px;}
+				}	
+			   .no-border{border-left: 5px solid transparent;}
+			   }
+				.timeline-year{
+					font-weight: $bold-font;
+					font-size: 1.3em;
+					margin: 0 0 0 25px;
+				}
         }
 
         .modal-footer {
