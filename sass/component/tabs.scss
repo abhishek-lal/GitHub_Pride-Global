@@ -60,9 +60,10 @@
     background-color: rgba(180,180,180,1);
     opacity: 1;
 
-	.glyphicon-chevron-left, .glyphicon-chevron-right, .icon-next, .icon-prev {
-    position: absolute;
-    top: 16px;
+	.glyphicon-triangle-left, .glyphicon-triangle-right, .icon-next, .icon-prev {
+    position: relative;
+    //top: 7px;
+	line-height:33px;
     /* z-index: 5; */
     display: inline-block;
     /* margin-top: -10px; */
