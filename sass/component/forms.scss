@@ -290,7 +290,7 @@
             font-size: 1.0em;
             //color:$white-font;
         }
-
+		  
         thead {
             background-color: $grey-color;
             color: $white-font;
@@ -357,6 +357,12 @@
                         color:$orange;
 						&:hover{
 								   color:$white;
+							   }
+                    }
+					a.orange-link{
+                        color:$orange;
+						&:hover{
+								   color:$orange;
 							   }
                     }
                 }
@@ -597,10 +603,12 @@
     					label{ 
     						display:inline-block;
     						width:170px;
+							vertical-align:top;
     						
     						}
     					.form-control-static{
     									  display:inline-block;
+										  width: 47%;
     						   }
     			}
     		}

@@ -95,10 +95,11 @@
                         <li role="presentation" class="active"><a data-toggle="tab" href="#clientInfo">Client Info</a></li>
                         <li role="presentation"><a data-toggle="tab" href="#billRate">Bill Rate</a></li>
                         <li role="presentation"><a data-toggle="tab" href="#suppliers">Suppliers</a></li>
-                        <li role="presentation"><a data-toggle="tab" href="#clientHeirarchy">Client Heirarchy</a></li>
+                        <li role="presentation"><a data-toggle="tab" href="#clientHierarchy">Client Hierarchy</a></li>
                     </ul>
                     <div class="tab-content margint20">
-                        <div id="clientInfo" class="tab-pane fade in active">
+                        <!-- Client Info -->
+                        <div id="clientInfo" class="tab-pane fade in active col-md-12">
                             <div class="horizontal-form">
                                 <div class="form-group-lg">
                                     <label class="col-lg-10">First Name</label><p class="form-control-static">John</p>
@@ -136,12 +137,6 @@
                                 <div class="form-group-lg">
                                     <label class="col-lg-10">Emergency Phone No</label><p class="form-control-static">123-567-0091</p>
                                 </div>
-                                <div class="form-group-lg">
-                                    <label class="col-lg-10">Supplier</label><p class="form-control-static">ABC Company Inc.</p>
-                                </div>
-                                <div class="form-group-lg">
-                                    <label class="col-lg-10">Resume Attachment (PDF)</label><p class="form-control-static"><a href="#">johnnysmithresume2015.pdf</a></p>
-                                </div>
                                 <div class="clear"></div>
                             </div>
                             <h3 class="margint20">Locations</h3>
@@ -151,7 +146,7 @@
                                     <label class="col-lg-10">Location Name</label><p class="form-control-static">HQ</p>
                                 </div>
                                 <div class="form-group-lg">
-                                    <label class="col-lg-10">Address</label><p class="form-control-static">123 Fake St.</p>
+                                    <label class="col-lg-10">Address 1</label><p class="form-control-static">123 Fake St.</p>
                                 </div>
                                 <div class="form-group-lg">
                                     <label class="col-lg-10">Address 2</label><p class="form-control-static"></p>
@@ -168,14 +163,62 @@
                                 <div class="clear"></div>
                             </div>
                         </div>
+                        <!-- Bill Rate -->
                         <div id="billRate" class="tab-pane fade">
-                            <div class="horizontal-form">
-                                <div class="form-group-lg">
-                                    <label class="col-lg-10">Bill Rate</label><p class="form-control-static">Content</p>
-                                </div>
-                                <div class="clear"></div>
+                            <div class="button-container"><div class="text-right"><a href="javascript:void(0)" data-toggle="modal" class="block-btn btn-mbl" data-target="#filter-users">Filter<span class="caret"></span></a></div></div>
+                            <div class="clear"></div>
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th><a href="#" class="caret-up">Job Title</a></th>
+                                            <th><a href="#" class="caret-down">Job Description</a></th>
+                                            <th><a href="#">Job Location</a></th>
+                                            <th><a href="#">Bill Rate Minimum</a></th>
+                                            <th><a href="#">Bill Rate Maximum</a></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Nursing Assitant</td>
+                                            <td>The N.A. will help nurses in all their daily needs. The N.A. will help nurses in all their daily needs. The N.A. will help nurses in all their daily needs.<span class="show-hide">More data will be displayed here.</span><a class="orange-link see-more link-toggle" href="javascript:void(0);">See more</a></td>
+                                            <td>Webster Headquarters</td>
+                                            <td>$45</td>
+                                            <td>$60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nursing Assitant</td>
+                                            <td>The N.A. will help nurses in all their daily needs. The N.A. will help nurses in all their daily needs. The N.A. will help nurses in all their daily needs.<span class="show-hide">More data will be displayed here.</span><a class="orange-link see-more link-toggle" href="javascript:void(0);">See more</a></td>
+                                            <td>Webster Headquarters</td>
+                                            <td>$45</td>
+                                            <td>$60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nursing Assitant</td>
+                                            <td>The N.A. will help nurses in all their daily needs. The N.A. will help nurses in all their daily needs. The N.A. will help nurses in all their daily needs.<span class="show-hide">More data will be displayed here.</span><a class="orange-link see-more link-toggle" href="javascript:void(0);">See more</a></td>
+                                            <td>Webster Headquarters</td>
+                                            <td>$45</td>
+                                            <td>$60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nursing Assitant</td>
+                                            <td>The N.A. will help nurses in all their daily needs. The N.A. will help nurses in all their daily needs. The N.A. will help nurses in all their daily needs.<span class="show-hide">More data will be displayed here.</span><a class="orange-link see-more link-toggle" href="javascript:void(0);">See more</a></td>
+                                            <td>Webster Headquarters</td>
+                                            <td>$45</td>
+                                            <td>$60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nursing Assitant</td>
+                                            <td>The N.A. will help nurses in all their daily needs. The N.A. will help nurses in all their daily needs. The N. <a href="#" class="orange-link">More...</a></td>
+                                            <td>Webster Headquarters</td>
+                                            <td>$45</td>
+                                            <td>$60</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
+                        <!-- Suppliers -->
                         <div id="suppliers" class="tab-pane fade">
                             <div class="col-md-3">
                                 <h3>Search Suppliers</h3>
@@ -209,18 +252,80 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="clientHeirarchy" class="tab-pane fade">
-                            <div class="horizontal-form">
-                                <div class="form-group-lg">
-                                    <label class="col-lg-10">Client Heirarchy</label><p class="form-control-static">Content</p>
-                                </div>
-                                <div class="clear"></div>
+                        <!-- Client Hierarchy -->
+                        <div id="clientHierarchy" class="tab-pane fade">
+                            <div class="form-group">
+                                <label for="businessUnit">Business Unit</label>
+                                <select id="businessUnit" class="form-control">
+                                    <option>Business Unit 1</option>
+                                    <option>Business Unit 2</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="division">Division</label>
+                                <select id="division" class="form-control">
+                                    <option>Division 1</option>
+                                    <option>Division 2</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="department">Department</label>
+                                <select id="department" class="form-control">
+                                    <option>Department</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="costCenter">Cost Center</label>
+                                <select id="costCenter" class="form-control">
+                                    <option>Cost Center</option>
+                                </select>
+                            </div>
+                            <div class="button-container"><div class="text-right"><button type="button" class="btn btn-default block-btn">Generate Hierarchy</button></div></div>
+                            <div class="clear"></div>
+                            <h3>Subgroups</h3>
+                            <div class="table-responsive">
+                                <table class="table table-striped table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th><a href="#" class="caret-up">Name</a></th>
+                                            <th><a href="#" class="caret-down">Approver</a></th>
+                                            <th><a href="#">Backup Approver</a></th>
+                                            <th><a href="#">Range</a></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Division 1</td>
+                                            <td>John Mark</td>
+                                            <td>John Kennedy</td>
+                                            <td>Up to $45</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Division 1</td>
+                                            <td>John Mark</td>
+                                            <td>John Kennedy</td>
+                                            <td>Up to $45</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Division 1</td>
+                                            <td>John Mark</td>
+                                            <td>John Kennedy</td>
+                                            <td>Up to $45</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Division 1</td>
+                                            <td>John Mark</td>
+                                            <td>John Kennedy</td>
+                                            <td>Up to $45</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="requisition-mbl-container">
-
+                    <!-- Arrow Buttons -->
                     <div id="carousel-example-generic" class="carousel" data-ride="carousel" data-interval="false">
                         <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                             <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
@@ -230,18 +335,140 @@
                             <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
-                        <!-- Wrapper for slides -->
+
                         <div class="carousel-inner">
+                            <!-- Client Info -->
                             <div class="item active">
                                 <h2>Client Info</h2>
-                                <h3 class="margint20">Client Info</h3>
+                                <div class="horizontal-form margint20">
+                                    <div class="form-group-lg">
+                                        <label class="col-lg-10">First Name</label><p class="form-control-static">John</p>
+                                    </div>
+                                    <div class="form-group-lg">
+                                        <label class="col-lg-10">Last Name</label><p class="form-control-static">Smith</p>
+                                    </div>
+                                    <div class="form-group-lg">
+                                        <label class="col-lg-10">Preferred Name</label><p class="form-control-static">Johnny</p>
+                                    </div>
+                                    <div class="form-group-lg">
+                                        <label class="col-lg-10">Date of Birth</label><p class="form-control-static">September 19th</p>
+                                    </div>
+                                    <div class="form-group-lg">
+                                        <label class="col-lg-10">Last 4 Digits of SSN</label><p class="form-control-static">1212</p>
+                                    </div>
+                                    <div class="form-group-lg">
+                                        <label class="col-lg-10">Phone Number</label><p class="form-control-static">125-452-4587</p>
+                                    </div>
+                                    <div class="form-group-lg">
+                                        <label class="col-lg-10">Address</label><p class="form-control-static">123 Fake St.</p>
+                                    </div>
+                                    <div class="form-group-lg">
+                                        <label class="col-lg-10">City</label><p class="form-control-static">Kalamazoo</p>
+                                    </div>
+                                    <div class="form-group-lg">
+                                        <label class="col-lg-10">State</label><p class="form-control-static">MI</p>
+                                    </div>
+                                    <div class="form-group-lg">
+                                        <label class="col-lg-10">Zip Code</label><p class="form-control-static">10009</p>
+                                    </div>
+                                    <div class="form-group-lg">
+                                        <label class="col-lg-10">Emergency Contact</label><p class="form-control-static">Jenny Smith</p>
+                                    </div>
+                                    <div class="form-group-lg">
+                                        <label class="col-lg-10">Emergency Phone No</label><p class="form-control-static">123-567-0091</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                                <h3 class="margint20">Locations</h3>
+                                <div class="clear"></div>
+                                <div class="horizontal-form">
+                                    <div class="form-group-lg">
+                                        <label class="col-lg-10">Location Name</label><p class="form-control-static">HQ</p>
+                                    </div>
+                                    <div class="form-group-lg">
+                                        <label class="col-lg-10">Address 1</label><p class="form-control-static">123 Fake St.</p>
+                                    </div>
+                                    <div class="form-group-lg">
+                                        <label class="col-lg-10">Address 2</label><p class="form-control-static">-</p>
+                                    </div>
+                                    <div class="form-group-lg">
+                                        <label class="col-lg-10">City</label><p class="form-control-static">Kalamazoo</p>
+                                    </div>
+                                    <div class="form-group-lg">
+                                        <label class="col-lg-10">State</label><p class="form-control-static">MI</p>
+                                    </div>
+                                    <div class="form-group-lg">
+                                        <label class="col-lg-10">Region</label><p class="form-control-static">Main Building</p>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
 
                             </div>
+                            <!-- Bill Rate -->
                             <div class="item">
                                 <h2>Bill Rate</h2>
-                                <h3 class="margint20">Bill Rate</h3>
-
+                                <div class="margint20"></div>
+                                <div><a href="javascript:void(0)" class="block-btn btn-mbl" data-toggle="modal" data-target="#bill-rate">Filter<span class="caret"></span></a></div>
+                                <div class="margint20"></div>
+                                <div class="mbl-container">
+                                    <div class="mbl-block">
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Job Title</label><p class="form-control-static">Nursing Assistant</p>
+                                        </div>
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Job Description</label><p class="form-control-static marginb10">The N.A. will help nurses in all their daily needs. The N.A. will help nurses in all their daily needs.<span class="show-hide">More data will be displayed here.</span><a class="orange-link see-more link-toggle" href="javascript:void(0);">See more</a></p>
+                                        </div>
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Job Location</label><p class="form-control-static">Webster Headquarters</p>
+                                        </div>
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Bill Rate Min.</label><p class="form-control-static">$45 Per Hour</p>
+                                        </div>
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Bill Rate Max</label><p class="form-control-static">$60 Per Hour</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mbl-container">
+                                    <div class="mbl-block">
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Job Title</label><p class="form-control-static">Nursing Assistant</p>
+                                        </div>
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Job Description</label><p class="form-control-static marginb10">The N.A. will help nurses.<span class="show-hide">More data will be displayed here.</span><a class="orange-link see-more link-toggle" href="javascript:void(0);">See more</a></p>
+                                        </div>
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Job Location</label><p class="form-control-static">Webster Headquarters</p>
+                                        </div>
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Bill Rate Min.</label><p class="form-control-static">$45 Per Hour</p>
+                                        </div>
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Bill Rate Max</label><p class="form-control-static">$60 Per Hour</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mbl-container">
+                                    <div class="mbl-block">
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Job Title</label><p class="form-control-static">Nursing Assistant</p>
+                                        </div>
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Job Description</label><p class="form-control-static marginb10">The N.A. will help nurses in all their daily needs. The N.A. will help nurses in all their daily needs.<span class="show-hide">More data will be displayed here.</span><a class="orange-link see-more link-toggle" href="javascript:void(0);">See more</a></p>
+                                        </div>
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Job Location</label><p class="form-control-static">Webster Headquarters</p>
+                                        </div>
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Bill Rate Min.</label><p class="form-control-static">$45 Per Hour</p>
+                                        </div>
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Bill Rate Max</label><p class="form-control-static">$60 Per Hour</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- Suppliers -->
                             <div class="item ">
                                 <h2>Suppliers</h2>
                                 <h3 class="margint20">Search Suppliers</h3>
@@ -264,9 +491,87 @@
                                     <button type="button" class="btn btn-default block-btn"><strong>ABC Company Inc.</strong></button>
                                 </div>
                             </div>
+                            <!-- Client Hierarchy -->
                             <div class="item">
-                                <h2>Client Heirarchy</h2>
-                                <h3 class="margint20">Client Heirarchy</h3>
+                                <h2>Client Hierarchy</h2>
+                                <div class="margint20"></div>
+                                <div class="form-group">
+                                    <label for="businessUnit">Business Unit</label>
+                                    <select id="businessUnit" class="form-control">
+                                        <option>Business Unit 1</option>
+                                        <option>Business Unit 2</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="division">Division</label>
+                                    <select id="division" class="form-control">
+                                        <option>Division 1</option>
+                                        <option>Division 2</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="department">Department</label>
+                                    <select id="department" class="form-control">
+                                        <option>Department</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="costCenter">Cost Center</label>
+                                    <select id="costCenter" class="form-control">
+                                        <option>Cost Center</option>
+                                    </select>
+                                </div>
+                                <div class="button-container"><div class="text-right"><button type="button" class="btn btn-default block-btn">Generate Hierarchy</button></div></div>
+                                <div class="clear"></div>
+                                <h3>Subgroups</h3>
+                                <div class="mbl-container">
+                                    <div class="mbl-block">
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Name</label><p class="form-control-static">Division 1</p>
+                                        </div>
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Approver</label><p class="form-control-static">John Kennedy</p>
+                                        </div>
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Backup Approver</label><p class="form-control-static">Jack Daniels</p>
+                                        </div>
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Range</label><p class="form-control-static">Up to $45</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mbl-container">
+                                    <div class="mbl-block">
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Name</label><p class="form-control-static">Division 1</p>
+                                        </div>
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Approver</label><p class="form-control-static">John Kennedy</p>
+                                        </div>
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Backup Approver</label><p class="form-control-static">Jack Daniels</p>
+                                        </div>
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Range</label><p class="form-control-static">Up to $45</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mbl-container">
+                                    <div class="mbl-block">
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Name</label><p class="form-control-static">Division 1</p>
+                                        </div>
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Approver</label><p class="form-control-static">John Kennedy</p>
+                                        </div>
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Backup Approver</label><p class="form-control-static">Jack Daniels</p>
+                                        </div>
+                                        <div class="form-group-lg">
+                                            <label class="col-lg-10">Range</label><p class="form-control-static">Up to $45</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!-- Controls -->

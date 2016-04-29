@@ -54,6 +54,9 @@ h1 {
 .marginl10 {
   margin-left: 10px; }
 
+.marginb10 {
+  margin-bottom: 10px; }
+
 h4 {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
@@ -103,6 +106,12 @@ input:focus::-moz-placeholder {
 
 input:focus:-moz-placeholder {
   color: transparent !important; }
+
+.show-hide, .see-more {
+  margin: 0 5px; }
+
+.show-hide {
+  display: none; }
 
 /* GENERIC 
 ------------------------------------------- */
@@ -937,6 +946,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         color: #ef5f47; }
         .table tbody tr td a.orange:hover {
           color: #fff; }
+      .table tbody tr td a.orange-link {
+        color: #ef5f47; }
+        .table tbody tr td a.orange-link:hover {
+          color: #ef5f47; }
     .table tbody tr .status-bar-green {
       display: inline-block;
       border-left: solid 4px #35b15a;
@@ -1192,9 +1205,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 100%; }
     .form-inline .form-group-lg label {
       display: inline-block;
-      width: 170px; }
+      width: 170px;
+      vertical-align: top; }
     .form-inline .form-group-lg .form-control-static {
-      display: inline-block; }
+      display: inline-block;
+      width: 47%; }
   .split-width input {
     width: 100%;
     min-width: 50px !important;
