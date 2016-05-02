@@ -3,7 +3,12 @@
         $(this).hide();
         $('#diff-email').show();
     });
-    $('.modal-footer .btn-primary,.close').click(function () {
+    $('.modal-footer .btn-primary,.close,.modal-footer .btn-default').click(function () {
+        $('#diff-email').val($(this).attr('placeholder'));
+        $('#diff-email').hide();
+        $('.diff-email label').show();
+    });
+    $("#resend-registration").on('hide.bs.modal', function () {
         $('#diff-email').val($(this).attr('placeholder'));
         $('#diff-email').hide();
         $('.diff-email label').show();
@@ -29,6 +34,10 @@
                 $(this).text('Less');
             }
     });
+
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
 
     //$('.button-indicator .btn').click(function () {
     //    $(this).toggleClass('btn-default btn-clearbg');

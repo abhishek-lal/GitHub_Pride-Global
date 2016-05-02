@@ -74,4 +74,22 @@ input:focus:-moz-placeholder{
 }
 .show-hide, .see-more{margin:0 5px;}
 .show-hide{display:none;}
+.tooltip-inner {
+    border: 1px solid $black;
+    max-width: 200px;
+    padding: 3px 8px;
+    color: $black;
+    text-align: center;
+    background-color: $tooltip-bg;
+    border-radius: 4px;
+}
+.tooltip{opacity:1 !important;}
+.error-block{
+	position:absolute;
+	display:block;
+	margin-top:5px;
+	margin-bottom:10px;
+	color:$error-color;
+	font-size:$footer-font-size;
+	}
 
