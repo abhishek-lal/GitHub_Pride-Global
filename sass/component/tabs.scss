@@ -1,0 +1,89 @@
+@import "../setup/library";
+
+.nav-pills{
+	li{
+		  border-right:3px solid $white;
+	a{
+		 background:$tab-grey;
+		 border-radius:0;
+		 color:$white;
+		 text-transform:capitalize;
+		 &:hover{background:$tab-orange;}
+		 &:focus{background:$default-button-hover-bg;}
+	 }
+	 &:last-child{ border-right:0;}
+  }
+	li.active a{
+		background:$tab-orange;
+		&:hover, &:active, &:focus{ background:$tab-orange;}
+	}
+	
+}
+
+	.carousel{
+		.carousel-inner{
+				.item{
+						 width:100%;
+							h2{
+							   background:$orange;
+							   text-align:center;
+							   margin:0;
+							   color:$white;
+							   @include font-face-default();
+							   font-size:$default-font-size;
+							   text-transform:uppercase;
+							   font-weight:$bold-font;
+							  // padding:10px 0;
+							  height:35px;
+							  line-height:35px;
+						   }
+							  
+				 }
+		   }
+
+	}
+
+
+.carousel-control {
+    height: 35px;
+    display: inline-block;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0,0,0,.6);
+    background-color: rgba(180,180,180,1);
+    opacity: 1;
+
+	.glyphicon-triangle-left, .glyphicon-triangle-right, .icon-next, .icon-prev {
+    position: relative;
+    //top: 7px;
+	line-height:33px;
+    /* z-index: 5; */
+    display: inline-block;
+    /* margin-top: -10px; */
+	}
+	&:focus, &:hover {
+			color: $white;
+			text-decoration: none;
+			outline: 0;
+			opacity: 1;
+			}
+}
+
+.carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: none; 
+	border-left: 3px solid $white;   
+}
+.carousel-control.left {
+    background-image: none;
+	border-right: 3px solid $white;   
+}
+

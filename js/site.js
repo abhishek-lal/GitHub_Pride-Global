@@ -8,6 +8,27 @@
         $('#diff-email').hide();
         $('.diff-email label').show();
     });
+    // for Audit Logs 
+    $(".audit-filter").hide();
+    var auditVal = ($('#auditType option:selected').val());
+    $("#" + auditVal).toggle();
+
+    $('#auditType').change(function (event) {
+        $(".audit-filter").hide();
+        var auditVal = ($('#auditType option:selected').val());
+        $("#" + auditVal).toggle();
+    });
+    
+    $('.link-toggle').click(function () {
+        $(this).prev('span').toggle();
+        var $this = $(this);
+        $this.toggleClass('see-more');
+        if ($this.hasClass('see-more')) {
+                $this.text('See more');
+            } else {
+                $(this).text('Less');
+            }
+    });
 
     //$('.button-indicator .btn').click(function () {
     //    $(this).toggleClass('btn-default btn-clearbg');
