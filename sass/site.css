@@ -661,6 +661,11 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
     font-weight: bold;
     font-size: 1.3em;
     margin: 0 0 0 25px; }
+  .modal-dialog .modal-content .modal-body .separator {
+    border-top: 1px solid #b4b4b4;
+    margin-bottom: 20px; }
+  .modal-dialog .modal-content .modal-body .form-horizontal .form-group label {
+    padding-top: 6px; }
   .modal-dialog .modal-content .modal-footer {
     padding: 0 15px 15px;
     border-top: none; }
