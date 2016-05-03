@@ -41,7 +41,7 @@
             max-width: 100%;
             margin-bottom: 2px;
             font-size: $form-heading-label;
-            font-weight: 400;
+            //font-weight: $bold-font;
         }
 
         .form-control {
@@ -74,7 +74,7 @@
     				
     				  label{ padding-left:0; 
     						 display:inline-block;
-    						 font-weight:bold;
+    						 //font-weight:bold;
     						 font-size:$default-font-size;
     						 width:auto;
     						 //width:170px;
@@ -133,7 +133,7 @@
                 max-width: 100%;
                 margin-bottom: 2px;
                 font-size: $form-heading-label;
-                font-weight: 400;
+                //font-weight: $bold-font;
                 padding-top:4px;
             }
 

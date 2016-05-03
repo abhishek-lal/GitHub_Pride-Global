@@ -700,7 +700,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .input-group-addon {
   padding: 6px 6px 6px 0;
-  font-size: 1.4em;
+  font-size: 1.2em;
   line-height: 1;
   background-color: transparent;
   border: none;
@@ -727,8 +727,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: block;
   max-width: 100%;
   margin-bottom: 2px;
-  font-size: 1.4em;
-  font-weight: 400; }
+  font-size: 1.2em; }
 .form-inline .form-control {
   border-radius: 0;
   min-width: 200px;
@@ -752,7 +751,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .form-inline .form-group-lg label {
     padding-left: 0;
     display: inline-block;
-    font-weight: bold;
     font-size: 1.2em;
     width: auto; }
   .form-inline .form-group-lg .form-control-static {
@@ -786,8 +784,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: block;
     max-width: 100%;
     margin-bottom: 2px;
-    font-size: 1.4em;
-    font-weight: 400;
+    font-size: 1.2em;
     padding-top: 4px; }
   .form-horizontal .form-group .form-control {
     border-radius: 0;
