@@ -92,4 +92,8 @@ input:focus:-moz-placeholder{
 	color:$error-color;
 	font-size:$footer-font-size;
 	}
+.separator{
+	border-top:1px solid $tab-grey;
+	margin-bottom:20px;
+	}
 

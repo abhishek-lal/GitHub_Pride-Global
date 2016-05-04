@@ -133,6 +133,10 @@ input:focus:-moz-placeholder {
   color: #ff2a00;
   font-size: 1em; }
 
+.separator {
+  border-top: 1px solid #b4b4b4;
+  margin-bottom: 20px; }
+
 /* GENERIC 
 ------------------------------------------- */
 .navbar {
@@ -661,11 +665,25 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
     font-weight: bold;
     font-size: 1.3em;
     margin: 0 0 0 25px; }
-  .modal-dialog .modal-content .modal-body .separator {
-    border-top: 1px solid #b4b4b4;
-    margin-bottom: 20px; }
   .modal-dialog .modal-content .modal-body .form-horizontal .form-group label {
     padding-top: 6px; }
+  .modal-dialog .modal-content .modal-body #addNewTag + .input-group-btn {
+    background: #ef5f47;
+    font-size: 2em;
+    text-align: center;
+    width: 1%; }
+    .modal-dialog .modal-content .modal-body #addNewTag + .input-group-btn:hover {
+      background-color: #c03e29; }
+    .modal-dialog .modal-content .modal-body #addNewTag + .input-group-btn button {
+      border: 0;
+      background: transparent;
+      color: #fff;
+      top: 2px; }
+      .modal-dialog .modal-content .modal-body #addNewTag + .input-group-btn button:focus {
+        outline: none !important; }
+      .modal-dialog .modal-content .modal-body #addNewTag + .input-group-btn button:before {
+        right: -1px;
+        position: relative; }
   .modal-dialog .modal-content .modal-footer {
     padding: 0 15px 15px;
     border-top: none; }
