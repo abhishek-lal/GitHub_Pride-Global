@@ -137,6 +137,9 @@ input:focus:-moz-placeholder {
   border-top: 1px solid #b4b4b4;
   margin-bottom: 20px; }
 
+.sub-heading {
+  font-size: 1.4em; }
+
 /* GENERIC 
 ------------------------------------------- */
 .navbar {
@@ -1555,7 +1558,8 @@ html.login {
     background: #b4b4b4;
     border-radius: 0;
     color: #fff;
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    white-space: nowrap; }
     .nav-pills li a:hover {
       background: #ef5f47; }
     .nav-pills li a:focus {
