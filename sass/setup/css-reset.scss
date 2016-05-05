@@ -97,3 +97,23 @@ input:focus:-moz-placeholder{
 	margin-bottom:20px;
 	}
 .sub-heading{font-size:$sub-heading-font-size;}
+.form-inline{
+	.well {
+		min-height: 20px;
+		padding: 15px;
+		margin-bottom: 20px;
+		background-color: $form-elements-bg;
+		border: none;
+		border-radius: 0;
+		box-shadow: none;
+		.form-control { background-color: $filter-elements-bg !important;}
+		.btn-link {margin-right:0;}
+
+	}
+}
+.block-btn[aria-expanded="true"]{ 
+	.caret {
+    border-bottom: 4px dashed;
+	border-top:none;
+    }
+  }

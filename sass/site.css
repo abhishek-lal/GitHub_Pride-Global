@@ -140,6 +140,23 @@ input:focus:-moz-placeholder {
 .sub-heading {
   font-size: 1.4em; }
 
+.form-inline .well {
+  min-height: 20px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 0;
+  box-shadow: none; }
+  .form-inline .well .form-control {
+    background-color: #fdfdfd !important; }
+  .form-inline .well .btn-link {
+    margin-right: 0; }
+
+.block-btn[aria-expanded="true"] .caret {
+  border-bottom: 4px dashed;
+  border-top: none; }
+
 /* GENERIC 
 ------------------------------------------- */
 .navbar {
@@ -1244,6 +1261,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
       border-top: 12px solid\9;
       border-right: 8px solid transparent;
       border-left: 8px solid transparent; }
+  .block-btn[aria-expanded="true"] .caret {
+    border-bottom: 12px dashed; }
   .form-inline .form-group-lg {
     width: 100%; }
     .form-inline .form-group-lg label {

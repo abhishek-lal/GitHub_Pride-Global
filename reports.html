@@ -148,59 +148,56 @@
                         </div>
                         <!-- Program Time to Fill -->
                         <div id="progTimeFill" class="tab-pane fade">
-                            <div class="button-container"><div class="text-right"><a href="javascript:void(0)" data-toggle="modal" class="block-btn btn-mbl" data-target="#filter-users">Filter<span class="caret"></span></a></div></div>
-                            <div class="clear"></div>
-                            <div class="table-responsive">
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr>
-                                            <th><a href="#" class="caret-up">Job Title</a></th>
-                                            <th><a href="#" class="caret-down">Job Description</a></th>
-                                            <th><a href="#">Job Location</a></th>
-                                            <th><a href="#">Bill Rate Minimum</a></th>
-                                            <th><a href="#">Bill Rate Maximum</a></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Nursing Assitant</td>
-                                            <td>The N.A. will help nurses in all their daily needs. The N.A. will help nurses in all their daily needs. The N.A. will help nurses in all their daily needs.<span class="show-hide">More data will be displayed here.</span><a class="orange-link see-more link-toggle" href="javascript:void(0);">See more</a></td>
-                                            <td>Webster Headquarters</td>
-                                            <td>$45</td>
-                                            <td>$60</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Nursing Assitant</td>
-                                            <td>The N.A. will help nurses in all their daily needs. The N.A. will help nurses in all their daily needs. The N.A. will help nurses in all their daily needs.<span class="show-hide">More data will be displayed here.</span><a class="orange-link see-more link-toggle" href="javascript:void(0);">See more</a></td>
-                                            <td>Webster Headquarters</td>
-                                            <td>$45</td>
-                                            <td>$60</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Nursing Assitant</td>
-                                            <td>The N.A. will help nurses in all their daily needs. The N.A. will help nurses in all their daily needs. The N.A. will help nurses in all their daily needs.<span class="show-hide">More data will be displayed here.</span><a class="orange-link see-more link-toggle" href="javascript:void(0);">See more</a></td>
-                                            <td>Webster Headquarters</td>
-                                            <td>$45</td>
-                                            <td>$60</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Nursing Assitant</td>
-                                            <td>The N.A. will help nurses in all their daily needs. The N.A. will help nurses in all their daily needs. The N.A. will help nurses in all their daily needs.<span class="show-hide">More data will be displayed here.</span><a class="orange-link see-more link-toggle" href="javascript:void(0);">See more</a></td>
-                                            <td>Webster Headquarters</td>
-                                            <td>$45</td>
-                                            <td>$60</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Nursing Assitant</td>
-                                            <td>The N.A. will help nurses in all their daily needs. The N.A. will help nurses in all their daily needs. The N. <a href="#" class="orange-link">More...</a></td>
-                                            <td>Webster Headquarters</td>
-                                            <td>$45</td>
-                                            <td>$60</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="form-group">
+                                <label for="client">Client*</label>
+                                <select id="client" class="form-control">
+                                    <option>Client 1</option>
+                                    <option>Client 2</option>
+                                </select>
                             </div>
+                            <div class="form-group">
+                                <label for="startDate">Date Range</label>
+                                <div class="input-group">
+                                    <input type="date" class="form-control" id="startDate" placeholder="From">
+                                    <div class="input-group-btn">
+                                        <input type="date" class="form-control marginl10" id="endDate" placeholder="To">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="jobTitle">Job Title</label>
+                                <select id="jobTitle" class="form-control">
+                                    <option>Job Title 1</option>
+                                    <option>Job Title 2</option>
+                                    <option>Job Title 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="clientReqowner1">Client Requisition Owner</label>
+                                <select id="clientReqowner1" class="form-control">
+                                    <option>Owner 1</option>
+                                    <option>Owner 2</option>
+                                    <option>Owner 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="orgHierarchy">Org Hierarchy</label>
+                                <input type="text" class="form-control" id="orgHierarchy" placeholder="Org Hierarchy">
+                            </div>
+                            <div class="form-group">
+                                <label for="workLocation1">Work Location</label>
+                                <select id="workLocation1" class="form-control">
+                                    <option>Location 1</option>
+                                    <option>Location 2</option>
+                                    <option>Location 3</option>
+                                </select>
+                            </div>
+                            <div class="button-container"><div class="text-right"><button type="submit" class="btn btn-default block-btn">Generate a Report</button></div></div>
+                            <div class="clear"></div>
+
                             <div class="separator"></div>
+                            <div class="clear"></div>
+                            <div class="button-container"><div class="pull-left"><strong class="sub-heading">Time to Fill Report</strong></div><div class="pull-right"><a href="#" class="btn-link">Download</a></div></div>
                             <div class="clear"></div>
                             <ul class="nav nav-pills nav-justified">
                                 <li role="presentation" class="active"><a data-toggle="tab" href="#ptf-all">All</a></li>
@@ -212,394 +209,34 @@
                             </ul>
                             <div class="tab-content margint20">
                                 <!-- PTF All -->
-                                <div id="ptf-all" class="tab-pane fade in active col-md-12">
-                                    <div class="horizontal-form">
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">First Name</label><p class="form-control-static">John</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Last Name</label><p class="form-control-static">Smith</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Preferred Name</label><p class="form-control-static">Johnny</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Date of Birth</label><p class="form-control-static">September 19th</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Last 4 Digits of SSN</label><p class="form-control-static">1212</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Phone Number</label><p class="form-control-static">125-452-4587</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Address</label><p class="form-control-static">123 Fake St.</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">City</label><p class="form-control-static">Kalamazoo</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">State</label><p class="form-control-static">MI</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Zip Code</label><p class="form-control-static">10009</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Emergency Contact</label><p class="form-control-static">Jenny Smith</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Emergency Phone No</label><p class="form-control-static">123-567-0091</p>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <h3 class="margint20">Locations</h3>
+                                <div id="ptf-all" class="tab-pane fade in active">
                                     <div class="clear"></div>
-                                    <div class="horizontal-form">
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Location Name</label><p class="form-control-static">HQ</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Address 1</label><p class="form-control-static">123 Fake St.</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Address 2</label><p class="form-control-static"></p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">City</label><p class="form-control-static">Kalamazoo</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">State</label><p class="form-control-static">MI</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Region</label><p class="form-control-static">Main Building</p>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
+                                    <div class="margint20" style="border:1px solid #c00;">PTF - All Graph Container</div>
                                 </div>
                                 <!-- PTF Job Title -->
-                                <div id="ptf-jobTitle" class="tab-pane fade in active col-md-12">
-                                    <div class="horizontal-form">
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">First Name</label><p class="form-control-static">John</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Last Name</label><p class="form-control-static">Smith</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Preferred Name</label><p class="form-control-static">Johnny</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Date of Birth</label><p class="form-control-static">September 19th</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Last 4 Digits of SSN</label><p class="form-control-static">1212</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Phone Number</label><p class="form-control-static">125-452-4587</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Address</label><p class="form-control-static">123 Fake St.</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">City</label><p class="form-control-static">Kalamazoo</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">State</label><p class="form-control-static">MI</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Zip Code</label><p class="form-control-static">10009</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Emergency Contact</label><p class="form-control-static">Jenny Smith</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Emergency Phone No</label><p class="form-control-static">123-567-0091</p>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <h3 class="margint20">Locations</h3>
+                                <div id="ptf-jobTitle" class="tab-pane fade">
                                     <div class="clear"></div>
-                                    <div class="horizontal-form">
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Location Name</label><p class="form-control-static">HQ</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Address 1</label><p class="form-control-static">123 Fake St.</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Address 2</label><p class="form-control-static"></p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">City</label><p class="form-control-static">Kalamazoo</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">State</label><p class="form-control-static">MI</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Region</label><p class="form-control-static">Main Building</p>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
+                                    <div class="margint20" style="border:1px solid #c00;">PTF - Job Title Graph Container</div>
                                 </div>
                                 <!-- PTF Client Req Owner -->
-                                <div id="ptf-clientReq" class="tab-pane fade in active col-md-12">
-                                    <div class="horizontal-form">
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">First Name</label><p class="form-control-static">John</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Last Name</label><p class="form-control-static">Smith</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Preferred Name</label><p class="form-control-static">Johnny</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Date of Birth</label><p class="form-control-static">September 19th</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Last 4 Digits of SSN</label><p class="form-control-static">1212</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Phone Number</label><p class="form-control-static">125-452-4587</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Address</label><p class="form-control-static">123 Fake St.</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">City</label><p class="form-control-static">Kalamazoo</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">State</label><p class="form-control-static">MI</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Zip Code</label><p class="form-control-static">10009</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Emergency Contact</label><p class="form-control-static">Jenny Smith</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Emergency Phone No</label><p class="form-control-static">123-567-0091</p>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <h3 class="margint20">Locations</h3>
+                                <div id="ptf-clientReq" class="tab-pane fade">
                                     <div class="clear"></div>
-                                    <div class="horizontal-form">
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Location Name</label><p class="form-control-static">HQ</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Address 1</label><p class="form-control-static">123 Fake St.</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Address 2</label><p class="form-control-static"></p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">City</label><p class="form-control-static">Kalamazoo</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">State</label><p class="form-control-static">MI</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Region</label><p class="form-control-static">Main Building</p>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
+                                    <div class="margint20" style="border:1px solid #c00;">PTF - Client Req Graph Container</div>
                                 </div>
                                 <!-- PTF MSP Req Owner -->
-                                <div id="ptf-mspReq" class="tab-pane fade in active col-md-12">
-                                    <div class="horizontal-form">
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">First Name</label><p class="form-control-static">John</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Last Name</label><p class="form-control-static">Smith</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Preferred Name</label><p class="form-control-static">Johnny</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Date of Birth</label><p class="form-control-static">September 19th</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Last 4 Digits of SSN</label><p class="form-control-static">1212</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Phone Number</label><p class="form-control-static">125-452-4587</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Address</label><p class="form-control-static">123 Fake St.</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">City</label><p class="form-control-static">Kalamazoo</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">State</label><p class="form-control-static">MI</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Zip Code</label><p class="form-control-static">10009</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Emergency Contact</label><p class="form-control-static">Jenny Smith</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Emergency Phone No</label><p class="form-control-static">123-567-0091</p>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <h3 class="margint20">Locations</h3>
+                                <div id="ptf-mspReq" class="tab-pane fade">
                                     <div class="clear"></div>
-                                    <div class="horizontal-form">
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Location Name</label><p class="form-control-static">HQ</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Address 1</label><p class="form-control-static">123 Fake St.</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Address 2</label><p class="form-control-static"></p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">City</label><p class="form-control-static">Kalamazoo</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">State</label><p class="form-control-static">MI</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Region</label><p class="form-control-static">Main Building</p>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
+                                    <div class="margint20" style="border:1px solid #c00;">PTF - MSP Requisition Graph Container</div>
                                 </div>
                                 <!-- PTF Org Hierarchy -->
-                                <div id="ptf-orgHierarchy" class="tab-pane fade in active col-md-12">
-                                    <div class="horizontal-form">
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">First Name</label><p class="form-control-static">John</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Last Name</label><p class="form-control-static">Smith</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Preferred Name</label><p class="form-control-static">Johnny</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Date of Birth</label><p class="form-control-static">September 19th</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Last 4 Digits of SSN</label><p class="form-control-static">1212</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Phone Number</label><p class="form-control-static">125-452-4587</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Address</label><p class="form-control-static">123 Fake St.</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">City</label><p class="form-control-static">Kalamazoo</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">State</label><p class="form-control-static">MI</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Zip Code</label><p class="form-control-static">10009</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Emergency Contact</label><p class="form-control-static">Jenny Smith</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Emergency Phone No</label><p class="form-control-static">123-567-0091</p>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <h3 class="margint20">Locations</h3>
+                                <div id="ptf-orgHierarchy" class="tab-pane fade">
                                     <div class="clear"></div>
-                                    <div class="horizontal-form">
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Location Name</label><p class="form-control-static">HQ</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Address 1</label><p class="form-control-static">123 Fake St.</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Address 2</label><p class="form-control-static"></p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">City</label><p class="form-control-static">Kalamazoo</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">State</label><p class="form-control-static">MI</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Region</label><p class="form-control-static">Main Building</p>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
+                                    <div class="margint20" style="border:1px solid #c00;">PTF - Org Hierarchy Graph Container</div>
                                 </div>
                                 <!-- PTF Work Location -->
-                                <div id="ptf-workLocation" class="tab-pane fade in active col-md-12">
-                                    <div class="horizontal-form">
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">First Name</label><p class="form-control-static">John</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Last Name</label><p class="form-control-static">Smith</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Preferred Name</label><p class="form-control-static">Johnny</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Date of Birth</label><p class="form-control-static">September 19th</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Last 4 Digits of SSN</label><p class="form-control-static">1212</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Phone Number</label><p class="form-control-static">125-452-4587</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Address</label><p class="form-control-static">123 Fake St.</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">City</label><p class="form-control-static">Kalamazoo</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">State</label><p class="form-control-static">MI</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Zip Code</label><p class="form-control-static">10009</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Emergency Contact</label><p class="form-control-static">Jenny Smith</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Emergency Phone No</label><p class="form-control-static">123-567-0091</p>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
-                                    <h3 class="margint20">Locations</h3>
+                                <div id="ptf-workLocation" class="tab-pane fade">
                                     <div class="clear"></div>
-                                    <div class="horizontal-form">
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Location Name</label><p class="form-control-static">HQ</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Address 1</label><p class="form-control-static">123 Fake St.</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Address 2</label><p class="form-control-static"></p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">City</label><p class="form-control-static">Kalamazoo</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">State</label><p class="form-control-static">MI</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Region</label><p class="form-control-static">Main Building</p>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
+                                    <div class="margint20" style="border:1px solid #c00;">PTF - Work Location Graph Container</div>
                                 </div>
                             </div>
                         </div>
@@ -722,135 +359,109 @@
                         </a>
 
                         <div class="carousel-inner">
-                            <!-- Client Info -->
+                            <!-- Funnel -->
                             <div class="item active">
-                                <h2>Client Info</h2>
+                                <h2>Funnel</h2>
                                 <div class="horizontal-form margint20">
-                                    <div class="form-group-lg">
-                                        <label class="col-lg-10">First Name</label><p class="form-control-static">John</p>
+                                    <div class="form-group">
+                                        <label for="client">Client*</label>
+                                        <select id="client" class="form-control">
+                                            <option>Client 1</option>
+                                            <option>Client 2</option>
+                                        </select>
                                     </div>
-                                    <div class="form-group-lg">
-                                        <label class="col-lg-10">Last Name</label><p class="form-control-static">Smith</p>
+                                    <div class="form-group">
+                                        <label for="startDate">Date Range</label>
+                                        <input type="date" class="form-control" id="startDate" placeholder="From">
                                     </div>
-                                    <div class="form-group-lg">
-                                        <label class="col-lg-10">Preferred Name</label><p class="form-control-static">Johnny</p>
+                                    <div class="form-group">
+                                        <input type="date" class="form-control" id="endDate" placeholder="To">
                                     </div>
-                                    <div class="form-group-lg">
-                                        <label class="col-lg-10">Date of Birth</label><p class="form-control-static">September 19th</p>
+                                    <div class="form-group">
+                                        <label for="jobTitle">Job Title</label>
+                                        <select id="jobTitle" class="form-control">
+                                            <option>Job Title 1</option>
+                                            <option>Job Title 2</option>
+                                            <option>Job Title 3</option>
+                                        </select>
                                     </div>
-                                    <div class="form-group-lg">
-                                        <label class="col-lg-10">Last 4 Digits of SSN</label><p class="form-control-static">1212</p>
+                                    <div class="form-group">
+                                        <label for="orgHierarchy">Org Hierarchy</label>
+                                        <input type="text" class="form-control" id="orgHierarchy" placeholder="Org Hierarchy">
                                     </div>
-                                    <div class="form-group-lg">
-                                        <label class="col-lg-10">Phone Number</label><p class="form-control-static">125-452-4587</p>
+                                    <div class="form-group">
+                                        <label for="reqStatus">Requisition Status</label>
+                                        <select id="reqStatus" class="form-control">
+                                            <option>Requisition Status 1</option>
+                                            <option>Requisition Status 2</option>
+                                            <option>Requisition Status 3</option>
+                                        </select>
                                     </div>
-                                    <div class="form-group-lg">
-                                        <label class="col-lg-10">Address</label><p class="form-control-static">123 Fake St.</p>
-                                    </div>
-                                    <div class="form-group-lg">
-                                        <label class="col-lg-10">City</label><p class="form-control-static">Kalamazoo</p>
-                                    </div>
-                                    <div class="form-group-lg">
-                                        <label class="col-lg-10">State</label><p class="form-control-static">MI</p>
-                                    </div>
-                                    <div class="form-group-lg">
-                                        <label class="col-lg-10">Zip Code</label><p class="form-control-static">10009</p>
-                                    </div>
-                                    <div class="form-group-lg">
-                                        <label class="col-lg-10">Emergency Contact</label><p class="form-control-static">Jenny Smith</p>
-                                    </div>
-                                    <div class="form-group-lg">
-                                        <label class="col-lg-10">Emergency Phone No</label><p class="form-control-static">123-567-0091</p>
-                                    </div>
+                                    <div class="button-container"><div class="text-right"><button type="submit" class="btn btn-default block-btn">Generate a Report</button></div></div>
                                     <div class="clear"></div>
-                                </div>
-                                <h3 class="margint20">Locations</h3>
-                                <div class="clear"></div>
-                                <div class="horizontal-form">
-                                    <div class="form-group-lg">
-                                        <label class="col-lg-10">Location Name</label><p class="form-control-static">HQ</p>
-                                    </div>
-                                    <div class="form-group-lg">
-                                        <label class="col-lg-10">Address 1</label><p class="form-control-static">123 Fake St.</p>
-                                    </div>
-                                    <div class="form-group-lg">
-                                        <label class="col-lg-10">Address 2</label><p class="form-control-static">-</p>
-                                    </div>
-                                    <div class="form-group-lg">
-                                        <label class="col-lg-10">City</label><p class="form-control-static">Kalamazoo</p>
-                                    </div>
-                                    <div class="form-group-lg">
-                                        <label class="col-lg-10">State</label><p class="form-control-static">MI</p>
-                                    </div>
-                                    <div class="form-group-lg">
-                                        <label class="col-lg-10">Region</label><p class="form-control-static">Main Building</p>
-                                    </div>
+
+                                    <div class="button-container"><div class="pull-left"><strong class="sub-heading">Funnel Graph Report</strong></div><div class="pull-right"><a href="#" class="btn-link">Download</a></div></div>
                                     <div class="clear"></div>
+                                    <div class="text-center marginb10"><strong>Total Req </strong>60</div>
+                                    <div class="separator"></div>
+                                    <div class="margint20" style="border:1px solid #c00;">Funnel Graph Data Container</div>
                                 </div>
 
                             </div>
                             <!-- Bill Rate -->
                             <div class="item">
-                                <h2>Bill Rate</h2>
-                                <div class="margint20"></div>
-                                <div><a href="javascript:void(0)" class="block-btn btn-mbl" data-toggle="modal" data-target="#bill-rate">Filter<span class="caret"></span></a></div>
-                                <div class="margint20"></div>
-                                <div class="mbl-container">
-                                    <div class="mbl-block">
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Job Title</label><p class="form-control-static">Nursing Assistant</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Job Description</label><p class="form-control-static marginb10">The N.A. will help nurses in all their daily needs. The N.A. will help nurses in all their daily needs.<span class="show-hide">More data will be displayed here.</span><a class="orange-link see-more link-toggle" href="javascript:void(0);">See more</a></p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Job Location</label><p class="form-control-static">Webster Headquarters</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Bill Rate Min.</label><p class="form-control-static">$45 Per Hour</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Bill Rate Max</label><p class="form-control-static">$60 Per Hour</p>
-                                        </div>
+                                <h2>Program Time to Fill</h2>
+                                <div class="horizontal-form margint20">
+                                    <div class="form-group">
+                                        <label for="client1">Client*</label>
+                                        <select id="client1" class="form-control">
+                                            <option>Client 1</option>
+                                            <option>Client 2</option>
+                                        </select>
                                     </div>
-                                </div>
-                                <div class="mbl-container">
-                                    <div class="mbl-block">
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Job Title</label><p class="form-control-static">Nursing Assistant</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Job Description</label><p class="form-control-static marginb10">The N.A. will help nurses.<span class="show-hide">More data will be displayed here.</span><a class="orange-link see-more link-toggle" href="javascript:void(0);">See more</a></p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Job Location</label><p class="form-control-static">Webster Headquarters</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Bill Rate Min.</label><p class="form-control-static">$45 Per Hour</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Bill Rate Max</label><p class="form-control-static">$60 Per Hour</p>
-                                        </div>
+                                    <div class="form-group">
+                                        <label for="startDate1">Date Range</label>
+                                        <input type="date" class="form-control" id="startDate1" placeholder="From">
                                     </div>
-                                </div>
-                                <div class="mbl-container">
-                                    <div class="mbl-block">
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Job Title</label><p class="form-control-static">Nursing Assistant</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Job Description</label><p class="form-control-static marginb10">The N.A. will help nurses in all their daily needs. The N.A. will help nurses in all their daily needs.<span class="show-hide">More data will be displayed here.</span><a class="orange-link see-more link-toggle" href="javascript:void(0);">See more</a></p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Job Location</label><p class="form-control-static">Webster Headquarters</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Bill Rate Min.</label><p class="form-control-static">$45 Per Hour</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Bill Rate Max</label><p class="form-control-static">$60 Per Hour</p>
-                                        </div>
+                                    <div class="form-group">
+                                        <input type="date" class="form-control" id="endDate" placeholder="To">
                                     </div>
+                                    <div class="form-group">
+                                        <label for="jobTitle">Job Title</label>
+                                        <select id="jobTitle" class="form-control">
+                                            <option>Job Title 1</option>
+                                            <option>Job Title 2</option>
+                                            <option>Job Title 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="clientReqowner3">Client Requisition Owner</label>
+                                        <select id="clientReqowner3" class="form-control">
+                                            <option>Req Owner 1</option>
+                                            <option>Req Owner 2</option>
+                                            <option>Req Owner 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="orgHierarchy1">Org Hierarchy</label>
+                                        <input type="text" class="form-control" id="orgHierarchy1" placeholder="Org Hierarchy">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="workLocation3">Work Location</label>
+                                        <select id="workLocation3" class="form-control">
+                                            <option>Location 1</option>
+                                            <option>Location 2</option>
+                                            <option>Location 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="button-container"><div class="text-right"><button type="submit" class="btn btn-default block-btn">Generate a Report</button></div></div>
+                                    <div class="clear"></div>
+
+                                    <div class="button-container"><div class="pull-left"><strong class="sub-heading">Time to Fill Report</strong></div><div class="pull-right"><a href="#" class="btn-link">Download</a></div></div>
+                                    <div class="clear"></div>
+                                    <div class="text-center marginb10"><strong>Total Req ------------------</strong>60</div>
+                                    <div class="separator"></div>
+                                    <div class="margint20" style="border:1px solid #c00;">Funnel Graph Data Container</div>
                                 </div>
                             </div>
                             <!-- Suppliers -->

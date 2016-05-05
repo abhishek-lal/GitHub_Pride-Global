@@ -595,6 +595,9 @@
                      border-left: 8px solid transparent;
               }
        }
+		.block-btn[aria-expanded="true"] .caret {
+				border-bottom: 12px dashed;
+	   }
 
     	.form-inline {
 			.form-group-lg{
