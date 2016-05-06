@@ -242,125 +242,178 @@
                         </div>
                         <!-- Req Stage-Gate -->
                         <div id="reqStageGate" class="tab-pane fade">
-                            <div class="col-md-3">
-                                <h3>Search Suppliers</h3>
-                                <div class="form-group">
-                                    <label for="supplierName">Supplier Name</label>
-                                    <input type="text" class="form-control" id="supplierName" placeholder="Supplier Name">
+                            <div class="form-group">
+                                <label for="client">Client*</label>
+                                <select id="client" class="form-control">
+                                    <option>Client 1</option>
+                                    <option>Client 2</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="startDate">Date Range</label>
+                                <div class="input-group">
+                                    <input type="date" class="form-control" id="startDate" placeholder="From">
+                                    <div class="input-group-btn">
+                                        <input type="date" class="form-control marginl10" id="endDate" placeholder="To">
+                                    </div>
                                 </div>
-                            </div><div class="col-md-9">
-                                <h3 class="disp-inblk">Selected Suppliers</h3>
-                                <div class="form-group-lg marginl10"><label><a href="javascript:void(0)" class="block-btn btn-mbl" data-toggle="modal" data-target="#tag-suppliers">Tag Suppliers</a></label></div>
-                                <div class="clear"></div>
-                                <div class="horizontal-form">
-                                    <div class="button-indicator">
-                                        <button type="button" class="btn btn-default block-btn"><strong>ABC Company Inc.</strong></button>
-                                    </div>
-                                    <div class="button-indicator">
-                                        <button type="button" class="btn btn-default block-btn"><strong>ABC Company Inc.</strong></button>
-                                    </div>
-                                    <div class="button-indicator">
-                                        <button type="button" class="btn btn-default block-btn"><strong>ABC Company Inc.</strong></button>
-                                    </div>
-                                    <div class="button-indicator">
-                                        <button type="button" class="btn btn-default block-btn"><strong>ABC Company Inc.</strong></button>
-                                    </div>
-                                    <div class="button-indicator">
-                                        <button type="button" class="btn btn-default block-btn"><strong>ABC Company Inc.</strong></button>
-                                    </div>
-                                    <div class="button-indicator">
-                                        <button type="button" class="btn btn-default block-btn"><strong>ABC Company Inc.</strong></button>
-                                    </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="jobTitle">Job Title</label>
+                                <select id="jobTitle" class="form-control">
+                                    <option>Job Title 1</option>
+                                    <option>Job Title 2</option>
+                                    <option>Job Title 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="clientReqowner1">Client Requisition Owner</label>
+                                <select id="clientReqowner1" class="form-control">
+                                    <option>Owner 1</option>
+                                    <option>Owner 2</option>
+                                    <option>Owner 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="mspReqowner2">MSP Requisition Owner</label>
+                                <select id="clientReqowner2" class="form-control">
+                                    <option>MSP Owner 1</option>
+                                    <option>MSP Owner 2</option>
+                                    <option>MSP Owner 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="orgHierarchy">Org Hierarchy</label>
+                                <input type="text" class="form-control" id="orgHierarchy" placeholder="Org Hierarchy">
+                            </div>
+                            <div class="form-group">
+                                <label for="workLocation1">Work Location</label>
+                                <select id="workLocation1" class="form-control">
+                                    <option>Location 1</option>
+                                    <option>Location 2</option>
+                                    <option>Location 3</option>
+                                </select>
+                            </div>
+                            <div class="button-container"><div class="text-right"><button type="submit" class="btn btn-default block-btn">Generate a Report</button></div></div>
+                            <div class="clear"></div>
+
+                            <div class="separator"></div>
+                            <div class="clear"></div>
+                            <div class="button-container"><div class="pull-left"><strong class="sub-heading">Stage Gate Report</strong></div><div class="pull-right"><a href="#" class="btn-link">Download</a></div></div>
+                            <div class="clear"></div>
+                            <ul class="nav nav-pills nav-justified">
+                                <li role="presentation" class="active"><a data-toggle="tab" href="#stg-all">All</a></li>
+                                <li role="presentation"><a data-toggle="tab" href="#stg-orgStructureEntity">Org Structure Entity</a></li>
+                                <li role="presentation"><a data-toggle="tab" href="#stg-clientReq">Client Req Owner</a></li>
+                                <li role="presentation"><a data-toggle="tab" href="#stg-mspReq">MSP Req Owner</a></li>
+                                <li role="presentation"><a data-toggle="tab" href="#stg-jobTitle">Job Title</a></li>
+                                <li role="presentation"><a data-toggle="tab" href="#stg-workLocation">Work Location</a></li>
+                            </ul>
+                            <div class="tab-content margint20">
+                                <!-- STG All -->
+                                <div id="stg-all" class="tab-pane fade in active">
+                                    <div class="clear"></div>
+                                    <div class="margint20" style="border:1px solid #c00;">STG - All Graph Container</div>
+                                </div>
+                                <!-- STG Org Structure Entity -->
+                                <div id="stg-orgStructureEntity" class="tab-pane fade">
+                                    <div class="clear"></div>
+                                    <div class="margint20" style="border:1px solid #c00;">STG - Org Structure Entity Container</div>
+                                </div>
+                                <!-- STG Client Req Owner -->
+                                <div id="stg-clientReq" class="tab-pane fade">
+                                    <div class="clear"></div>
+                                    <div class="margint20" style="border:1px solid #c00;">STG - Client Req Owner Container</div>
+                                </div>
+                                <!-- STG MSP Req Owner -->
+                                <div id="stg-mspReq" class="tab-pane fade">
+                                    <div class="clear"></div>
+                                    <div class="margint20" style="border:1px solid #c00;">STG - MSP Requisition Owner Container</div>
+                                </div>
+                                <!-- STG Job Title -->
+                                <div id="stg-jobTitle" class="tab-pane fade">
+                                    <div class="clear"></div>
+                                    <div class="margint20" style="border:1px solid #c00;">STG - Job Title Container</div>
+                                </div>
+                                <!-- STG Work Location -->
+                                <div id="stg-workLocation" class="tab-pane fade">
+                                    <div class="clear"></div>
+                                    <div class="margint20" style="border:1px solid #c00;">STG - Work Location Container</div>
                                 </div>
                             </div>
                         </div>
                         <!-- Supplier Score Card -->
                         <div id="suppScoreCard" class="tab-pane fade">
                             <div class="form-group">
-                                <label for="businessUnit">Business Unit</label>
-                                <select id="businessUnit" class="form-control">
-                                    <option>Business Unit 1</option>
-                                    <option>Business Unit 2</option>
+                                <label for="client">Client*</label>
+                                <select id="client" class="form-control">
+                                    <option>Client 1</option>
+                                    <option>Client 2</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="division">Division</label>
-                                <select id="division" class="form-control">
-                                    <option>Division 1</option>
-                                    <option>Division 2</option>
+                                <label for="supplier">Supplier*</label>
+                                <select id="supplier" class="form-control">
+                                    <option>Supplier 1</option>
+                                    <option>Supplier 2</option>
+                                    <option>Supplier 3</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="department">Department</label>
-                                <select id="department" class="form-control">
-                                    <option>Department</option>
+                                <label for="startDate">Date Range</label>
+                                <div class="input-group">
+                                    <input type="date" class="form-control" id="startDate" placeholder="From">
+                                    <div class="input-group-btn">
+                                        <input type="date" class="form-control marginl10" id="endDate" placeholder="To">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="jobTitle">Job Title</label>
+                                <select id="jobTitle" class="form-control">
+                                    <option>Job Title 1</option>
+                                    <option>Job Title 2</option>
+                                    <option>Job Title 3</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="costCenter">Cost Center</label>
-                                <select id="costCenter" class="form-control">
-                                    <option>Cost Center</option>
+                                <label for="reqOrgHierarchy">Req Org Hierarchy</label>
+                                <input type="text" class="form-control" id="reqOrgHierarchy" placeholder="Req Org Hierarchy">
+                            </div>
+                            <div class="form-group">
+                                <label for="jobLocation">Job Location</label>
+                                <select id="jobLocation" class="form-control">
+                                    <option>Location 1</option>
+                                    <option>Location 2</option>
+                                    <option>Location 3</option>
                                 </select>
                             </div>
-                            <div class="button-container"><div class="text-right"><button type="button" class="btn btn-default block-btn">Generate Hierarchy</button></div></div>
+                            <div class="button-container"><div class="text-right"><button type="submit" class="btn btn-default block-btn">Generate a Report</button></div></div>
                             <div class="clear"></div>
-                            <h3>Subgroups</h3>
-                            <div class="table-responsive">
-                                <table class="table table-striped table-hover">
-                                    <thead>
-                                        <tr>
-                                            <th><a href="#" class="caret-up">Name</a></th>
-                                            <th><a href="#" class="caret-down">Approver</a></th>
-                                            <th><a href="#">Backup Approver</a></th>
-                                            <th><a href="#">Range</a></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>Division 1</td>
-                                            <td>John Mark</td>
-                                            <td>John Kennedy</td>
-                                            <td>Up to $45</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Division 1</td>
-                                            <td>John Mark</td>
-                                            <td>John Kennedy</td>
-                                            <td>Up to $45</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Division 1</td>
-                                            <td>John Mark</td>
-                                            <td>John Kennedy</td>
-                                            <td>Up to $45</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Division 1</td>
-                                            <td>John Mark</td>
-                                            <td>John Kennedy</td>
-                                            <td>Up to $45</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+
+                            <div class="separator"></div>
+                            <div class="clear"></div>
+                            <div class="button-container"><div class="pull-left"><strong class="sub-heading">Supplier Scorecard</strong></div><div class="pull-right"><a href="#" class="btn-link">Download</a></div></div>
+                            <div class="clear"></div>
+                            <div class="margint20" style="border:1px solid #c00;">Supplier Scorecard Data Container</div>
                         </div>
                     </div>
                 </div>
                 <div class="requisition-mbl-container">
                     <!-- Arrow Buttons -->
-                    <div id="carousel-example-generic" class="carousel" data-ride="carousel" data-interval="false">
-                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <div id="carousel-one" class="carousel" data-ride="carousel" data-interval="false">
+                        <a class="left carousel-control" href="#carousel-one" role="button" data-slide="prev">
                             <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                        <a class="right carousel-control" href="#carousel-one" role="button" data-slide="next">
                             <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
                             <span class="sr-only">Next</span>
                         </a>
 
                         <div class="carousel-inner">
                             <!-- Funnel -->
-                            <div class="item active">
+                            <div class="item active" id="funnel">
                                 <h2>Funnel</h2>
                                 <div class="horizontal-form margint20">
                                     <div class="form-group">
@@ -408,8 +461,8 @@
                                 </div>
 
                             </div>
-                            <!-- Bill Rate -->
-                            <div class="item">
+                            <!-- Program Time to Fill -->
+                            <div class="item" id="ptf">
                                 <h2>Program Time to Fill</h2>
                                 <div class="horizontal-form margint20">
                                     <div class="form-group">
@@ -459,118 +512,237 @@
 
                                     <div class="button-container"><div class="pull-left"><strong class="sub-heading">Time to Fill Report</strong></div><div class="pull-right"><a href="#" class="btn-link">Download</a></div></div>
                                     <div class="clear"></div>
-                                    <div class="text-center marginb10"><strong>Total Req ------------------</strong>60</div>
+                                </div>
+                            </div>
+                            <!-- Req Stage Gate -->
+                            <div class="item" id="stage-gate">
+                                <h2>Req Stage Gate</h2>
+                                <div class="horizontal-form margint20">
+                                    <div class="form-group">
+                                        <label for="client1">Client*</label>
+                                        <select id="client1" class="form-control">
+                                            <option>Client 1</option>
+                                            <option>Client 2</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="startDate1">Date Range</label>
+                                        <input type="date" class="form-control" id="startDate1" placeholder="From">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="date" class="form-control" id="endDate" placeholder="To">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="jobTitle">Job Title</label>
+                                        <select id="jobTitle" class="form-control">
+                                            <option>Job Title 1</option>
+                                            <option>Job Title 2</option>
+                                            <option>Job Title 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="clientReqowner3">Client Requisition Owner</label>
+                                        <select id="clientReqowner3" class="form-control">
+                                            <option>Req Owner 1</option>
+                                            <option>Req Owner 2</option>
+                                            <option>Req Owner 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="mspReqowner3">MSP Requisition Owner</label>
+                                        <select id="mspReqowner3" class="form-control">
+                                            <option>MSP Req Owner 1</option>
+                                            <option>MSP Req Owner 2</option>
+                                            <option>MSP Req Owner 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="orgHierarchy1">Org Hierarchy</label>
+                                        <input type="text" class="form-control" id="orgHierarchy1" placeholder="Org Hierarchy">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="workLocation3">Work Location</label>
+                                        <select id="workLocation3" class="form-control">
+                                            <option>Location 1</option>
+                                            <option>Location 2</option>
+                                            <option>Location 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="button-container"><div class="text-right"><button type="submit" class="btn btn-default block-btn">Generate a Report</button></div></div>
+                                    <div class="clear"></div>
+
+                                    <div class="button-container"><div class="pull-left"><strong class="sub-heading">Stage Gate Report</strong></div><div class="pull-right"><a href="#" class="btn-link">Download</a></div></div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <!-- Supplier Score Card -->
+                            <div class="item" id="score-card">
+                                <h2>Supplier Score Card</h2>
+                                <div class="horizontal-form margint20">
+                                    <div class="form-group">
+                                        <label for="client">Client*</label>
+                                        <select id="client" class="form-control">
+                                            <option>Client 1</option>
+                                            <option>Client 2</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="client">Supplier*</label>
+                                        <select id="client" class="form-control">
+                                            <option>Supplier 1</option>
+                                            <option>Supplier 2</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="startDate">Date Range</label>
+                                        <input type="date" class="form-control" id="startDate" placeholder="From">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="date" class="form-control" id="endDate" placeholder="To">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="jobTitle">Job Title</label>
+                                        <select id="jobTitle" class="form-control">
+                                            <option>Job Title 1</option>
+                                            <option>Job Title 2</option>
+                                            <option>Job Title 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="orgHierarchy">Req Org Hierarchy</label>
+                                        <input type="text" class="form-control" id="orgHierarchy" placeholder="Req Org Hierarchy">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="reqStatus">Job Location</label>
+                                        <select id="reqStatus" class="form-control">
+                                            <option>Location 1</option>
+                                            <option>Location 2</option>
+                                            <option>Location 3</option>
+                                        </select>
+                                    </div>
+                                    <div class="button-container"><div class="text-right"><button type="submit" class="btn btn-default block-btn">Generate a Report</button></div></div>
+                                    <div class="clear"></div>
+
+                                    <div class="button-container"><div class="pull-left"><strong class="sub-heading">Supplier Scorecard</strong></div><div class="pull-right"><a href="#" class="btn-link">Download</a></div></div>
+                                    <div class="clear"></div>
+                                    <div class="text-center marginb10"><strong>Program Participation</strong></div>
                                     <div class="separator"></div>
-                                    <div class="margint20" style="border:1px solid #c00;">Funnel Graph Data Container</div>
-                                </div>
-                            </div>
-                            <!-- Suppliers -->
-                            <div class="item ">
-                                <h2>Suppliers</h2>
-                                <h3 class="margint20">Search Suppliers</h3>
-                                <div class="form-group">
-                                    <label for="supplier">Supplier Name</label>
-                                    <input type="text" class="form-control" id="supplier" placeholder="Supplier Name">
-                                </div>
-                                <h3 class="margint20">Selected Suppliers</h3>
-                                <div><a href="javascript:void(0)" class="block-btn btn-mbl" data-toggle="modal" data-target="#tag-suppliers">Tag Suppliers</a></div>
-                                <div class="button-indicator">
-                                    <button type="button" class="btn btn-default block-btn"><strong>ABC Company Inc.</strong></button>
-                                </div>
-                                <div class="button-indicator">
-                                    <button type="button" class="btn btn-default block-btn"><strong>ABC Company Inc.</strong></button>
-                                </div>
-                                <div class="button-indicator">
-                                    <button type="button" class="btn btn-default block-btn"><strong>ABC Company Inc.</strong></button>
-                                </div>
-                                <div class="button-indicator">
-                                    <button type="button" class="btn btn-default block-btn"><strong>ABC Company Inc.</strong></button>
-                                </div>
-                            </div>
-                            <!-- Client Hierarchy -->
-                            <div class="item">
-                                <h2>Client Hierarchy</h2>
-                                <div class="margint20"></div>
-                                <div class="form-group">
-                                    <label for="businessUnit">Business Unit</label>
-                                    <select id="businessUnit" class="form-control">
-                                        <option>Business Unit 1</option>
-                                        <option>Business Unit 2</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="division">Division</label>
-                                    <select id="division" class="form-control">
-                                        <option>Division 1</option>
-                                        <option>Division 2</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="department">Department</label>
-                                    <select id="department" class="form-control">
-                                        <option>Department</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="costCenter">Cost Center</label>
-                                    <select id="costCenter" class="form-control">
-                                        <option>Cost Center</option>
-                                    </select>
-                                </div>
-                                <div class="button-container"><div class="text-right"><button type="button" class="btn btn-default block-btn">Generate Hierarchy</button></div></div>
-                                <div class="clear"></div>
-                                <h3>Subgroups</h3>
-                                <div class="mbl-container">
-                                    <div class="mbl-block">
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Name</label><p class="form-control-static">Division 1</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Approver</label><p class="form-control-static">John Kennedy</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Backup Approver</label><p class="form-control-static">Jack Daniels</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Range</label><p class="form-control-static">Up to $45</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mbl-container">
-                                    <div class="mbl-block">
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Name</label><p class="form-control-static">Division 1</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Approver</label><p class="form-control-static">John Kennedy</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Backup Approver</label><p class="form-control-static">Jack Daniels</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Range</label><p class="form-control-static">Up to $45</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="mbl-container">
-                                    <div class="mbl-block">
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Name</label><p class="form-control-static">Division 1</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Approver</label><p class="form-control-static">John Kennedy</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Backup Approver</label><p class="form-control-static">Jack Daniels</p>
-                                        </div>
-                                        <div class="form-group-lg">
-                                            <label class="col-lg-10">Range</label><p class="form-control-static">Up to $45</p>
-                                        </div>
-                                    </div>
+                                    <div class="margint20" style="border:1px solid #c00;">Supplier Scorecard Data Container</div>
                                 </div>
                             </div>
                         </div>
                         <!-- Controls -->
+                    </div>
+
+                    <div id="carousel-two" class="carousel hide" data-ride="carousel" data-interval="false">
+                        <a class="left carousel-control" href="#carousel-two" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-two" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+
+                        <div class="carousel-inner">
+                            <!-- All Data Container -->
+                            <div class="item active">
+                                <h2>All</h2>
+                                <div class="horizontal-form margint20">
+                                    <div class="margint20" style="border:1px solid #c00;">All Data Container</div>
+                                </div>
+                            </div>
+                            <!-- Job Title Container -->
+                            <div class="item">
+                                <h2>Job Title</h2>
+                                <div class="horizontal-form margint20">
+                                    <div class="margint20" style="border:1px solid #c00;">Job Title Data Container</div>
+                                </div>
+                            </div>
+                            <!-- Client Req Owner Container -->
+                            <div class="item">
+                                <h2>Client Req Owner</h2>
+                                <div class="horizontal-form margint20">
+                                    <div class="margint20" style="border:1px solid #c00;">Client Req Owner Data Container</div>
+                                </div>
+                            </div>
+                            <!-- MSP Req Owner Container -->
+                            <div class="item">
+                                <h2>MSP Req Owner</h2>
+                                <div class="horizontal-form margint20">
+                                    <div class="margint20" style="border:1px solid #c00;">MSP Req Owner Data Container</div>
+                                </div>
+                            </div>
+                            <!-- Org Hierarchy Container -->
+                            <div class="item">
+                                <h2>Org Hierarchy</h2>
+                                <div class="horizontal-form margint20">
+                                    <div class="margint20" style="border:1px solid #c00;">Org Hierarchy Data Container</div>
+                                </div>
+                            </div>
+                            <!-- Work Location Container -->
+                            <div class="item">
+                                <h2>Work Location</h2>
+                                <div class="horizontal-form margint20">
+                                    <div class="margint20" style="border:1px solid #c00;">Work Location Data Container</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="carousel-three" class="carousel hide" data-ride="carousel" data-interval="false">
+                        <a class="left carousel-control" href="#carousel-three" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-three" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+
+                        <div class="carousel-inner">
+                            <!-- All Data Container -->
+                            <div class="item active">
+                                <h2>All</h2>
+                                <div class="horizontal-form margint20">
+                                    <div class="margint20" style="border:1px solid #c00;">All Data Container</div>
+                                </div>
+                            </div>
+                            <!-- Org Structure Entity Container -->
+                            <div class="item">
+                                <h2>Org Structure Entity</h2>
+                                <div class="horizontal-form margint20">
+                                    <div class="margint20" style="border:1px solid #c00;">Org Structure Entity Data Container</div>
+                                </div>
+                            </div>
+                            <!-- Client Req Owner Container -->
+                            <div class="item">
+                                <h2>Client Req Owner</h2>
+                                <div class="horizontal-form margint20">
+                                    <div class="margint20" style="border:1px solid #c00;">Client Req Owner Data Container</div>
+                                </div>
+                            </div>
+                            <!-- MSP Req Owner Container -->
+                            <div class="item">
+                                <h2>MSP Req Owner</h2>
+                                <div class="horizontal-form margint20">
+                                    <div class="margint20" style="border:1px solid #c00;">MSP Req Owner Data Container</div>
+                                </div>
+                            </div>
+                            <!-- Job Title Container -->
+                            <div class="item">
+                                <h2>Job Title</h2>
+                                <div class="horizontal-form margint20">
+                                    <div class="margint20" style="border:1px solid #c00;">Job Title Data Container</div>
+                                </div>
+                            </div>
+                            <!-- Work Location Container -->
+                            <div class="item">
+                                <h2>Work Location</h2>
+                                <div class="horizontal-form margint20">
+                                    <div class="margint20" style="border:1px solid #c00;">Work Location Data Container</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </form>
