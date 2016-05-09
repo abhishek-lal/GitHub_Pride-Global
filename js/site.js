@@ -68,6 +68,10 @@
         }
     });
 
+    $('.date-pick').datepicker({
+        format: "dd/mm/yyyy"
+    });
+    
     //$('.button-indicator .btn').click(function () {
     //    $(this).toggleClass('btn-default btn-clearbg');
     //});
