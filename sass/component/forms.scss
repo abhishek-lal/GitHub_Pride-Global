@@ -493,31 +493,44 @@
 	.badge-label{font-size: $default-font-size; color: $orange; font-weight:$bold-font;}
 	
 	.badge-large {
-			display:inline-block;
-			padding: 40px 45px;
+			//display:inline-block;
+			//padding: 40px 45px;
 			color: $orange;
 			background-color: $badge-bg;
 			border-radius: 50%;
 			font-size: $badge-view-font-size;
 			font-weight:$bold-font;
+			width:100px;
+			height:100px;
+			line-height:100px;
+			text-align:center;
+			display:inline-table;
 			}
 	.badge-medium{
-			display:inline-block;
+			display:inline-table;
 			color: $orange;
 			background-color: $badge-bg;
 			font-size: $badge-view-font-size;
-			padding: 22px 27px;
+			//padding: 22px 27px;
 			border-radius: 50%;
 			font-weight:$bold-font;
+			height: 80px;
+			width: 80px;
+			line-height: 80px;
+			text-align: center;
 		  }
 	.badge-small{
-			display:inline-block;
+			display:inline-table;
 			color: $orange;
 			background-color: $badge-bg;
 			font-size: $badge-view-font-size;
-			padding: 10px 22px;
+			//padding: 10px 22px;
 			border-radius: 50%;
 			font-weight:bold;
+			height:65px;
+			width:65px;
+			text-align:center;
+			line-height:65px;
 		  }
 	}
 
