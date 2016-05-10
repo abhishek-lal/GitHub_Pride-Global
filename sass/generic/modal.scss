@@ -104,6 +104,33 @@
 					font-size: 1.3em;
 					margin: 0 0 0 25px;
 				}
+				
+				.form-horizontal .form-group label {
+					padding-top:6px;
+				}
+				#addNewTag+.input-group-btn{
+					background:$orange;
+					font-size:$plus-icon;
+					text-align:center;
+					width:1%;
+					&:hover{
+							   background-color: $default-button-hover-bg;
+							   }
+						   button{
+							   border:0;
+							   background:transparent;
+							   color:$white;
+							   top:2px;
+							   &:focus{
+										  outline:none !important;
+										  }
+									  &:before{
+										  right:-1px;
+										  position:relative;
+										  }
+									  }
+	}
+
         }
 
         .modal-footer {

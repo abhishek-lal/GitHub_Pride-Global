@@ -8,6 +8,7 @@
 		 border-radius:0;
 		 color:$white;
 		 text-transform:capitalize;
+		 white-space:nowrap;
 		 &:hover{background:$tab-orange;}
 		 &:focus{background:$default-button-hover-bg;}
 	 }
