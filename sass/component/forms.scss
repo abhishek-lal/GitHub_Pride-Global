@@ -277,6 +277,17 @@
 			
 			height:56px;	
 		}
+		.btn-disable{
+			width:265px;
+			position:relative;
+			background-color:transparent !important;
+			border:solid 2px $disable-border !important;
+			color: $grey-color !important;
+			padding:4px 8px !important;
+			text-align:left !important;	
+			height:56px;
+			cursor:default;	
+		}
 	}
 
     // table css
@@ -649,7 +660,7 @@
 		.button-indicator{
 			.block-btn{margin: 10px 0;}
 			display:block;
-			.btn-default,.btn-clearbg{width:100%;}
+			.btn-default,.btn-clearbg,.btn-disable{width:100%;}
 			strong,span{width:85%;}
 		}
 		.mbl-container button img{
