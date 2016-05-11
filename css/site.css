@@ -1269,7 +1269,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .button-indicator .btn-disable {
     width: 265px;
     position: relative;
-    background-color: transparent !important;
+    background-color: #cdcdcd !important;
     border: solid 2px #cdcdcd !important;
     color: #5f5f5f !important;
     padding: 4px 8px !important;
