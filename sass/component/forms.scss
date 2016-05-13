@@ -29,6 +29,7 @@
     .split-width{
     	input{max-width:86px !important; min-width:30px !important; margin-right:10px;
     		  }
+		.width-max{max-width:120px !important;}
        select{max-width:100px !important; min-width:30px !important;
     			   }
        .split-width-select{margin-right:10px;} 
@@ -163,7 +164,7 @@
     .form-group {
         padding-left: 0;
     }
-	.requisition-mbl-container{display:none;}
+	.requisition-mbl-container{display:none !important;}
     .button-container {
         //text-align: right;
         margin: 10px 0;
@@ -570,7 +571,7 @@
 	   .requisition-dtop-container{ 
 								display:none;
 								}
-	   .requisition-mbl-container{display:block;}
+	   .requisition-mbl-container{display:block !important;}
 	   .mbl-resume{
 		   position: relative;
 		   a{
@@ -641,6 +642,7 @@
     		}
     	.split-width{
     	input{width:100%; min-width:50px !important; max-width:700px !important;}
+			 .width-max{max-width:100% !important;}
     	select{ width:150px !important; min-width:50px !important;}
     	.split-width-select{margin-right:10px;}
 		.split-width-input{ width:auto;}

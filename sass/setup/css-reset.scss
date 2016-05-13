@@ -24,8 +24,11 @@ h1 {margin: 0 0 20px; font-size:$heading-font-size; font-weight:500;}
 .margint20 {margin-top: 20px;}
 .marginl10{margin-left:10px;}
 .marginb10{margin-bottom:10px;}
-h4{		@include font-face-default();
-	font-size:$sub-heading-font-size;}
+
+h4{		
+	@include font-face-default();
+	font-size:$sub-heading-font-size;
+	}
 
 .clear {
     clear: both;

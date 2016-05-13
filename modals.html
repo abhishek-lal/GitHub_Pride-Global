@@ -9,7 +9,6 @@
     <meta name="author" content="">
     <link rel="icon" href="img/favicon.ico">
     <title>Launch - Pride Global</title>
-
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
@@ -22,7 +21,6 @@
       <script src="js/respond.min.js"></script>
     <![endif]-->
 </head>
-
 <body>
     <!-- Global Header -->
     <header>
@@ -89,23 +87,164 @@
     <div class="container">
         <h1>All Page Modals</h1>
         <div class="form-container">
-            <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#approval-chain">1) #324 - Approval Chain</a></div>
-            <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#reason-closing">2) #202 - Reason for Closing</a></div>
-            <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#user-info">3) #1709 - View user info modal</a></div>
-            <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#areyousure">4) #1355 - Are you sure modal</a></div>
-            <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#submitCand-billRate">5) #1357 - Submit candidate bill rate modal</a></div>
-            <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#schedule-interview">6) #1361 - Schedule Interview Modal</a></div>
-            <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#recruiting-funnel">7) #1351 - Recruiting Funnel Modal</a></div>
-            <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#timeline">8) #1350 - Timeline Modal</a></div>
-            <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#tag-suppliers">9) #1371 - Client supplier tags modal</a></div>
-            <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#view-details">10) #1375 - Audit details modal Create</a></div>
-            <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#view-updates">11) #1714 - Audit details modal Edit</a></div>
-
-            <br /><br />
-            <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#filter-users">Example 1 for reuse</a></div>
-            <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#msp-users">Example 2 for reuse</a></div>
-            <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#supplier-users">Example 3 for reuse</a></div>
-
+            <form class="form-inline">
+                <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#approval-chain">1) #324 - Approval Chain</a></div>
+                <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#reason-closing">2) #202 - Reason for Closing</a></div>
+                <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#user-info">3) #1709 - View user info modal</a></div>
+                <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#areyousure">4) #1355 - Are you sure modal</a></div>
+                <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#submitCand-billRate">5) #1357 - Submit candidate bill rate modal</a></div>
+                <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#schedule-interview">6) #1361 - Schedule Interview Modal</a></div>
+                <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#recruiting-funnel">7) #1351 - Recruiting Funnel Modal</a></div>
+                <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#timeline">8) #1350 - Timeline Modal</a></div>
+                <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#tag-suppliers">9) #1371 - Client supplier tags modal</a></div>
+                <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#view-details">10) #1375 - Audit details modal Create</a></div>
+                <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#view-updates">11) #1714 - Audit details modal Edit</a></div>
+                <br /><br />
+                <div class="requisition-dtop-container">
+                    <!--Filter begins (desktop version)-->
+                    <div class="button-container"><div class="text-right"><a href="#filter-users" data-toggle="collapse" class="block-btn btn-mbl">Filter<span class="caret"></span></a></div></div>
+                    <div class="clear"></div>
+                    <div class="collapse" id="filter-users">
+                        <div class="well">
+                            <div class="form-group">
+                                <label for="jobTitle">Job Title</label>
+                                <input type="text" class="form-control" id="jobTitle" placeholder="Job Title">
+                            </div>
+                            <div class="form-group">
+                                <label for="jobLocation">Job Location</label>
+                                <select id="jobLocation" class="form-control">
+                                    <option>Location 1</option>
+                                    <option>Location 2</option>
+                                    <option>Location 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="dateAdd">Date Added</label>
+                                <input type="text" class="form-control" id="dateAdd" placeholder="Date Added">
+                            </div>
+                            <div class="form-group">
+                                <label for="phNumber">Phone Number</label>
+                                <input type="tel" class="form-control" id="phNumber" placeholder="Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <label for="userType">Clients</label>
+                                <select id="userType" class="form-control">
+                                    <option>Client 1</option>
+                                    <option>Client 2</option>
+                                    <option>Client 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="orgStruc">Organisation Structure</label>
+                                <input type="text" class="form-control" id="orgStruc" placeholder="Organisation Structure">
+                            </div>
+                            <div class="form-group">
+                                <label for="dateCreated">Date Created</label>
+                                <input type="text" class="form-control date-pick" id="dateCreated" placeholder="Date Created">
+                            </div>
+                            <div class="form-group">
+                                <label for="reqID">Requisition ID</label>
+                                <input type="text" class="form-control" id="reqID" placeholder="Requisition ID">
+                            </div>
+                            <div class="form-group">
+                                <label for="reqStatus">Requisition Status</label>
+                                <select id="reqStatus" class="form-control">
+                                    <option>Requisition Status 1</option>
+                                    <option>Requisition Status 2</option>
+                                    <option>Requisition Status 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="hiringMgr">Hiring Manager</label>
+                                <select id="hiringMgr" class="form-control">
+                                    <option>Hiring Manager 1</option>
+                                    <option>Hiring Manager 2</option>
+                                    <option>Hiring Manager 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="mspOwner">MSP Owner</label>
+                                <select id="mspOwner" class="form-control">
+                                    <option>MSP Owner 1</option>
+                                    <option>MSP Owner 2</option>
+                                    <option>MSP Owner 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="clientId">Client ID</label>
+                                <input type="text" class="form-control" id="clientId" placeholder="Client ID">
+                            </div>
+                            <div class="form-group">
+                                <label for="clientName">Client Name</label>
+                                <input type="text" class="form-control" id="clientName" placeholder="Client Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="supplierId">Supplier ID</label>
+                                <input type="text" class="form-control" id="supplierId" placeholder="Supplier ID">
+                            </div>
+                            <div class="form-group">
+                                <label for="supplierName">Supplier Name</label>
+                                <input type="text" class="form-control" id="supplierName" placeholder="Supplier Name">
+                            </div>
+                            <div class="form-group">
+                                <label for="clientLists">Client Lists</label>
+                                <select id="clientLists" class="form-control">
+                                    <option>Client 1</option>
+                                    <option>Client 2</option>
+                                    <option>Client 3</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company</label>
+                                <input type="text" class="form-control" id="company" placeholder="Company">
+                            </div>
+                            <div class="form-group">
+                                <label for="userType">User Type</label>
+                                <select id="userType" class="form-control">
+                                    <option>MSP</option>
+                                    <option>Client</option>
+                                    <option>Supplier</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="userId">User Id</label>
+                                <input type="text" class="form-control" id="userId" placeholder="User ID">
+                            </div>
+                            <div class="form-group modal-radio">
+                                <label for="actStatus">Active Status</label>
+                                <div class="button-container">
+                                    <div class="radio radio-primary">
+                                        <input type="radio" id="radio1" name="optradio" checked><label for="radio1">Active</label>
+                                    </div>
+                                    <div class="radio radio-primary">
+                                        <input type="radio" id="radio2" name="optradio"><label for="radio2">Inactive</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="text-right"><button type="reset" class="btn btn-link">Clear All</button></div>
+                        </div>
+                    </div>
+                    <!--Filter ends (desktop version)-->
+                </div>
+                <div class="requisition-mbl-container">
+                    <!--Filter begins (mobile version)-->
+                    <div><a href="javascript:void(0)" class="block-btn btn-mbl" data-toggle="modal" data-target="#filter-users-mbl">Filter<span class="caret"></span></a></div>
+                    <div class="clear"></div>
+                    <!--Filter ends (mobile version)-->
+                </div>
+                <!--<div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#filter-users">Example 1 for reuse</a></div>-->
+                <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#msp-users">Example 2 for reuse</a></div>
+                <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#supplier-users">Example 3 for reuse</a></div>
+            </form>
         </div>
     </div>
     <!-- /.container -->
@@ -495,7 +634,6 @@
                         <div class="form-group">
                             <label>Are you sure you want to perform this action?</label>
                         </div>
-
                     </form>
                 </div>
                 <div class="modal-footer">
@@ -572,7 +710,7 @@
                             <label for="date">Times when I am available (Date/Time):</label>
                             <div class="input-group">
                                 <span class="input-group-addon">1</span>
-                                <input type="date" class="form-control" id="date" placeholder="Date">
+                                <input type="text" class="form-control date-pick width-max" id="date" placeholder="Date">
                                 <div class="input-group-btn">
                                     <select id="location" class="form-control">
                                         <option>1:00 PM</option>
@@ -585,7 +723,7 @@
                             <div class="clear"></div>
                             <div class="input-group margint20">
                                 <span class="input-group-addon">2</span>
-                                <input type="date" class="form-control" id="date" placeholder="Date">
+                                <input type="text" class="form-control date-pick width-max" id="date" placeholder="Date">
                                 <div class="input-group-btn">
                                     <select id="location" class="form-control">
                                         <option>1:00 PM</option>
@@ -598,7 +736,7 @@
                             <div class="clear"></div>
                             <div class="input-group margint20">
                                 <span class="input-group-addon">3</span>
-                                <input type="date" class="form-control" id="date" placeholder="Date">
+                                <input type="text" class="form-control date-pick width-max" id="date" placeholder="Date">
                                 <div class="input-group-btn">
                                     <select id="location" class="form-control">
                                         <option>1:00 PM</option>
@@ -609,7 +747,6 @@
                                 </div>
                             </div>
                         </div>
-
                         <div class="clear"></div>
                     </form>
                 </div>
@@ -700,7 +837,8 @@
                                 <li></li>
                                 <li><div class="oval"></div><strong>Dec 13th</strong><span>Created by Lauren Koscielny</span></li>
                                 <li><div class="oval"></div><strong>Dec 13th</strong><span>Created by Lauren Koscielny</span></li>
-                                <li></li><li></li>
+                                <li></li>
+                                <li></li>
                                 <li><div class="oval"></div><strong>Dec 13th</strong><span>Created by Lauren Koscielny</span></li>
                                 <li><div class="oval"></div><strong>Dec 13th</strong><span>Created by Lauren Koscielny</span></li>
                             </ul>
@@ -721,9 +859,8 @@
             </div>
         </div>
     </div>
-
-    <!-- Modal Example code -->
-    <div class="modal fade" id="filter-users" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <!--Filter modal begins (mobile version)-->
+    <div class="modal fade" id="filter-users-mbl" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -733,29 +870,127 @@
                 <div class="modal-body">
                     <form class="form-inline">
                         <div class="form-group">
-                            <label for="company">Company</label>
-                            <input type="text" class="form-control" id="company" placeholder="Company">
+                            <label for="mbl-jobTitle">Job Title</label>
+                            <input type="text" class="form-control" id="mbl-jobTitle" placeholder="Job Title">
                         </div>
                         <div class="form-group">
-                            <label for="userType">User Type</label>
-                            <select id="userType" class="form-control">
+                            <label for="mbl-jobLocation">Job Location</label>
+                            <select id="mbl-jobLocation" class="form-control">
+                                <option>Location 1</option>
+                                <option>Location 2</option>
+                                <option>Location 3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mbl-firstName">First Name</label>
+                            <input type="text" class="form-control" id="mbl-firstName" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="mbl-lastName">Last Name</label>
+                            <input type="text" class="form-control" id="mbl-lastName" placeholder="Last Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="mbl-dateAdd">Date Added</label>
+                            <input type="text" class="form-control" id="mbl-dateAdd" placeholder="Date Added">
+                        </div>
+                        <div class="form-group">
+                            <label for="mbl-phNumber">Phone Number</label>
+                            <input type="tel" class="form-control" id="mbl-phNumber" placeholder="Phone Number">
+                        </div>
+                        <div class="form-group">
+                            <label for="mbl-userType">Clients</label>
+                            <select id="mbl-userType" class="form-control">
+                                <option>Client 1</option>
+                                <option>Client 2</option>
+                                <option>Client 3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mbl-orgStruc">Organisation Structure</label>
+                            <input type="text" class="form-control" id="mbl-orgStruc" placeholder="Organisation Structure">
+                        </div>
+                        <div class="form-group">
+                            <label for="mbl-dateCreated">Date Created</label>
+                            <input type="text" class="form-control date-pick" id="mbl-dateCreated" placeholder="Date Created">
+                        </div>
+                        <div class="form-group">
+                            <label for="mbl-reqID">Requisition ID</label>
+                            <input type="text" class="form-control" id="mbl-reqID" placeholder="Requisition ID">
+                        </div>
+                        <div class="form-group">
+                            <label for="mbl-reqStatus">Requisition Status</label>
+                            <select id="mbl-reqStatus" class="form-control">
+                                <option>Requisition Status 1</option>
+                                <option>Requisition Status 2</option>
+                                <option>Requisition Status 3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mbl-hiringMgr">Hiring Manager</label>
+                            <select id="mbl-hiringMgr" class="form-control">
+                                <option>Hiring Manager 1</option>
+                                <option>Hiring Manager 2</option>
+                                <option>Hiring Manager 3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mspOwner">MSP Owner</label>
+                            <select id="mspOwner" class="form-control">
+                                <option>MSP Owner 1</option>
+                                <option>MSP Owner 2</option>
+                                <option>MSP Owner 3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mbl-clientId">Client ID</label>
+                            <input type="text" class="form-control" id="mbl-clientId" placeholder="Client ID">
+                        </div>
+                        <div class="form-group">
+                            <label for="mbl-clientName">Client Name</label>
+                            <input type="text" class="form-control" id="mbl-clientName" placeholder="Client Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="mbl-supplierId">Supplier ID</label>
+                            <input type="text" class="form-control" id="mbl-supplierId" placeholder="Supplier ID">
+                        </div>
+                        <div class="form-group">
+                            <label for="mbl-supplierName">Supplier Name</label>
+                            <input type="text" class="form-control" id="mbl-supplierName" placeholder="Supplier Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="mbl-clientLists">Client Lists</label>
+                            <select id="mbl-clientLists" class="form-control">
+                                <option>Client 1</option>
+                                <option>Client 2</option>
+                                <option>Client 3</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mbl-company">Company</label>
+                            <input type="text" class="form-control" id="mbl-company" placeholder="Company">
+                        </div>
+                        <div class="form-group">
+                            <label for="mbl-userType">User Type</label>
+                            <select id="mbl-userType" class="form-control">
                                 <option>MSP</option>
                                 <option>Client</option>
                                 <option>Supplier</option>
                             </select>
                         </div>
-                        <div class="clear"></div>
                         <div class="form-group">
-                            <label for="firstName">First Name</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                            <label for="mbl-userId">User Id</label>
+                            <input type="text" class="form-control" id="mbl-userId" placeholder="User ID">
                         </div>
-                        <div class="form-group">
-                            <label for="lastName">Last Name</label>
-                            <input type="text" class="form-control" id="lastName" placeholder="Last Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="PreferredName">User Id</label>
-                            <input type="text" class="form-control" id="userId" placeholder="User ID">
+                        <div class="form-group modal-radio">
+                            <label for="mbl-actStatus">Active Status</label>
+                            <div class="button-container">
+                                <div class="radio radio-primary">
+                                    <input type="radio" id="radio3" name="optradio" checked><label for="radio3">Active</label>
+                                </div>
+                                <div class="radio radio-primary">
+                                    <input type="radio" id="radio4" name="optradio"><label for="radio4">Inactive</label>
+                                </div>
+                            </div>
                         </div>
                         <div class="clear"></div>
                         <!--<a href="#">Clear All</a>-->
@@ -763,11 +998,13 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary block-btn" data-dismiss="modal">Cancel</button><button type="submit" class="btn btn-default block-btn">Submit</button>
+                    <button type="submit" class="btn btn-default block-btn" data-dismiss="modal">Filter Results</button>
                 </div>
             </div>
         </div>
     </div>
+    <!--Filter modal ends (mobile version)-->
+    <!-- Modal Example code -->
     <div class="modal fade" id="msp-users" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-md" role="document">
             <div class="modal-content">
@@ -931,12 +1168,12 @@
             </div>
         </div>
     </div>
-
     <!-- /.Modal -->
     <script src="js/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/bs-datepicker.js"></script>
+    <script src="js/site.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
 </body>
