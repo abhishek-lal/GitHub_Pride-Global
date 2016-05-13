@@ -1072,6 +1072,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   max-width: 86px !important;
   min-width: 30px !important;
   margin-right: 10px; }
+.split-width .width-max {
+  max-width: 120px !important; }
 .split-width select {
   max-width: 100px !important;
   min-width: 30px !important; }
@@ -1168,7 +1170,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   padding-left: 0; }
 
 .requisition-mbl-container {
-  display: none; }
+  display: none !important; }
 
 .button-container {
   margin: 10px 0;
@@ -1557,7 +1559,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .requisition-dtop-container {
     display: none; }
   .requisition-mbl-container {
-    display: block; }
+    display: block !important; }
   .mbl-resume {
     position: relative; }
     .mbl-resume a {
@@ -1614,6 +1616,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 100%;
     min-width: 50px !important;
     max-width: 700px !important; }
+  .split-width .width-max {
+    max-width: 100% !important; }
   .split-width select {
     width: 150px !important;
     min-width: 50px !important; }
