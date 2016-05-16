@@ -111,7 +111,6 @@ input:focus:-moz-placeholder{
 		box-shadow: none;
 		.form-control { background-color: $filter-elements-bg !important;}
 		.btn-link {margin-right:0;}
-
 	}
 }
 .block-btn[aria-expanded="true"]{ 
@@ -120,3 +119,15 @@ input:focus:-moz-placeholder{
 	border-top:none;
     }
   }
+.multiselect-parent .btn-group .dropdown-multiselect{
+	width:100%;
+	.dropdown-toggle .btn .btn-default{width:100%; text-align:left;
+		.caret{float:right; margin-top:8px;}
+	}
+	ul.dropdown-menu .dropdown-menu-form{width:100%;
+	span.glyphicon-ok{background:$orange; color:$white;font-size:10px;padding:3px;}
+	}
+}
+
+
+
