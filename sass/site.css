@@ -224,6 +224,9 @@ navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:
   background-color: transparent;
   color: #ef5f47; }
 
+.dropdown-menu {
+  border-radius: 0; }
+
 .dropdown-menu > li > a {
   color: #5f5f5f; }
 
@@ -255,12 +258,16 @@ navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:
   margin: 9px 20px 0 0; }
 
 .message-control {
-  right: auto !important;
   max-height: 200px;
   overflow-y: auto;
   min-width: 220px !important; }
   .message-control li a {
-    white-space: normal !important; }
+    white-space: normal !important;
+    text-transform: capitalize; }
+  .message-control li:nth-of-type(odd) {
+    background-color: #fff; }
+  .message-control li:nth-of-type(even) {
+    background-color: #f2f2f2; }
 
 .navbar-toggle .icon-bar {
   height: 3px; }
@@ -290,6 +297,10 @@ navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:
       font-size: 1em; }
   .navbar-nav li a {
     padding: 3px 5px !important; } }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .navbar-nav {
+    font-size: 1.1em; } }
 
 @media (max-width: 767px) {
   body {
