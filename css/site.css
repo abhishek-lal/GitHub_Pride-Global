@@ -173,6 +173,10 @@ input:focus:-moz-placeholder {
       font-size: 10px;
       padding: 3px; }
 
+.full-height-blk {
+  display: block;
+  height: 100%; }
+
 /* GENERIC 
 ------------------------------------------- */
 .navbar {
