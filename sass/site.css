@@ -157,21 +157,39 @@ input:focus:-moz-placeholder {
   border-bottom: 4px dashed;
   border-top: none; }
 
-.multiselect-parent .btn-group .dropdown-multiselect {
+.multiselect-parent {
   width: 100%; }
-  .multiselect-parent .btn-group .dropdown-multiselect .dropdown-toggle .btn .btn-default {
-    width: 100%;
-    text-align: left; }
-    .multiselect-parent .btn-group .dropdown-multiselect .dropdown-toggle .btn .btn-default .caret {
+  .multiselect-parent .dropdown-toggle {
+    min-width: 200px;
+    text-align: left;
+    padding: 3px 6px;
+    text-transform: capitalize;
+    background-color: #f2f2f2 !important;
+    color: #5f5f5f;
+    height: 34px;
+    font-size: 14px; }
+    .multiselect-parent .dropdown-toggle .caret {
       float: right;
       margin-top: 8px; }
-  .multiselect-parent .btn-group .dropdown-multiselect ul.dropdown-menu .dropdown-menu-form {
+  .multiselect-parent ul.dropdown-menu {
     width: 100%; }
-    .multiselect-parent .btn-group .dropdown-multiselect ul.dropdown-menu .dropdown-menu-form span.glyphicon-ok {
+    .multiselect-parent ul.dropdown-menu span.glyphicon-ok, .multiselect-parent ul.dropdown-menu span.glyphicon-remove {
       background: #ef5f47;
       color: #fff;
       font-size: 10px;
-      padding: 3px; }
+      padding: 3px;
+      position: relative;
+      top: 0; }
+    .multiselect-parent ul.dropdown-menu span.glyphicon-remove {
+      background: #5f5f5f; }
+    .multiselect-parent ul.dropdown-menu a {
+      font-size: 1em; }
+    .multiselect-parent ul.dropdown-menu a:hover span.glyphicon-ok {
+      background: #fff;
+      color: #ef5f47; }
+    .multiselect-parent ul.dropdown-menu a:hover span.glyphicon-remove {
+      background: #fff;
+      color: #5f5f5f; }
 
 .full-height-blk {
   display: block;
