@@ -74,7 +74,7 @@
                                 <li><a href="#">My Profile</a></li>
                                 <li><a href="#">Help</a></li>
                                 <li><a href="#">unsubscribe</a></li>
-                                <li><a href="#">Update Password</a></li>
+                                <li><a href="javascript:void(0)" data-toggle="modal" data-target="#update-password">Update Password</a></li>
                                 <li><a href="#">Sign Out</a></li>
                             </ul>
                         </li>
@@ -99,6 +99,7 @@
                 <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#tag-suppliers">9) #1371 - Client supplier tags modal</a></div>
                 <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#view-details">10) #1375 - Audit details modal Create</a></div>
                 <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#view-updates">11) #1714 - Audit details modal Edit</a></div>
+                <div class="text-left"><a href="javascript:void(0)" data-toggle="modal" data-target="#update-password">12) #2251 - Update password modal</a></div>
                 <br /><br />
                 <div class="requisition-dtop-container">
                     <!--Filter begins (desktop version)-->
@@ -1004,6 +1005,37 @@
         </div>
     </div>
     <!--Filter modal ends (mobile version)-->
+    <!-- Update Password Modal -->
+    <div class="modal fade" id="update-password" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title" id="myModalLabel">Update Password</h3>
+                </div>
+                <div class="modal-body">
+                    <form class="form-inline">
+                        <div class="form-group full-width">
+                            <label for="curPassword">Current Password*</label>
+                            <input type="password" class="form-control full-width" id="curPassword" placeholder="Current Password" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="newpassword">New Password*</label>
+                            <input type="password" class="form-control full-width" id="newpassword" placeholder="New Password" required>
+                        </div>
+                        <div class="form-group full-width">
+                            <label for="cnfpassword">Confirm Password*</label>
+                            <input type="password" class="form-control full-width" id="cnfpassword" placeholder="Confirm Password" required>
+                        </div>
+                        <div class="clear"></div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-default block-btn" data-dismiss="modal">Update Password</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Modal Example code -->
     <div class="modal fade" id="msp-users" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
         <div class="modal-dialog modal-md" role="document">
