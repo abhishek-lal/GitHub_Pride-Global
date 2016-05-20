@@ -1856,7 +1856,7 @@ html.login {
           margin-top: -25px;
           margin-bottom: 30px; }
           .cover-container .right-content .reg-form-wrapper .container .form-horizontal .form-control-static, .cover-container .right-content .update-pwd-wrapper .container .form-horizontal .form-control-static, .cover-container .right-content .forgot-pwd-container .container .form-horizontal .form-control-static {
-            font-size: 1.4em;
+            font-size: 1.2em;
             padding-top: 4px;
             padding-bottom: 0;
             min-height: auto; }
@@ -1867,6 +1867,8 @@ html.login {
             display: inline-block; }
       .cover-container .right-content .reg-form-wrapper .form-group, .cover-container .right-content .reg-form-wrapper .form-control, .cover-container .right-content .reg-form-wrapper .button-container .btn, .cover-container .right-content .update-pwd-wrapper .form-group, .cover-container .right-content .update-pwd-wrapper .form-control, .cover-container .right-content .update-pwd-wrapper .button-container .btn, .cover-container .right-content .forgot-pwd-container .form-group, .cover-container .right-content .forgot-pwd-container .form-control, .cover-container .right-content .forgot-pwd-container .button-container .btn {
         min-width: 100%; }
+      .cover-container .right-content .reg-form-wrapper .width-auto, .cover-container .right-content .update-pwd-wrapper .width-auto, .cover-container .right-content .forgot-pwd-container .width-auto {
+        width: auto !important; }
 
 @media (max-width: 992px) {
   .cover-container .update-pwd-container .left-content, .cover-container .forgot-pwd-container .left-content {
