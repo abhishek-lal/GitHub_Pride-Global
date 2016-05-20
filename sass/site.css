@@ -186,7 +186,8 @@ input:focus:-moz-placeholder {
       background: #5f5f5f; }
     .multiselect-parent ul.dropdown-menu a {
       font-size: 1em;
-      padding: 3px 10px; }
+      padding: 3px 10px;
+      cursor: default; }
     .multiselect-parent ul.dropdown-menu a:hover span.glyphicon-ok {
       background: #fff;
       color: #ef5f47; }
@@ -1287,31 +1288,39 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .button-indicator {
   display: inline-block; }
+  .button-indicator .tag {
+    padding: 10px 40px;
+    font-size: 1.3em;
+    display: table;
+    white-space: nowrap;
+    vertical-align: middle; }
+    .button-indicator .tag div {
+      display: table-cell;
+      vertical-align: middle; }
   .button-indicator .block-btn {
-    margin: 7px 5px; }
+    margin: 5px; }
   .button-indicator strong, .button-indicator span {
     width: 200px;
     overflow: hidden;
     text-overflow: ellipsis;
     text-transform: capitalize;
     float: left; }
-  .button-indicator .btn-default {
+  .button-indicator .tag-button {
     width: 265px;
     position: relative;
     padding: 6px 10px;
     text-align: left !important;
-    height: 56px; }
-  .button-indicator .btn-default:after, .button-indicator .btn-clearbg:after {
-    content: "\e083";
-    font-family: "glyphicons";
-    font-size: 2.3em;
+    height: 56px;
+    background-color: #ef5f47;
+    color: #fff; }
+  .button-indicator span.glyphicon-remove-sign, .button-indicator span.glyphicon-ok-sign {
     position: absolute;
-    right: 10px;
-    top: 2px; }
-  .button-indicator .btn-clearbg:after {
-    content: "\e084";
-    color: #ef5f47; }
-  .button-indicator .btn-clearbg {
+    font-size: 2.3em;
+    right: 2%;
+    top: 19%;
+    width: auto;
+    cursor: pointer; }
+  .button-indicator .tag-clearbg {
     width: 265px;
     position: relative;
     background-color: #fff !important;
@@ -1320,7 +1329,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding: 4px 8px !important;
     text-align: left !important;
     height: 56px; }
-  .button-indicator .btn-disable {
+  .button-indicator .tag-disable {
     width: 265px;
     position: relative;
     background-color: #cdcdcd !important;
@@ -1697,10 +1706,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     display: block; }
     .button-indicator .block-btn {
       margin: 10px 0; }
-    .button-indicator .btn-default, .button-indicator .btn-clearbg, .button-indicator .btn-disable {
+    .button-indicator .tag, .button-indicator .tag-clearbg, .button-indicator .tag-disable {
       width: 100%; }
     .button-indicator strong, .button-indicator span {
-      width: 85%; }
+      width: 78%; }
   .mbl-container button img {
     position: relative;
     top: -1px; }

@@ -128,7 +128,7 @@ input:focus:-moz-placeholder{
 	ul.dropdown-menu{width:100%;
 	span.glyphicon-ok,span.glyphicon-remove{background:$orange; color:$white;font-size:10px;padding:3px; position:relative; top:0;}
 	span.glyphicon-remove{background:$grey-color;}
-	a{font-size:$footer-font-size; padding:3px 10px;}
+	a{font-size:$footer-font-size; padding:3px 10px; cursor:default;}
 	a:hover span.glyphicon-ok{background:$white; color:$orange;} 
 	a:hover span.glyphicon-remove{background:$white; color:$grey-color;} 
 	}
