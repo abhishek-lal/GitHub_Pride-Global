@@ -160,7 +160,7 @@ input:focus:-moz-placeholder {
 .multiselect-parent {
   width: 100%; }
   .multiselect-parent .btn-group.open .dropdown-toggle {
-    box-shadow: none; }
+    box-shadow: none !important; }
   .multiselect-parent .dropdown-toggle {
     min-width: 200px;
     text-align: left;
@@ -659,6 +659,18 @@ input[type="checkbox"] .styled:checked + label::before, input[type="radio"] .sty
 
 input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styled:checked + label::after {
   color: #fff; }
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 2.3em FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0); }
+
+.fa-circle-o:before {
+  content: "\f10c"; }
 
 #resend-registration .modal-footer {
   margin-top: 50px; }
@@ -1313,13 +1325,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     height: 56px;
     background-color: #ef5f47;
     color: #fff; }
-  .button-indicator span.glyphicon-remove-sign, .button-indicator span.glyphicon-ok-sign {
+  .button-indicator span.glyphicon-remove-sign, .button-indicator span.glyphicon-ok-sign, .button-indicator span.fa-circle-o {
     position: absolute;
     font-size: 2.3em;
     right: 2%;
     top: 19%;
     width: auto;
     cursor: pointer; }
+  .button-indicator span.fa-circle-o {
+    font-size: 2.6em;
+    top: 15%;
+    width: 36px; }
   .button-indicator .tag-clearbg {
     width: 265px;
     position: relative;

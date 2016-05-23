@@ -266,7 +266,7 @@
 			background-color:$orange;
 			color:$white;
 		}
-		span.glyphicon-remove-sign, span.glyphicon-ok-sign{
+		span.glyphicon-remove-sign, span.glyphicon-ok-sign, span.fa-circle-o{
 				position:absolute;
 				font-size: 2.3em;
 				right:2%;
@@ -274,6 +274,7 @@
 				width:auto;
 				cursor:pointer;
 		}
+		span.fa-circle-o{font-size:2.6em; top:15%; width:36px;}
 		.tag-clearbg{
 			width:265px;
 			position:relative;

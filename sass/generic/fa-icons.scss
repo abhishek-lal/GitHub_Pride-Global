@@ -287,3 +287,16 @@ input[type="radio"] .styled:checked + label::before {
 input[type="checkbox"] .styled:checked + label::after,
 input[type="radio"] .styled:checked + label::after {
   color: #fff; }
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 2.3em FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+.fa-circle-o:before {
+  content: "\f10c";
+}
