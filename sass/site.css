@@ -199,6 +199,21 @@ input:focus:-moz-placeholder {
   display: block;
   height: 100%; }
 
+.no-shadow {
+  box-shadow: none !important; }
+
+@-moz-document url-prefix() {
+  .multiselect-parent .dropdown-toggle {
+    padding: 6px; }
+    .multiselect-parent .dropdown-toggle .caret {
+      margin-top: -12px; } }
+
+@media (max-width: 767px) {
+  .multiselect-parent {
+    width: 100% !important; }
+    .multiselect-parent .dropdown-toggle {
+      width: 100% !important; } }
+
 /* GENERIC 
 ------------------------------------------- */
 .navbar {
