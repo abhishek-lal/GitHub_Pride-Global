@@ -91,76 +91,49 @@
     <!-- container start -->
     <div class="container">
         <h1>James Polk</h1>
+        <div class="text-right">
+            <ul class="list-inline text-links">
+                <li><a href="#">Edit User</a></li>
+            </ul>
+        </div>
         <div class="form-container">
-            <div class="button-container"><div class="text-right"><button type="submit" class="btn btn-default block-btn">Edit User</button></div></div>
+            <!--<div class="button-container"><div class="text-right"><button type="submit" class="btn btn-default block-btn">Edit User</button></div></div>-->
             <div class="clear"></div>
             <form class="form-inline">
-                <div class="form-group col-sm-3">
-                    <label for="userType" class="control-label">User Type</label>
-                    <div>
-                        <p class="form-control-static">MSP</p>
+                <div class="horizontal-form">
+                    <div class="form-group-lg">
+                        <label class="col-lg-10">User Type</label><p class="form-control-static">MSP</p>
                     </div>
-                </div>
-                <div class="form-group col-sm-3">
-                    <label for="userName" class="control-label">User Name</label>
-                    <div>
-                        <p class="form-control-static">Jpolk@chase.com</p>
+                    <div class="form-group-lg">
+                        <label class="col-lg-10">User Name</label><p class="form-control-static">Jpolk@chase.com</p>
                     </div>
-                </div>
-                <div class="clear"></div>
-                <div class="form-group col-sm-3">
-                    <label for="firstName" class="control-label">First Name</label>
-                    <div>
-                        <p class="form-control-static">James</p>
+                    <div class="form-group-lg">
+                        <label class="col-lg-10">First Name</label><p class="form-control-static">James</p>
                     </div>
-                </div>
-                <div class="form-group col-sm-3">
-                    <label for="lastName" class="control-label">Last Name</label>
-                    <div>
-                        <p class="form-control-static">Polk</p>
+                    <div class="form-group-lg">
+                        <label class="col-lg-10">Last Name</label><p class="form-control-static">Polk</p>
                     </div>
-                </div>
-                <div class="form-group col-sm-3">
-                    <label for="PreferredName" class="control-label">Preferred Name</label>
-                    <div>
-                        <p class="form-control-static">Jamie</p>
+                    <div class="form-group-lg">
+                        <label class="col-lg-10">Preferred Name</label><p class="form-control-static">Jamie</p>
                     </div>
-                </div>
-                <div class="clear"></div>
-                <div class="form-group col-sm-3">
-                    <label for="phoneNo" class="control-label">Phone No</label>
-                    <div>
-                        <p class="form-control-static">123-456-789</p>
+                    <div class="form-group-lg">
+                        <label class="col-lg-10">Phone No</label><p class="form-control-static">123-456-789</p>
                     </div>
-                </div>
-                <div class="form-group col-sm-3">
-                    <label for="activeStatus" class="control-label">Active Status</label>
-                    <div>
-                        <p class="form-control-static">Active</p>
+                    <div class="form-group-lg">
+                        <label class="col-lg-10">Active Status</label><p class="form-control-static">Active</p>
                     </div>
-                </div>
-                <div class="form-group col-sm-3">
-                    <label for="clientAccess" class="control-label">Client Access</label>
-                    <div>
-                        <p class="form-control-static">Chase Bank, Webster Bank, Bank of America</p>
+                    <div class="form-group-lg">
+                        <label class="col-lg-10">Client Access</label><p class="form-control-static">Chase Bank, Webster Bank, Bank of America</p>
                     </div>
-                </div>
-                <div class="clear"></div>
-                <div class="form-group col-sm-3">
-                    <label for="permissions" class="control-label">Permissions</label>
-                    <div>
-                        <p class="form-control-static">Manage Candidates</p>
+                    <div class="form-group-lg">
+                        <label class="col-lg-10">Permissions</label><p class="form-control-static">Manage Candidates</p>
                     </div>
-                </div>
-                <div class="form-group col-sm-3">
-                    <label for="registrationStatus" class="control-label">Registration Status</label>
-                    <div>
-                        <p class="form-control-static">Unregistered <a href="#" data-toggle="modal" data-target="#resend-registration">Resend</a> <a href="userResendHistory.html">Resend History</a></p>
+                    <div class="form-group-lg">
+                        <label class="col-lg-10">Registration Status</label><p class="form-control-static">Unregistered <a href="#" data-toggle="modal" data-target="#resend-registration">Resend</a> <a href="userResendHistory.html">Resend History</a></p>
                     </div>
-                </div>
-                <div class="clear"></div>
-                <!--<div class="button-container"><div class="text-right"><button type="submit" class="btn btn-default">Resend</button> <button type="submit" class="btn btn-default">Resend History</button></div></div>-->
-            </form>
+                    <div class="clear"></div>
+                 </div>
+</form>
         </div>
     </div>
     <!-- /.container -->
@@ -182,10 +155,11 @@
                             </div>
                         </div>
                         <div class="form-group">
-                            <div class="col-sm-8 col-sm-offset-4">
-                                <p class="form-control-static">
+                            <label class="col-sm-4 control-label"></label>
+                            <div class="col-sm-8">
+                                <p class="form-control-static diff-email">
                                     <label for="diff-email">Send to a different email</label>
-                                    <input type="email" class="form-control" id="diff-email" placeholder="Send to a different email" required>
+                                    <input type="email" class="form-control" id="diff-email" placeholder="Send to a different email">
                                 </p>
                             </div>
                         </div>
@@ -193,7 +167,7 @@
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary block-btn" data-dismiss="modal">Cancel</button><button type="submit" class="btn btn-default block-btn">Send</button>
+                    <button type="button" class="btn btn-primary block-btn" data-dismiss="modal">Cancel</button><button type="submit" class="btn btn-default block-btn" data-dismiss="modal">Send</button>
                 </div>
             </div>
         </div>
@@ -202,7 +176,7 @@
     <script src="js/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/site.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
 </body>

@@ -35,9 +35,9 @@
             }
     });
 
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
+    
+    $('[data-toggle="tooltip"]').tooltip();
+    
 
     $("#carousel-one .right").click(function () {
         if ($(".active h2").html() == 'Funnel') {

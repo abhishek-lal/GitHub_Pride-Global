@@ -42,7 +42,11 @@
                     <!--<a href="#" class="pull-right hidden-lg hidden-md hidden-sm"><span class="badge-mobile">10</span></a>-->
                     <div class="input-group pull-right hidden-lg hidden-md hidden-sm">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="badge-mobile">10</span></a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu message-control">
+                            <li><a href="#">Mobile</a></li>
+                            <li><a href="#">Clients</a></li>
+                            <li><a href="#">Sppliers</a></li>
+                            <li><a href="#">Audit Log</a></li>
                             <li><a href="#">Users</a></li>
                             <li><a href="#">Clients</a></li>
                             <li><a href="#">Sppliers</a></li>
@@ -54,7 +58,11 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown visible-lg visible-md visible-sm">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="badge">10</span></a>
-                            <ul class="dropdown-menu">
+                            <ul class="dropdown-menu message-control">
+                                <li><a href="#">Users</a></li>
+                                <li><a href="#">Clients</a></li>
+                                <li><a href="#">Sppliers</a></li>
+                                <li><a href="#">Audit Log</a></li>
                                 <li><a href="#">Users</a></li>
                                 <li><a href="#">Clients</a></li>
                                 <li><a href="#">Sppliers</a></li>
@@ -159,16 +167,16 @@
                 <div class="block-horizontal">
                     <h4>Abilities*</h4>
                     <div class="checkbox checkbox-primary">
-                        <input type="checkbox" id="checkBox1"><label for="checkBox1">Create Requisitions</label>
+                        <input type="checkbox" id="checkBox1"><label for="checkBox1" data-toggle="tooltip" data-placement="right" title="Allows the user to open a new requisition and set the job details">Create Requisitions</label>
                     </div>
                     <div class="checkbox checkbox-primary">
-                        <input type="checkbox" id="checkBox2"><label for="checkBox2">Approve Requisitions</label>
+                        <input type="checkbox" id="checkBox2"><label for="checkBox2" data-toggle="tooltip" data-placement="right" title="Allows the user to view new requisitions and either approve or reject them">Approve Requisitions</label>
                     </div>
                     <div class="checkbox checkbox-primary">
-                        <input type="checkbox" id="checkBox3"><label for="checkBox3">Manage Requisitions</label>
+                        <input type="checkbox" id="checkBox3"><label for="checkBox3" data-toggle="tooltip" data-placement="right" title="Allows the user to review candidates submitted to their requisitions and select them for the job">Manage Requisitions</label>
                     </div>
                     <div class="checkbox checkbox-primary">
-                        <input type="checkbox" id="checkBox4"><label for="checkBox4">View All Requisitions</label>
+                        <input type="checkbox" id="checkBox4"><label for="checkBox4" data-toggle="tooltip" data-placement="right" title="Allows the user to see every requisition for their company">View All Requisitions</label>
                     </div>
                 </div>
                 <div class="clear"></div>
@@ -181,7 +189,8 @@
     <script src="js/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/bs-datepicker.js"></script>
+    <script src="js/site.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="js/ie10-viewport-bug-workaround.js"></script>
 </body>

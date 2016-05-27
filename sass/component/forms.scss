@@ -29,6 +29,7 @@
     .split-width{
     	input{max-width:86px !important; min-width:30px !important; margin-right:10px;
     		  }
+		.width-max{max-width:120px !important;}
        select{max-width:100px !important; min-width:30px !important;
     			   }
        .split-width-select{margin-right:10px;} 
@@ -163,7 +164,7 @@
     .form-group {
         padding-left: 0;
     }
-	.requisition-mbl-container{display:none;}
+	.requisition-mbl-container{display:none !important;}
     .button-container {
         //text-align: right;
         margin: 10px 0;
@@ -236,8 +237,19 @@
     }
 
 	.button-indicator{
-		.block-btn{margin:7px 5px;}
 		display: inline-block;
+		.tag{
+			 padding: 10px 40px;
+			 font-size: 1.3em;
+			 display: table;
+			 white-space:nowrap;
+			 vertical-align:middle;
+			 div{display:table-cell; vertical-align:middle;}
+			}
+		.block-btn{
+			 margin:5px;
+			}
+		
 		strong, span{
 			width:200px; 
 			overflow:hidden; 
@@ -245,28 +257,25 @@
 			text-transform:capitalize;
 			float:left;
 		}
-		.btn-default{
+		.tag-button{
 			width:265px;
 			position:relative;
 			padding:6px 10px;
 			text-align:left !important;
-
 			height:56px;
+			background-color:$orange;
+			color:$white;
 		}
-		.btn-default:after,.btn-clearbg:after{
-				content:"\e083";
-				font-family:$icon-font-name;
-				font-size:2.3em;
+		span.glyphicon-remove-sign, span.glyphicon-ok-sign, span.fa-circle-o{
 				position:absolute;
-				right:10px;
-				top:2px;
-				//line-height: 1.3;
+				font-size: 2.3em;
+				right:2%;
+				top:19%;
+				width:auto;
+				cursor:pointer;
 		}
-		.btn-clearbg:after{
-				content:"\e084";
-				color:$orange;
-		}
-		.btn-clearbg{
+		span.fa-circle-o{font-size:2.6em; top:15%; width:36px;}
+		.tag-clearbg{
 			width:265px;
 			position:relative;
 			background-color:$white !important;
@@ -274,8 +283,18 @@
 			color:$orange !important;
 			padding:4px 8px !important;
 			text-align:left !important;	
-			
 			height:56px;	
+		}
+		.tag-disable{
+			width:265px;
+			position:relative;
+			background-color:$disable-border !important;
+			border:solid 2px $disable-border !important;
+			color: $grey-color !important;
+			padding:4px 8px !important;
+			text-align:left !important;	
+			height:56px;
+			cursor:default;	
 		}
 	}
 
@@ -493,31 +512,44 @@
 	.badge-label{font-size: $default-font-size; color: $orange; font-weight:$bold-font;}
 	
 	.badge-large {
-			display:inline-block;
-			padding: 40px 45px;
+			//display:inline-block;
+			//padding: 40px 45px;
 			color: $orange;
 			background-color: $badge-bg;
 			border-radius: 50%;
 			font-size: $badge-view-font-size;
 			font-weight:$bold-font;
+			width:100px;
+			height:100px;
+			line-height:100px;
+			text-align:center;
+			display:inline-table;
 			}
 	.badge-medium{
-			display:inline-block;
+			display:inline-table;
 			color: $orange;
 			background-color: $badge-bg;
 			font-size: $badge-view-font-size;
-			padding: 22px 27px;
+			//padding: 22px 27px;
 			border-radius: 50%;
 			font-weight:$bold-font;
+			height: 80px;
+			width: 80px;
+			line-height: 80px;
+			text-align: center;
 		  }
 	.badge-small{
-			display:inline-block;
+			display:inline-table;
 			color: $orange;
 			background-color: $badge-bg;
 			font-size: $badge-view-font-size;
-			padding: 10px 22px;
+			//padding: 10px 22px;
 			border-radius: 50%;
 			font-weight:bold;
+			height:65px;
+			width:65px;
+			text-align:center;
+			line-height:65px;
 		  }
 	}
 
@@ -546,7 +578,7 @@
 	   .requisition-dtop-container{ 
 								display:none;
 								}
-	   .requisition-mbl-container{display:block;}
+	   .requisition-mbl-container{display:block !important;}
 	   .mbl-resume{
 		   position: relative;
 		   a{
@@ -617,6 +649,7 @@
     		}
     	.split-width{
     	input{width:100%; min-width:50px !important; max-width:700px !important;}
+			 .width-max{max-width:100% !important;}
     	select{ width:150px !important; min-width:50px !important;}
     	.split-width-select{margin-right:10px;}
 		.split-width-input{ width:auto;}
@@ -634,10 +667,10 @@
 		}
 		
 		.button-indicator{
-			.block-btn{margin: 10px 0;}
 			display:block;
-			.btn-default,.btn-clearbg{width:100%;}
-			strong,span{width:85%;}
+			.block-btn{margin: 10px 0;}
+			.tag,.tag-clearbg,.tag-disable{width:100%;}
+			strong,span{width:78%;}
 		}
 		.mbl-container button img{
 			    position: relative;
