@@ -205,6 +205,10 @@ input:focus:-moz-placeholder {
 .no-shadow {
   box-shadow: none !important; }
 
+.highlighted {
+  color: #b13535;
+  font-weight: bold; }
+
 @-moz-document url-prefix() {
   .multiselect-parent .dropdown-toggle {
     padding: 6px; }
