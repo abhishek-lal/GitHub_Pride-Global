@@ -111,6 +111,9 @@ input:focus:-moz-placeholder{
 		border-radius: 0;
 		box-shadow: none;
 		.form-control { background-color: $filter-elements-bg !important;}
+		.multiselect-parent{
+			.dropdown-toggle{background-color: $filter-elements-bg !important;}
+							}
 		.btn-link {margin-right:0;}
 	}
 }

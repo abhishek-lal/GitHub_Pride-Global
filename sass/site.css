@@ -153,6 +153,8 @@ input:focus:-moz-placeholder {
   box-shadow: none; }
   .form-inline .well .form-control {
     background-color: #fdfdfd !important; }
+  .form-inline .well .multiselect-parent .dropdown-toggle {
+    background-color: #fdfdfd !important; }
   .form-inline .well .btn-link {
     margin-right: 0; }
 
