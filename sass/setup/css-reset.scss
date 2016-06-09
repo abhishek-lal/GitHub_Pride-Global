@@ -97,8 +97,10 @@ input:focus:-moz-placeholder{
 	font-size:$footer-font-size;
 	}
 .separator{
-	border-top:1px solid $tab-grey;
+	border-bottom:1px solid $tab-grey;
 	margin-bottom:20px;
+	font-weight: $bold-font;
+    font-size: $default-font-size;
 	}
 .sub-heading{font-size:$sub-heading-font-size;}
 .form-inline{

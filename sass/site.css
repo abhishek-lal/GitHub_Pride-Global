@@ -137,8 +137,10 @@ input:focus:-moz-placeholder {
   font-size: 1em; }
 
 .separator {
-  border-top: 1px solid #b4b4b4;
-  margin-bottom: 20px; }
+  border-bottom: 1px solid #b4b4b4;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.2em; }
 
 .sub-heading {
   font-size: 1.4em; }
