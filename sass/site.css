@@ -213,6 +213,9 @@ input:focus:-moz-placeholder {
   color: #b13535;
   font-weight: bold; }
 
+.addon-label {
+  padding: 25px 6px 6px 0 !important; }
+
 @-moz-document url-prefix() {
   .multiselect-parent .dropdown-toggle {
     padding: 6px; }
@@ -1164,6 +1167,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background-color: transparent;
   border: none;
   border-radius: none; }
+
+.input-group-label {
+  height: 20px;
+  font-size: 14px !important; }
 
 .split-width input {
   max-width: 86px !important;

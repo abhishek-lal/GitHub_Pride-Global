@@ -26,6 +26,10 @@
         border: none;
         border-radius: none;
     	}
+	.input-group-label{
+		height:20px;
+		font-size:14px !important;
+		}
     .split-width{
     	input{max-width:86px !important; min-width:30px !important; margin-right:10px;
     		  }
