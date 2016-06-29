@@ -467,7 +467,8 @@ footer {
   z-index: 1; }
 
 .checkbox input[type="checkbox"]:focus + label::before, .checkbox input[type="radio"]:focus + label::before {
-  outline: none; }
+  outline: thin dotted;
+  outline-offset: -2px; }
 
 .checkbox input[type="checkbox"]:checked + label::after, .checkbox input[type="radio"]:checked + label::after {
   font-family: "FontAwesome";
