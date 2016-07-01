@@ -1806,6 +1806,10 @@ html.login {
   html.login body {
     margin-bottom: 0;
     margin-top: 0; }
+  html.login .success-msg {
+    position: absolute;
+    top: 58px;
+    width: 100%; }
 
 .site-wrapper {
   display: table;
@@ -1957,7 +1961,11 @@ html.login {
     padding-top: 13px; }
   .cover-container .form-horizontal .form-group label {
     display: inline-block;
-    width: 13%; } }
+    width: 13%; }
+  html.login .success-msg {
+    position: relative;
+    top: auto;
+    margin: 0; } }
 
 @media (max-width: 430px) {
   .cover-container .logo-block img {
