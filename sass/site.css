@@ -216,6 +216,10 @@ input:focus:-moz-placeholder {
 .addon-label {
   padding: 25px 6px 6px 0 !important; }
 
+.text-dropdown .dropdown-menu {
+  max-height: 200px !important;
+  overflow-y: auto !important; }
+
 @-moz-document url-prefix() {
   .multiselect-parent .dropdown-toggle {
     padding: 6px; }
