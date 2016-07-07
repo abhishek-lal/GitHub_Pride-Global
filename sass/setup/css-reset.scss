@@ -143,7 +143,12 @@ input:focus:-moz-placeholder{
 .no-shadow{box-shadow:none !important;}
 .highlighted{color:#b13535; font-weight:bold;}
 .addon-label{padding: 25px 6px 6px 0 !important;}
-.text-dropdown .dropdown-menu{max-height:200px !important; overflow-y:auto !important;}
+.text-dropdown .dropdown-menu{
+	max-height:200px !important; overflow-y:auto !important;
+	li > a{
+			cursor:default;
+		  }
+	}
 
 @-moz-document url-prefix() {
     .multiselect-parent{

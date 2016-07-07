@@ -219,6 +219,8 @@ input:focus:-moz-placeholder {
 .text-dropdown .dropdown-menu {
   max-height: 200px !important;
   overflow-y: auto !important; }
+  .text-dropdown .dropdown-menu li > a {
+    cursor: default; }
 
 @-moz-document url-prefix() {
   .multiselect-parent .dropdown-toggle {
@@ -1362,7 +1364,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     text-transform: capitalize;
     float: left; }
   .button-indicator .tag-button {
-    width: 265px;
+    width: 263px;
     position: relative;
     padding: 6px 10px;
     text-align: left !important;
@@ -1381,7 +1383,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     top: 15%;
     width: 36px; }
   .button-indicator .tag-clearbg {
-    width: 265px;
+    width: 263px;
     position: relative;
     background-color: #fff !important;
     border: solid 2px #ef5f47 !important;
@@ -1390,7 +1392,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     text-align: left !important;
     height: 56px; }
   .button-indicator .tag-disable {
-    width: 265px;
+    width: 263px;
     position: relative;
     background-color: #cdcdcd !important;
     border: solid 2px #cdcdcd !important;
