@@ -24,6 +24,7 @@ h1 {margin: 0 0 20px; font-size:$heading-font-size; font-weight:500;}
 .margint20 {margin-top: 20px;}
 .marginl10{margin-left:10px;}
 .marginb10{margin-bottom:10px;}
+.margintb2{margin:2px 0;}
 
 h4{		
 	@include font-face-default();
@@ -96,8 +97,10 @@ input:focus:-moz-placeholder{
 	font-size:$footer-font-size;
 	}
 .separator{
-	border-top:1px solid $tab-grey;
+	border-bottom:1px solid $tab-grey;
 	margin-bottom:20px;
+	font-weight: $bold-font;
+    font-size: $default-font-size;
 	}
 .sub-heading{font-size:$sub-heading-font-size;}
 .form-inline{
@@ -110,6 +113,9 @@ input:focus:-moz-placeholder{
 		border-radius: 0;
 		box-shadow: none;
 		.form-control { background-color: $filter-elements-bg !important;}
+		.multiselect-parent{
+			.dropdown-toggle{background-color: $filter-elements-bg !important;}
+							}
 		.btn-link {margin-right:0;}
 	}
 }
@@ -135,6 +141,14 @@ input:focus:-moz-placeholder{
 }
 .full-height-blk{display:block; height:100%;}
 .no-shadow{box-shadow:none !important;}
+.highlighted{color:#b13535; font-weight:bold;}
+.addon-label{padding: 25px 6px 6px 0 !important;}
+.text-dropdown .dropdown-menu{
+	max-height:200px !important; overflow-y:auto !important;
+	li > a{
+			cursor:default;
+		  }
+	}
 
 @-moz-document url-prefix() {
     .multiselect-parent{

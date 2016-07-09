@@ -60,28 +60,33 @@ navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:
     }
 
 .badge {
-    padding: 11px 10px;
     color: $white-font;
     background-color: $nav-color;
-    border-radius: 40px;
+    border-radius: 50%;
     font-size: $badge-font-size !important;
+	text-align:center;
+	height:28px;
+	width:34px;
+	line-height:28px;
+	display:inline-table;
 }
 
 .badge-mobile {
     background-color: $nav-color;
-    border-radius: 40px;
+    border-radius: 50%;
     color: $white-font;
-    display: inline-block;
     font-size: $badge-font-size !important;
     font-weight: 700;
-    line-height: 1;
     min-width: 10px;
-    padding: 11px 10px;
     text-align: center;
     vertical-align: middle;
     white-space: nowrap;
     margin: 9px 20px 0 0;
-    //display:none;
+    text-align:center;
+	height:34px;
+	width:34px;
+	line-height:34px;
+	display:inline-table;
 }
 .message-control{
 	//right: auto !important;

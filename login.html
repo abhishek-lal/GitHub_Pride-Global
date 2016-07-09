@@ -26,11 +26,12 @@
 <body>
     <div class="site-wrapper">
         <!-- Global Header -->
-
         <!-- container start -->
         <div class="site-wrapper-inner">
             <div class="cover-container">
                 <div class="col-sm-12 clearfix text-center logo-block"><a href="#"><img src="img/launch_logo1.png" /></a></div>
+                <div class="clear"></div>
+                <div class="success-msg">Login failed: Either the username or password was incorrect</div>
                 <div class="col-sm-12 clearfix">
                     <table class="reg-container forgot-pwd-container">
                         <tr>
@@ -48,14 +49,16 @@
                                             <div class="global-msg">Login failed: Either the username or password was incorrect</div>
                                             <div class="form-container">
                                                 <form class="form-inline">
-                                                    <div class="form-group">
+                                                    <div class="form-group has-error">
                                                         <label for="email">Email*</label>
                                                         <input type="email" class="form-control" id="email" placeholder="Username" required>
+                                                        <span class="error-msg">Error message</span>
                                                     </div>
                                                     <div class="clear"></div>
-                                                    <div class="form-group">
+                                                    <div class="form-group has-error">
                                                         <label for="password">Password*</label>
                                                         <input type="password" class="form-control" id="password" placeholder="Password" required>
+                                                        <span class="error-msg">Error message</span>
                                                     </div>
                                                     <div class="clear"></div>
                                                     <div class="form-group">
@@ -77,7 +80,7 @@
                         </tr>
                     </table>
                 </div>
-                
+
             </div>
         </div>
         <!-- /.container -->

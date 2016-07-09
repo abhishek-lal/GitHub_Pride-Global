@@ -103,132 +103,85 @@
                 <br /><br />
                 <div class="requisition-dtop-container">
                     <!--Filter begins (desktop version)-->
-                    <div class="button-container"><div class="text-right"><a href="#filter-users" data-toggle="collapse" class="block-btn btn-mbl">Filter<span class="caret"></span></a></div></div>
+                    <div class="button-container"><div class="text-right"><a href="javascript:void(0);" data-target="#filter-users" data-toggle="collapse" class="block-btn btn-mbl">Filter<span class="caret"></span></a></div></div>
                     <div class="clear"></div>
                     <div class="collapse" id="filter-users">
                         <div class="well">
                             <div class="form-group">
-                                <label for="jobTitle">Job Title</label>
-                                <input type="text" class="form-control" id="jobTitle" placeholder="Job Title">
-                            </div>
-                            <div class="form-group">
-                                <label for="jobLocation">Job Location</label>
-                                <select id="jobLocation" class="form-control">
-                                    <option>Location 1</option>
-                                    <option>Location 2</option>
-                                    <option>Location 3</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="firstName">First Name</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="First Name">
-                            </div>
-                            <div class="form-group">
-                                <label for="lastName">Last Name</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
-                            </div>
-                            <div class="form-group">
-                                <label for="dateAdd">Date Added</label>
-                                <input type="text" class="form-control" id="dateAdd" placeholder="Date Added">
-                            </div>
-                            <div class="form-group">
-                                <label for="phNumber">Phone Number</label>
-                                <input type="tel" class="form-control" id="phNumber" placeholder="Phone Number">
-                            </div>
-                            <div class="form-group">
-                                <label for="userType">Clients</label>
-                                <select id="userType" class="form-control">
-                                    <option>Client 1</option>
-                                    <option>Client 2</option>
-                                    <option>Client 3</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="orgStruc">Organisation Structure</label>
-                                <input type="text" class="form-control" id="orgStruc" placeholder="Organisation Structure">
-                            </div>
-                            <div class="form-group">
-                                <label for="dateCreated">Date Created</label>
-                                <input type="text" class="form-control date-pick" id="dateCreated" placeholder="Date Created">
-                            </div>
-                            <div class="form-group">
-                                <label for="reqID">Requisition ID</label>
+                                <label for="reqID">Req ID</label>
                                 <input type="text" class="form-control" id="reqID" placeholder="Requisition ID">
-                            </div>
-                            <div class="form-group">
-                                <label for="reqStatus">Requisition Status</label>
-                                <select id="reqStatus" class="form-control">
-                                    <option>Requisition Status 1</option>
-                                    <option>Requisition Status 2</option>
-                                    <option>Requisition Status 3</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="hiringMgr">Hiring Manager</label>
-                                <select id="hiringMgr" class="form-control">
-                                    <option>Hiring Manager 1</option>
-                                    <option>Hiring Manager 2</option>
-                                    <option>Hiring Manager 3</option>
-                                </select>
                             </div>
                             <div class="form-group">
                                 <label for="mspOwner">MSP Owner</label>
                                 <select id="mspOwner" class="form-control">
-                                    <option>MSP Owner 1</option>
-                                    <option>MSP Owner 2</option>
-                                    <option>MSP Owner 3</option>
+                                    <option>Owner 1</option>
+                                    <option>Owner 2</option>
+                                    <option>Owner 3</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="clientId">Client ID</label>
-                                <input type="text" class="form-control" id="clientId" placeholder="Client ID">
+                                <label for="reqStatus">Req Status</label>
+                                <select id="reqStatus" class="form-control">
+                                    <option>Open</option>
+                                    <option>Closed</option>
+                                </select>
                             </div>
                             <div class="form-group">
-                                <label for="clientName">Client Name</label>
-                                <input type="text" class="form-control" id="clientName" placeholder="Client Name">
+                                <label for="reqShow">Show</label>
+                                <select id="reqShow" class="form-control">
+                                    <option>All</option>
+                                    <option>Sent to MSP</option>
+                                    <option>Accepting Candidates</option>
+                                    <option>Offer</option>
+                                    <option>On Hold</option>
+                                    <option>Covered</option>
+                                </select>
                             </div>
+                            <fieldset>
+                                <div class="clear separator">Date Created</div>
+                                <div class="form-group">
+                                    <!--<label for="selRange">Select Range</label>-->
+                                    <select id="selRange" class="form-control">
+                                        <option>Select Range</option>
+                                        <option>Before</option>
+                                        <option>After</option>
+                                        <option>Between</option>
+                                        <option>Exactly</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <!--<label for="dateFrom">Date From</label>-->
+                                    <input type="text" class="form-control date-pick" id="dateFrom" placeholder="Date From">
+                                </div>
+                                <div class="form-group">
+                                    <!--<label for="dateTo">Date To</label>-->
+                                    <input type="text" class="form-control date-pick" id="dateTo" placeholder="Date To">
+                                </div>
+                                <div class="clear separator"></div>
+                            </fieldset>
                             <div class="form-group">
-                                <label for="supplierId">Supplier ID</label>
-                                <input type="text" class="form-control" id="supplierId" placeholder="Supplier ID">
-                            </div>
-                            <div class="form-group">
-                                <label for="supplierName">Supplier Name</label>
-                                <input type="text" class="form-control" id="supplierName" placeholder="Supplier Name">
-                            </div>
-                            <div class="form-group">
-                                <label for="clientLists">Client Lists</label>
-                                <select id="clientLists" class="form-control">
+                                <label for="userType">Client</label>
+                                <select id="userType" class="form-control">
                                     <option>Client 1</option>
                                     <option>Client 2</option>
                                     <option>Client 3</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="company">Company</label>
-                                <input type="text" class="form-control" id="company" placeholder="Company">
-                            </div>
-                            <div class="form-group">
-                                <label for="userType">User Type</label>
-                                <select id="userType" class="form-control">
-                                    <option>MSP</option>
-                                    <option>Client</option>
-                                    <option>Supplier</option>
+                                <label for="jobTitle">Job Title</label>
+                                <select id="jobTitle" class="form-control">
+                                    <option>Job Title 1</option>
+                                    <option>Job Title 2</option>
+                                    <option>Job Title 3</option>
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label for="userId">User Id</label>
-                                <input type="text" class="form-control" id="userId" placeholder="User ID">
-                            </div>
-                            <div class="form-group modal-radio">
-                                <label for="actStatus">Active Status</label>
-                                <div class="button-container">
-                                    <div class="radio radio-primary">
-                                        <input type="radio" id="radio1" name="optradio" checked><label for="radio1">Active</label>
-                                    </div>
-                                    <div class="radio radio-primary">
-                                        <input type="radio" id="radio2" name="optradio"><label for="radio2">Inactive</label>
-                                    </div>
-                                </div>
+                                <label for="jobLocation">Job Location</label>
+                                <select id="jobLocation" class="form-control">
+                                    <option>Job Location 1</option>
+                                    <option>Job Location 2</option>
+                                    <option>Job Location 3</option>
+                                </select>
                             </div>
                             <div class="clear"></div>
                             <div class="text-right"><button type="reset" class="btn btn-link">Clear All</button></div>
@@ -710,9 +663,12 @@
                         <div class="form-group split-width">
                             <label for="date">Times when I am available (Date/Time):</label>
                             <div class="input-group">
-                                <span class="input-group-addon">1</span>
+                                <span class="input-group-addon addon-label">1</span>
+                                <label>Date</label>
                                 <input type="text" class="form-control date-pick width-max" id="date" placeholder="Date">
+                                
                                 <div class="input-group-btn">
+                                    <label class="input-group-label">Time</label>
                                     <select id="location" class="form-control">
                                         <option>1:00 PM</option>
                                         <option>1:30 PM</option>
@@ -723,9 +679,11 @@
                             </div>
                             <div class="clear"></div>
                             <div class="input-group margint20">
-                                <span class="input-group-addon">2</span>
+                                <span class="input-group-addon addon-label">2</span>
+                                <label>Date</label>
                                 <input type="text" class="form-control date-pick width-max" id="date" placeholder="Date">
                                 <div class="input-group-btn">
+                                    <label class="input-group-label">Time</label>
                                     <select id="location" class="form-control">
                                         <option>1:00 PM</option>
                                         <option>1:30 PM</option>
@@ -736,9 +694,11 @@
                             </div>
                             <div class="clear"></div>
                             <div class="input-group margint20">
-                                <span class="input-group-addon">3</span>
+                                <span class="input-group-addon addon-label">3</span>
+                                <label>Date</label>
                                 <input type="text" class="form-control date-pick width-max" id="date" placeholder="Date">
                                 <div class="input-group-btn">
+                                    <label class="input-group-label">Time</label>
                                     <select id="location" class="form-control">
                                         <option>1:00 PM</option>
                                         <option>1:30 PM</option>
@@ -871,130 +831,82 @@
                 <div class="modal-body">
                     <form class="form-inline">
                         <div class="form-group">
-                            <label for="mbl-jobTitle">Job Title</label>
-                            <input type="text" class="form-control" id="mbl-jobTitle" placeholder="Job Title">
-                        </div>
-                        <div class="form-group">
-                            <label for="mbl-jobLocation">Job Location</label>
-                            <select id="mbl-jobLocation" class="form-control">
-                                <option>Location 1</option>
-                                <option>Location 2</option>
-                                <option>Location 3</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="mbl-firstName">First Name</label>
-                            <input type="text" class="form-control" id="mbl-firstName" placeholder="First Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="mbl-lastName">Last Name</label>
-                            <input type="text" class="form-control" id="mbl-lastName" placeholder="Last Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="mbl-dateAdd">Date Added</label>
-                            <input type="text" class="form-control" id="mbl-dateAdd" placeholder="Date Added">
-                        </div>
-                        <div class="form-group">
-                            <label for="mbl-phNumber">Phone Number</label>
-                            <input type="tel" class="form-control" id="mbl-phNumber" placeholder="Phone Number">
-                        </div>
-                        <div class="form-group">
-                            <label for="mbl-userType">Clients</label>
-                            <select id="mbl-userType" class="form-control">
-                                <option>Client 1</option>
-                                <option>Client 2</option>
-                                <option>Client 3</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="mbl-orgStruc">Organisation Structure</label>
-                            <input type="text" class="form-control" id="mbl-orgStruc" placeholder="Organisation Structure">
-                        </div>
-                        <div class="form-group">
-                            <label for="mbl-dateCreated">Date Created</label>
-                            <input type="text" class="form-control date-pick" id="mbl-dateCreated" placeholder="Date Created">
-                        </div>
-                        <div class="form-group">
-                            <label for="mbl-reqID">Requisition ID</label>
+                            <label for="mbl-reqID">Req ID</label>
                             <input type="text" class="form-control" id="mbl-reqID" placeholder="Requisition ID">
                         </div>
                         <div class="form-group">
-                            <label for="mbl-reqStatus">Requisition Status</label>
-                            <select id="mbl-reqStatus" class="form-control">
-                                <option>Requisition Status 1</option>
-                                <option>Requisition Status 2</option>
-                                <option>Requisition Status 3</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="mbl-hiringMgr">Hiring Manager</label>
-                            <select id="mbl-hiringMgr" class="form-control">
-                                <option>Hiring Manager 1</option>
-                                <option>Hiring Manager 2</option>
-                                <option>Hiring Manager 3</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="mspOwner">MSP Owner</label>
-                            <select id="mspOwner" class="form-control">
+                            <label for="mbl-mspOwner">MSP Owner</label>
+                            <select id="mbl-mspOwner" class="form-control">
                                 <option>MSP Owner 1</option>
                                 <option>MSP Owner 2</option>
                                 <option>MSP Owner 3</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="mbl-clientId">Client ID</label>
-                            <input type="text" class="form-control" id="mbl-clientId" placeholder="Client ID">
+                            <label for="mbl-reqStatus">Req Status</label>
+                            <select id="mbl-reqStatus" class="form-control">
+                                <option>Open</option>
+                                <option>Closed</option>
+                            </select>
                         </div>
                         <div class="form-group">
-                            <label for="mbl-clientName">Client Name</label>
-                            <input type="text" class="form-control" id="mbl-clientName" placeholder="Client Name">
+                            <label for="mbl-reqShow">Show</label>
+                            <select id="mbl-reqShow" class="form-control">
+                                <option>All</option>
+                                <option>Sent to MSP</option>
+                                <option>Accepting Candidates</option>
+                                <option>Offer</option>
+                                <option>On Hold</option>
+                                <option>Covered</option>
+                            </select>
                         </div>
+                        <fieldset>
+                            <div class="clear separator">Date Created</div>
+                            <div class="form-group">
+                                <!--<label for="selRange">Select Range</label>-->
+                                <select id="mbl-selRange" class="form-control">
+                                    <option>Select Range</option>
+                                    <option>Before</option>
+                                    <option>After</option>
+                                    <option>Between</option>
+                                    <option>Exactly</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <!--<label for="dateFrom">Date From</label>-->
+                                <input type="text" class="form-control date-pick" id="mbl-dateFrom" placeholder="Date From">
+                            </div>
+                            <div class="form-group">
+                                <!--<label for="dateTo">Date To</label>-->
+                                <input type="text" class="form-control date-pick" id="mbl-dateTo" placeholder="Date To">
+                            </div>
+                            <div class="clear separator"></div>
+                        </fieldset>
                         <div class="form-group">
-                            <label for="mbl-supplierId">Supplier ID</label>
-                            <input type="text" class="form-control" id="mbl-supplierId" placeholder="Supplier ID">
-                        </div>
-                        <div class="form-group">
-                            <label for="mbl-supplierName">Supplier Name</label>
-                            <input type="text" class="form-control" id="mbl-supplierName" placeholder="Supplier Name">
-                        </div>
-                        <div class="form-group">
-                            <label for="mbl-clientLists">Client Lists</label>
-                            <select id="mbl-clientLists" class="form-control">
+                            <label for="mbl-userType">Client</label>
+                            <select id="mbl-userType" class="form-control">
                                 <option>Client 1</option>
                                 <option>Client 2</option>
                                 <option>Client 3</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="mbl-company">Company</label>
-                            <input type="text" class="form-control" id="mbl-company" placeholder="Company">
-                        </div>
-                        <div class="form-group">
-                            <label for="mbl-userType">User Type</label>
-                            <select id="mbl-userType" class="form-control">
-                                <option>MSP</option>
-                                <option>Client</option>
-                                <option>Supplier</option>
+                            <label for="mbl-jobTitle">Job Title</label>
+                            <select id="mbl-jobTitle" class="form-control">
+                                <option>Job Title 1</option>
+                                <option>Job Title 2</option>
+                                <option>Job Title 3</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="mbl-userId">User Id</label>
-                            <input type="text" class="form-control" id="mbl-userId" placeholder="User ID">
-                        </div>
-                        <div class="form-group modal-radio">
-                            <label for="mbl-actStatus">Active Status</label>
-                            <div class="button-container">
-                                <div class="radio radio-primary">
-                                    <input type="radio" id="radio7" name="optradio" checked><label for="radio7">Active</label>
-                                </div>
-                                <div class="radio radio-primary">
-                                    <input type="radio" id="radio8" name="optradio"><label for="radio8">Inactive</label>
-                                </div>
-                            </div>
+                            <label for="mbl-jobLocation">Job Location</label>
+                            <select id="mbl-jobLocation" class="form-control">
+                                <option>Job Location 1</option>
+                                <option>Job Location 2</option>
+                                <option>Job Location 3</option>
+                            </select>
                         </div>
                         <div class="clear"></div>
-                        <!--<a href="#">Clear All</a>-->
                         <button type="reset" class="btn btn-link">Clear All</button>
                     </form>
                 </div>

@@ -26,6 +26,10 @@
         border: none;
         border-radius: none;
     	}
+	.input-group-label{
+		height:20px;
+		font-size:14px !important;
+		}
     .split-width{
     	input{max-width:86px !important; min-width:30px !important; margin-right:10px;
     		  }
@@ -258,7 +262,7 @@
 			float:left;
 		}
 		.tag-button{
-			width:265px;
+			width:263px;
 			position:relative;
 			padding:6px 10px;
 			text-align:left !important;
@@ -276,7 +280,7 @@
 		}
 		span.fa-circle-o{font-size:2.6em; top:15%; width:36px;}
 		.tag-clearbg{
-			width:265px;
+			width:263px;
 			position:relative;
 			background-color:$white !important;
 			border:solid 2px $orange !important;
@@ -286,7 +290,7 @@
 			height:56px;	
 		}
 		.tag-disable{
-			width:265px;
+			width:263px;
 			position:relative;
 			background-color:$disable-border !important;
 			border:solid 2px $disable-border !important;

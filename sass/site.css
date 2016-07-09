@@ -57,6 +57,9 @@ h1 {
 .marginb10 {
   margin-bottom: 10px; }
 
+.margintb2 {
+  margin: 2px 0; }
+
 h4 {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
@@ -134,8 +137,10 @@ input:focus:-moz-placeholder {
   font-size: 1em; }
 
 .separator {
-  border-top: 1px solid #b4b4b4;
-  margin-bottom: 20px; }
+  border-bottom: 1px solid #b4b4b4;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.2em; }
 
 .sub-heading {
   font-size: 1.4em; }
@@ -149,6 +154,8 @@ input:focus:-moz-placeholder {
   border-radius: 0;
   box-shadow: none; }
   .form-inline .well .form-control {
+    background-color: #fdfdfd !important; }
+  .form-inline .well .multiselect-parent .dropdown-toggle {
     background-color: #fdfdfd !important; }
   .form-inline .well .btn-link {
     margin-right: 0; }
@@ -201,6 +208,19 @@ input:focus:-moz-placeholder {
 
 .no-shadow {
   box-shadow: none !important; }
+
+.highlighted {
+  color: #b13535;
+  font-weight: bold; }
+
+.addon-label {
+  padding: 25px 6px 6px 0 !important; }
+
+.text-dropdown .dropdown-menu {
+  max-height: 200px !important;
+  overflow-y: auto !important; }
+  .text-dropdown .dropdown-menu li > a {
+    cursor: default; }
 
 @-moz-document url-prefix() {
   .multiselect-parent .dropdown-toggle {
@@ -277,26 +297,32 @@ navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:
   background-color: #ef5f47; }
 
 .badge {
-  padding: 11px 10px;
   color: #fff;
   background-color: #ef5f47;
-  border-radius: 40px;
-  font-size: 12px !important; }
+  border-radius: 50%;
+  font-size: 12px !important;
+  text-align: center;
+  height: 28px;
+  width: 34px;
+  line-height: 28px;
+  display: inline-table; }
 
 .badge-mobile {
   background-color: #ef5f47;
-  border-radius: 40px;
+  border-radius: 50%;
   color: #fff;
-  display: inline-block;
   font-size: 12px !important;
   font-weight: 700;
-  line-height: 1;
   min-width: 10px;
-  padding: 11px 10px;
   text-align: center;
   vertical-align: middle;
   white-space: nowrap;
-  margin: 9px 20px 0 0; }
+  margin: 9px 20px 0 0;
+  text-align: center;
+  height: 34px;
+  width: 34px;
+  line-height: 34px;
+  display: inline-table; }
 
 .message-control {
   max-height: 200px;
@@ -447,7 +473,8 @@ footer {
   z-index: 1; }
 
 .checkbox input[type="checkbox"]:focus + label::before, .checkbox input[type="radio"]:focus + label::before {
-  outline: none; }
+  outline: thin dotted;
+  outline-offset: -2px; }
 
 .checkbox input[type="checkbox"]:checked + label::after, .checkbox input[type="radio"]:checked + label::after {
   font-family: "FontAwesome";
@@ -1148,6 +1175,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border: none;
   border-radius: none; }
 
+.input-group-label {
+  height: 20px;
+  font-size: 14px !important; }
+
 .split-width input {
   max-width: 86px !important;
   min-width: 30px !important;
@@ -1333,7 +1364,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     text-transform: capitalize;
     float: left; }
   .button-indicator .tag-button {
-    width: 265px;
+    width: 263px;
     position: relative;
     padding: 6px 10px;
     text-align: left !important;
@@ -1352,7 +1383,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     top: 15%;
     width: 36px; }
   .button-indicator .tag-clearbg {
-    width: 265px;
+    width: 263px;
     position: relative;
     background-color: #fff !important;
     border: solid 2px #ef5f47 !important;
@@ -1361,7 +1392,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     text-align: left !important;
     height: 56px; }
   .button-indicator .tag-disable {
-    width: 265px;
+    width: 263px;
     position: relative;
     background-color: #cdcdcd !important;
     border: solid 2px #cdcdcd !important;
@@ -1781,6 +1812,10 @@ html.login {
   html.login body {
     margin-bottom: 0;
     margin-top: 0; }
+  html.login .success-msg {
+    position: absolute;
+    top: 58px;
+    width: 100%; }
 
 .site-wrapper {
   display: table;
@@ -1932,7 +1967,11 @@ html.login {
     padding-top: 13px; }
   .cover-container .form-horizontal .form-group label {
     display: inline-block;
-    width: 13%; } }
+    width: 13%; }
+  html.login .success-msg {
+    position: relative;
+    top: auto;
+    margin: 0; } }
 
 @media (max-width: 430px) {
   .cover-container .logo-block img {
