@@ -1899,7 +1899,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 200px;
     overflow: hidden;
     text-overflow: ellipsis;
-    text-transform: capitalize;
     float: left; }
   .button-indicator .tag-button {
     width: 263px;
