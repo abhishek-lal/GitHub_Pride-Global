@@ -37,6 +37,7 @@
 
     
     $('[data-toggle="tooltip"]').tooltip();
+    $(".dropdown-search").select2();
     
 
     $("#carousel-one .right").click(function () {
