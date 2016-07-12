@@ -60,6 +60,9 @@ h1 {
 .margintb2 {
   margin: 2px 0; }
 
+.no-marginb .form-group {
+  margin-bottom: 0px !important; }
+
 h4 {
   font-family: 'Open Sans', sans-serif;
   font-weight: normal;
