@@ -92,9 +92,9 @@ navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:
 	//right: auto !important;
 	max-height:200px;
 	overflow-y:auto;
-	min-width: 220px !important;
+	min-width: 300px !important;
 	li {
-		   a{white-space: normal !important; text-transform:capitalize;}
+		   a{white-space: normal !important; text-transform:none; font-size:1em; padding:3px 10px;}
 	
 		&:nth-of-type(odd) {
 			background-color: $white;
@@ -142,6 +142,9 @@ navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:
         .navbar-nav li a {
             padding: 3px 5px !important;
         }
+		.message-control{
+			min-width: 250px !important;
+	}
 }
 @media (min-width: 992px) and (max-width: 1200px) {
 	.navbar-nav {
@@ -198,4 +201,7 @@ navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:
             }
         }
     }
+	.message-control{
+		min-width: 220px !important;
+	}
 }
