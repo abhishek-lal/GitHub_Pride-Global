@@ -37,7 +37,11 @@
 
     
     $('[data-toggle="tooltip"]').tooltip();
-    $(".dropdown-search").select2();
+    $(".dropdown-search").select2({
+        dropdownAutoWidth: false,
+        width: 'resolve'
+    });
+    
     
 
     $("#carousel-one .right").click(function () {

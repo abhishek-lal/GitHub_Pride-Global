@@ -1691,6 +1691,8 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
 
 @media (max-width: 767px) {
   .select2-container--default .select2-selection--multiple .select2-selection__rendered, .select2-container {
+    width: 100% !important; }
+  .dropdown-search {
     width: 100% !important; } }
 
 /* PAGE ITEMS

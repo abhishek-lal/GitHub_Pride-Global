@@ -5162,7 +5162,7 @@ S2.define('select2/core',[
       if (elementWidth <= 0) {
         return 'auto';
       }
-
+      elementWidth = elementWidth + 20;
       return elementWidth + 'px';
     }
 
