@@ -37,6 +37,7 @@
 
     
     $('[data-toggle="tooltip"]').tooltip();
+    $('[data-toggle="popover"]').popover();
     $(".dropdown-search").select2({
         dropdownAutoWidth: false,
         width: 'resolve'

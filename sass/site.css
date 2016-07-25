@@ -219,6 +219,10 @@ input:focus:-moz-placeholder {
 .addon-label {
   padding: 25px 6px 6px 0 !important; }
 
+.timeline-scroll {
+  height: 350px;
+  overflow-x: auto; }
+
 .text-dropdown .dropdown-menu {
   max-height: 200px !important;
   overflow-y: auto !important; }
@@ -1301,7 +1305,8 @@ input[type="checkbox"] .styled:checked + label::after, input[type="radio"] .styl
   border: none;
   border-radius: 0;
   /*font-size: 1.2em !important;*/
-  color: #5f5f5f !important; }
+  color: #5f5f5f !important;
+  padding: 0 !important; }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
   color: #444;
